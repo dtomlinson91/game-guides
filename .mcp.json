@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "wcl": {
+      "command": "/Users/dtomlinson/.nvm/versions/node/v24.15.0/bin/node",
+      "args": ["/Users/dtomlinson/git-repos/wcl-mcp-server/dist/index.js"],
+      "env": {
+        "WCL_CLIENT_ID": "***REMOVED***",
+        "WCL_CLIENT_SECRET": "***REMOVED***"
+      }
+    }
+  }
+}

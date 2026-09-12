@@ -263,7 +263,7 @@ this list rather than replacing it.
 
 #### Resto Druid
 
-[`world-of-warcraft/resto-druid-raid-rotation.md`](world-of-warcraft/resto-druid-raid-rotation.md)
+[`world-of-warcraft/rotations/resto-druid-raid-rotation.md`](world-of-warcraft/rotations/resto-druid-raid-rotation.md)
 — raid healing rotation for The Venomous Abyss. Covers the rate-based rotation,
 the baseline-versus-spike model, per-boss damage profiles for all nine
 encounters, a log-check list, and a gear check. **Rewritten 2026-09-06 from log
@@ -314,12 +314,13 @@ Reddit — playstyle shape only, no rotation detail:
 
 #### Ret Paladin
 
-[`world-of-warcraft/ret-paladin-mplus-rotation.md`](world-of-warcraft/ret-paladin-mplus-rotation.md)
+[`world-of-warcraft/rotations/ret-paladin-mplus-rotation.md`](world-of-warcraft/rotations/ret-paladin-mplus-rotation.md)
 — Mythic+ rotation quick reference for Season 2. Covers the single-target and
 AoE priority lists, the Avenging Wrath burst window with measured offsets, a
-macro set derived from the logged cast timings, the target-count spender swap,
-observed cast rates, and the buttons that are not buttons. **Written 2026-09-11
-from 24 mid-tier logs. Macros added 2026-09-12.**
+macro set derived from the logged cast timings, a Cooldown Manager buff list,
+the target-count spender swap, observed cast rates, and the buttons that are not
+buttons. **Written 2026-09-11 from 24 mid-tier logs. Macros and Cooldown Manager
+setup added 2026-09-12.**
 
 Primary source — Warcraft Logs, through the MCP server:
 

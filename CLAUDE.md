@@ -5,12 +5,49 @@ One directory per game, one file per subject.
 
 ```
 <game-slug>/<subject-slug>.md
+<game-slug>/<category>/<subject-slug>.md   # when a game has many of one kind
 ```
+
+World of Warcraft class rotations live in `world-of-warcraft/rotations/`.
 
 Follow the conventions in the `doc-summary` skill when writing a guide: short
 headers of two to four words, an introductory paragraph under every header, and
 GitHub alerts (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`,
 `> [!CAUTION]`) where the reader needs to stop and read.
+
+## Section order
+
+Order sections by **how often the reader returns to them**, most frequent
+first. Group related sections together, then order the groups by frequency.
+The reader should not scroll past content they read once to reach content they
+check every pull.
+
+A guide the reader uses while playing falls into four bands:
+
+1. **Act on it now** — priority lists, rotations, timings, per-pull decisions
+2. **Check when something feels wrong** — the non-obvious rules, common
+   failure modes, troubleshooting
+3. **Check after the session** — measured rates and benchmarks to compare a log
+   against
+4. **Set up once** — talent or build choice, keybinds, macros, UI and tracker
+   configuration, then provenance and sample notes
+
+> [!IMPORTANT]
+> Put one-time setup at the END, however important it is. Macros, keybinds and
+> UI setup are read once or twice and then never again. Leading with them
+> buries the lists the reader needs mid-combat.
+
+> [!TIP]
+> Moving a section can strand a cross-reference. "Described below" becomes wrong
+> when the target moves above. Use an anchor link such as
+> `[burst window](#the-burst-window)` rather than a direction word, then check
+> every `(#anchor)` against the headers after any reorder.
+
+> [!WARNING]
+> A prerequisite explained in a section you moved to the end leaves its first
+> use unexplained. Either move that explanation to where it is first needed, or
+> state it in the opening paragraph. Do not leave a term defined only after the
+> list that uses it.
 
 ## Research
 
@@ -134,9 +171,16 @@ Terms that appear across every guide and are worth using consistently.
 
 ## World of Warcraft
 
-Guides live in `world-of-warcraft/`. Name the expansion, patch and season in
+Guides live in `world-of-warcraft/`, with class rotations under
+`world-of-warcraft/rotations/`. Name the expansion, patch and season in
 every guide, because a rotation can change completely between seasons. As of
 2026-09, this is Midnight, patch 12.1, Season 2.
+
+> [!IMPORTANT]
+> **To build or update a class rotation guide, use the `wow-rotation-guide`
+> skill** in `.claude/skills/wow-rotation-guide/`. It holds the interactive
+> intake, the full Warcraft Logs query cookbook, and the six analysis traps that
+> produce confident wrong numbers. Do not rebuild that method from scratch.
 
 ### Research sources
 
@@ -179,18 +223,9 @@ ToolSearch  select:mcp__wcl__wcl_get_fights,mcp__wcl__wcl_get_player_info,mcp__w
 fight `startTime` from `wcl_get_fights` and add your offset to it. A window
 starting at 0 silently returns data from before the pull.
 
-A time-bounded table through GraphQL:
-
-```graphql
-query {
-  reportData {
-    report(code: "<code>") {
-      x: table(fightIDs: [1], dataType: Healing, sourceID: 11,
-               startTime: 15789556, endTime: 16220056)
-    }
-  }
-}
-```
+`wcl_get_table` does not accept a time window. Only `wcl_graphql` does, using
+`table(fightIDs: [..], dataType: .., sourceID: .., startTime: .., endTime: ..)`.
+The `wow-rotation-guide` skill's cookbook has the full query.
 
 > [!TIP]
 > Results are large. A healing table for one fight runs to 370 KB and is
@@ -337,6 +372,10 @@ Live spell values — checked against tooltips, not guides:
 - <https://www.wowhead.com/spell=1296661/paladin-retribution-12-1-class-set-4pc>
 - <https://www.wowhead.com/spell=427453/hammer-of-light>
 - <https://www.wowhead.com/spell=425518/lights-deliverance>
+- <https://www.wowhead.com/spell=1306161> and <https://www.wowhead.com/spell=1306162>
+  — the two Divine Arbiter buffs. Same name, same icon, opposite meaning.
+- <https://www.wowhead.com/guide/ui/cooldown-manager-setup> — Cooldown Manager
+  setup path, updated 2026-08-10 for 12.1.
 
 Written guides — mechanics only, priorities NOT trusted:
 
@@ -356,24 +395,10 @@ Sources that failed:
   to be derived from cast and buff signatures instead.
 - A single GraphQL query with 30 aliased `table` calls times out. Batch smaller.
 
-> [!TIP]
-> A Mythic+ run logs as ONE fight, not separate boss pulls. Split it with
-> GraphQL `dungeonPulls` on that fight: `encounterID != 0` is a boss,
-> `encounterID == 0` is trash. Each pull carries exact ms bounds, so you can
-> bucket every cast into single-target or AoE. This is the whole method.
-
-> [!CAUTION]
-> A WCL Mythic+ "boss" pull is NOT automatically single target. The median boss
-> pull in this sample held 9 distinct enemies and the range was 1 to 68. Treating
-> every boss pull as single target inflates Divine Storm from 6.5 to 9.9 casts
-> per minute. Filter by enemy count, and note that the count is cumulative
-> across the pull rather than simultaneous.
-
 > [!IMPORTANT]
 > Retribution's Avenging Wrath is a 60-second cooldown, not the 120 seconds its
 > spell page shows. A hidden spec passive (spell 1258011) cuts it. The same
-> passive changes Consecration and Divine Protection. Reading the bare tooltip
-> gets all three wrong.
+> passive changes Consecration and Divine Protection.
 
 > [!NOTE]
 > The field is 100% Herald of the Sun — 24 of 24 sampled logs, and 60 of 60 top
@@ -381,17 +406,8 @@ Sources that failed:
 > talent page both still recommend Templar. They are stale. No Templar data
 > exists in this sample, so nothing in the guide is validated for it.
 
-> [!TIP]
-> Macros can be derived from log timings rather than guessed. The gap between
-> two casts tells you whether they shared a keypress. Avenging Wrath to
-> Execution Sentence has a median gap of 0.40 s with a p10 of 0.10 s, which no
-> human produces by hand — that pair is macro'd in the field. Wake of Ashes sits
-> at a median 1.00 s, one global later, so it cannot be in the same macro. Parse
-> the burst-window strings in the per-log JSON for this; the offsets are already
-> relative to the Avenging Wrath cast.
-
-> [!WARNING]
-> A macro cannot fire two abilities that both cost a global cooldown. The
-> Avenging Wrath plus Execution Sentence macro works only because Avenging Wrath
-> is off the GCD and Execution Sentence has a 750 ms one. Before writing any
-> "press these together" advice, check the GCD row on the Wowhead spell page.
+> [!CAUTION]
+> The patch 12.1 tier 4-piece (Divine Arbiter) reshapes the rotation, not just
+> the damage. It empowers the spender you did *not* just press, which is why
+> both spenders appear in both the single-target and AoE lists. A guide written
+> for 4-piece is wrong for a player without it.

@@ -30,7 +30,7 @@ record with a one-line outline and the URLs that produced it. Note any source
 that failed, and why. This is the part that saves the next agent time, so do it
 even when the sources were the obvious ones.
 
-Three rules hold across every game:
+Four rules hold across every game:
 
 1. **Research the subject. Do not answer from memory.** These games change with
    every patch. Damage values, tier placements, and recommended builds go stale
@@ -40,6 +40,18 @@ Three rules hold across every game:
 3. **Prefer the game's own data over a written guide for any value.** Written
    guides lag behind balance changes. Where the game exposes a live tooltip or
    database page, check the number there and treat the guide as commentary.
+4. **Prefer observed play over prescribed play.** A guide states what a player
+   should do. A log states what strong players did. Where a log or telemetry
+   source exists, check every rotation and priority claim against it before you
+   repeat the claim in a guide.
+
+> [!CAUTION]
+> Rule 4 is not theoretical. Icy Veins and Wowhead both state that a raiding
+> Restoration Druid should end a fight with more Regrowth casts than
+> Rejuvenation casts. A Heroic log showed the raid's top healer casting 164
+> Rejuvenation to 43 Regrowth, while the player who followed the written rule
+> healed 2.78 times less. A guide rule can be stale, or conditional and written
+> as though it were absolute. Mark conditional advice as conditional.
 
 > [!IMPORTANT]
 > When a source disagrees with another, say so in the guide and name which one
@@ -136,16 +148,69 @@ A starting point, not an exclusive one.
 | `icy-veins.com/wow/` | Written rotation and cooldown guides. Explicit maintenance lists, ramp sequences, and log-uptime targets. Usually the most current written source |
 | `wowhead.com/guide/classes/` | Rotation guides with the reasoning spelled out. Good "explain why" sections |
 | `method.gg/guides/` | Independent cross-check. Structured by playstyle. Known to carry stale tuning values |
-| `archon.gg/wow/builds/` | Log-derived talent, gear and stat-priority data. The usable substitute for Warcraft Logs |
+| **Warcraft Logs MCP server** | **The best source for anything about real play.** Reaches the WCL v2 API directly. Real cast counts, healing by ability, buff uptimes, targeting, and raw event streams from actual pulls. See below |
+| `archon.gg/wow/builds/` | Log-derived talent, gear and stat-priority data. Aggregated, so it shows what most players run, not what one player did |
 | `maxroll.gg/wow/class-guides/` | Alternative written guides. Check the patch number, they lag |
 | Official patch notes | Balance changes and new mechanics |
 
+### Warcraft Logs
+
+A Warcraft Logs MCP server is configured for this repository. It is the highest
+value source available for any question about how a spec is actually played,
+because it reports what real players pressed rather than what a guide says to
+press.
+
+Load the schemas before use. They are deferred, so a direct call fails:
+
+```
+ToolSearch  select:mcp__wcl__wcl_get_fights,mcp__wcl__wcl_get_player_info,mcp__wcl__wcl_get_table,mcp__wcl__wcl_get_events,mcp__wcl__wcl_graphql,mcp__wcl__wcl_get_rate_limit
+```
+
+| Tool | Returns |
+| --- | --- |
+| `wcl_get_fights` | Every pull in a report. Fight IDs, boss names, kill or wipe, difficulty, time bounds |
+| `wcl_get_player_info` | The roster. Actor IDs, names, class, spec, role. Call this first to map a name to the `sourceID` every other tool needs |
+| `wcl_get_table` | The workhorse. Aggregated views: `healing`, `casts`, `damage-taken`, `buffs`, `deaths`, `resources`, and more |
+| `wcl_get_events` | Raw event streams. Use for cast sequences, combos, and anything needing exact timestamps |
+| `wcl_graphql` | Escape hatch. The only route that accepts a **time window**, which `wcl_get_table` does not |
+| `wcl_get_rate_limit` | Points spent this hour. Budget is 3600 per hour, so cost is rarely a problem |
+
+**Timestamps are report-relative milliseconds, not fight-relative.** Read the
+fight `startTime` from `wcl_get_fights` and add your offset to it. A window
+starting at 0 silently returns data from before the pull.
+
+A time-bounded table through GraphQL:
+
+```graphql
+query {
+  reportData {
+    report(code: "<code>") {
+      x: table(fightIDs: [1], dataType: Healing, sourceID: 11,
+               startTime: 15789556, endTime: 16220056)
+    }
+  }
+}
+```
+
+> [!TIP]
+> Results are large. A healing table for one fight runs to 370 KB and is
+> written to a file rather than returned. Parse it with `python3` through Bash
+> and print only the rows you need. A GraphQL result file is sometimes a JSON
+> list whose first element holds the real JSON in a `.text` field, so parse
+> defensively.
+
+> [!IMPORTANT]
+> **Compare inside a fair window.** If one player died, bound every query at
+> the death timestamp. Otherwise the survivor's extra minutes read as skill.
+> Check `activeTime` against fight duration too. A player at 77% active time
+> has a different problem from one who is casting the wrong spells.
+
 > [!WARNING]
-> `warcraftlogs.com` cannot be scraped. `/zone/rankings/`, `/zone/statistics/`
-> and their filtered variants all return an empty body with no error, because
-> the data renders client-side. Do not spend attempts on it. Use `archon.gg`
-> for log-derived data. For a player's own performance, ask them for their log
-> rather than trying to fetch one.
+> The **website** still cannot be scraped. `/zone/rankings/`,
+> `/zone/statistics/` and their filtered variants return an empty body with no
+> error, because the pages render client-side. That is a separate route from
+> the MCP server, which works. Use the MCP server for report data, and
+> `archon.gg` for aggregated ranking data.
 
 > [!CAUTION]
 > Written guides carry stale tuning numbers. Confirm every percentage against
@@ -199,33 +264,133 @@ this list rather than replacing it.
 #### Resto Druid
 
 [`world-of-warcraft/resto-druid-raid-rotation.md`](world-of-warcraft/resto-druid-raid-rotation.md)
-— raid healing rotation. Covers maintenance casts, the Abundance cycle, ramp
-and burst sequences, downtime filler, cooldown planning, where the healing
-actually comes from, and how to diagnose low healing from a log. Written
-2026-09-04 against Midnight patch 12.1, Season 2.
+— raid healing rotation for The Venomous Abyss. Covers the rate-based rotation,
+the baseline-versus-spike model, per-boss damage profiles for all nine
+encounters, a log-check list, and a gear check. **Rewritten 2026-09-06 from log
+data after the guide-site version was proved wrong.**
 
-Written guides:
+Primary source — Warcraft Logs, through the MCP server:
 
-- <https://www.icy-veins.com/wow/restoration-druid-pve-healing-rotation-cooldowns-abilities>
-- <https://www.icy-veins.com/wow/restoration-druid-pve-healing-easy-mode>
-- <https://www.wowhead.com/guide/classes/druid/restoration/rotation-cooldowns-pve-healer>
-- <https://www.method.gg/guides/restoration-druid/playstyle-and-rotation>
-- <https://www.archon.gg/wow/builds/restoration/druid/raid/overview/heroic/midnight-falls>
+- 109 ranked Restoration Druid parses across all nine encounters of zone 53,
+  Heroic and Mythic, via `worldData.encounter(id).characterRankings`.
+- Per-boss damage profiles from `DamageTaken` tables and per-second timelines.
+- One paired comparison from the user's own log, report `t3Jg1qnxFKm9TdRD`.
 
-Live spell data, used to check the numbers the written guides quote:
+Live spell values — checked against tooltips, not guides:
 
 - <https://www.wowhead.com/spell=8936/regrowth>
 - <https://www.wowhead.com/spell=207383/abundance>
 - <https://www.wowhead.com/spell=1263879/natures-bounty>
 - <https://www.wowhead.com/spell=1264649/intensity>
 
-Reddit:
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/restoration-druid-pve-healing-rotation-cooldowns-abilities>
+- <https://www.wowhead.com/guide/classes/druid/restoration/rotation-cooldowns-pve-healer>
+- <https://www.method.gg/guides/restoration-druid/playstyle-and-rotation>
+
+Reddit — playstyle shape only, no rotation detail:
 
 - <https://www.reddit.com/r/wownoob/comments/1s2edgz/any_tips_for_a_newbie_resto_druid_for_the/>
 - <https://www.reddit.com/r/wow/comments/1vwvduq/i_have_not_been_liking_resto_druid_anymore/>
 
+> [!CAUTION]
+> Icy Veins, Wowhead and Method all state that a raiding Restoration Druid
+> should cast more Regrowth than Rejuvenation. Across 109 ranked logs the
+> median ratio is 1.40 and the range is 0.44 to 11.25, and within every boss
+> the correlation between that ratio and healing done is zero. The guide sites
+> are wrong on this. Do not reintroduce it.
+
+> [!TIP]
+> The useful metric is **Wild Growth casts per minute**. The field range across
+> 109 ranked logs is 2.95 to 5.08 with per-boss medians between 4.08 and 4.53 —
+> the tightest distribution in the dataset. A druid below 2.95 has a real
+> problem. A druid inside the band does not, whatever their spell mix.
+
 > [!NOTE]
-> Both Reddit threads confirm the shape of the playstyle only. The r/wownoob
-> thread carries good first-principles explanation. The r/wow thread returned
-> the post with no comments. All rotation detail came from the guide sites and
-> the spell pages.
+> All nine encounters in this tier are constant-damage fights. There is no
+> burst-shaped control in the sample, so any claim that a rotation is
+> conditional on the damage profile is untested here.
+
+#### Ret Paladin
+
+[`world-of-warcraft/ret-paladin-mplus-rotation.md`](world-of-warcraft/ret-paladin-mplus-rotation.md)
+— Mythic+ rotation quick reference for Season 2. Covers the single-target and
+AoE priority lists, the Avenging Wrath burst window with measured offsets, a
+macro set derived from the logged cast timings, the target-count spender swap,
+observed cast rates, and the buttons that are not buttons. **Written 2026-09-11
+from 24 mid-tier logs. Macros added 2026-09-12.**
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 24 Mythic+ keys, 3 from each of the 8 dungeons in zone 55, key level 16 to 18.
+  Sampled from `worldData.encounter(id).characterRankings` pages 3, 5, 8 and 11
+  to get good-but-not-top players. Sampled DPS band 217k to 389k against roughly
+  458k on page 1. All five regions.
+- 84 boss pulls (285 min), 151 trash pulls (324 min), 561 Avenging Wrath burst
+  windows, 47,021 cast events.
+
+Live spell values — checked against tooltips, not guides:
+
+- <https://www.wowhead.com/spell=1306923/divine-arbiter>
+- <https://www.wowhead.com/spell=1296661/paladin-retribution-12-1-class-set-4pc>
+- <https://www.wowhead.com/spell=427453/hammer-of-light>
+- <https://www.wowhead.com/spell=425518/lights-deliverance>
+
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/retribution-paladin-pve-dps-rotation-cooldowns-abilities>
+- <https://www.icy-veins.com/wow/retribution-paladin-pve-dps-spec-builds-talents>
+- <https://www.method.gg/guides/retribution-paladin/playstyle-and-rotation>
+- <https://maxroll.gg/wow/class-guides/retribution-paladin-mythic-plus-guide>
+- <https://www.wowhead.com/guide/classes/paladin/retribution/rotation>
+
+Sources that failed:
+
+- `archon.gg` — returned an empty body. The page renders client-side, same
+  failure mode as the Warcraft Logs website.
+- `wowhead.com/guide/classes/paladin/retribution/hero-talents` — loads, but is
+  stale. Updated 2026-01-18 and still titled "The War Within 11.2.7".
+- WCL `characterRankings` does not expose talents, so the hero talent split had
+  to be derived from cast and buff signatures instead.
+- A single GraphQL query with 30 aliased `table` calls times out. Batch smaller.
+
+> [!TIP]
+> A Mythic+ run logs as ONE fight, not separate boss pulls. Split it with
+> GraphQL `dungeonPulls` on that fight: `encounterID != 0` is a boss,
+> `encounterID == 0` is trash. Each pull carries exact ms bounds, so you can
+> bucket every cast into single-target or AoE. This is the whole method.
+
+> [!CAUTION]
+> A WCL Mythic+ "boss" pull is NOT automatically single target. The median boss
+> pull in this sample held 9 distinct enemies and the range was 1 to 68. Treating
+> every boss pull as single target inflates Divine Storm from 6.5 to 9.9 casts
+> per minute. Filter by enemy count, and note that the count is cumulative
+> across the pull rather than simultaneous.
+
+> [!IMPORTANT]
+> Retribution's Avenging Wrath is a 60-second cooldown, not the 120 seconds its
+> spell page shows. A hidden spec passive (spell 1258011) cuts it. The same
+> passive changes Consecration and Divine Protection. Reading the bare tooltip
+> gets all three wrong.
+
+> [!NOTE]
+> The field is 100% Herald of the Sun — 24 of 24 sampled logs, and 60 of 60 top
+> ranked parses had zero Hammer of Light casts. Maxroll and Wowhead's hero
+> talent page both still recommend Templar. They are stale. No Templar data
+> exists in this sample, so nothing in the guide is validated for it.
+
+> [!TIP]
+> Macros can be derived from log timings rather than guessed. The gap between
+> two casts tells you whether they shared a keypress. Avenging Wrath to
+> Execution Sentence has a median gap of 0.40 s with a p10 of 0.10 s, which no
+> human produces by hand — that pair is macro'd in the field. Wake of Ashes sits
+> at a median 1.00 s, one global later, so it cannot be in the same macro. Parse
+> the burst-window strings in the per-log JSON for this; the offsets are already
+> relative to the Avenging Wrath cast.
+
+> [!WARNING]
+> A macro cannot fire two abilities that both cost a global cooldown. The
+> Avenging Wrath plus Execution Sentence macro works only because Avenging Wrath
+> is off the GCD and Execution Sentence has a 750 ms one. Before writing any
+> "press these together" advice, check the GCD row on the Wowhead spell page.

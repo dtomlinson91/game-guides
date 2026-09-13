@@ -411,3 +411,66 @@ Sources that failed:
 > the damage. It empowers the spender you did *not* just press, which is why
 > both spenders appear in both the single-target and AoE lists. A guide written
 > for 4-piece is wrong for a player without it.
+
+#### Holy Paladin
+
+[`world-of-warcraft/rotations/holy-paladin-cdm-buffs.md`](world-of-warcraft/rotations/holy-paladin-cdm-buffs.md)
+— which buffs to show on the in-game Cooldown Manager buff bar, and which to
+hide. Covers the seven auras that change a press, the eleven that do not, the
+Group Buffs raid-frame list, the Spells tab cooldown list, observed cast rates,
+and four tooltip values the logs contradict. **Written 2026-09-12 from 44
+Warcraft Logs parses.**
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 34 Mythic raid parses, zone 53, across 7 encounters. Sampled at ranks 1, 9,
+  21, 41, 66 and 91 of each `characterRankings` page to span the field.
+- 10 Mythic+ parses, zone 55, key level 19 to 21.
+- 132 minutes of cast and buff event streams across 12 of those logs, for
+  proc-consumption and cooldown-gap analysis.
+
+Live spell values — checked against tooltips, not guides:
+
+- <https://www.wowhead.com/spell=54149/infusion-of-light>
+- <https://www.wowhead.com/spell=223819/divine-purpose>
+- <https://www.wowhead.com/spell=431522/dawnlight> — the 2-charge spender tracker
+- <https://www.wowhead.com/spell=447988/light-of-the-martyr> and
+  <https://www.wowhead.com/spell=448087/bestow-light> — one system, not two buffs
+- <https://www.wowhead.com/spell=400745/afterimage>
+- <https://www.wowhead.com/spell=1296656> and <https://www.wowhead.com/spell=1296657>
+  — the Holy 12.1 class set 2-piece and 4-piece
+- <https://www.wowhead.com/guide/ui/cooldown-manager-setup> — 12.1 adds a Buffs
+  tab with Tracked Buffs and Tracked Bars, plus a healer-only Group Buffs tab
+
+> [!TIP]
+> `nether.wowhead.com/tooltip/spell/<id>?dataEnv=1&locale=0` returns a small
+> JSON blob with the spell description **and the buff tooltip** as separate
+> fields. Scrape that through Bright Data instead of the 200 KB spell page. The
+> `buff` field is the only place that says what an aura actually does, and two
+> spells sharing a name are separated only there.
+
+> [!IMPORTANT]
+> WCL `dataType: Buffs` with **both** `sourceID` and `targetID` set to the
+> player returns only self-applied auras. Without `targetID` you get every raid
+> buff, flask and trinket as well, which buries the class auras. This one filter
+> is what makes a buff-bar question answerable.
+
+> [!CAUTION]
+> Four Holy Paladin tooltips disagree with the logs. Infusion of Light claims a
+> 10% chance and lands on 37% of Holy Shocks. Avenging Wrath claims 20 seconds
+> and runs 30.0 s in all 34 logs. Divine Toll claims a 1 minute cooldown and has
+> a 30.0 s floor across 179 gaps. Dawnlight names Holy Prism or Barrier of Faith
+> as its trigger, and no sampled log cast either — Divine Toll preceded 190 of
+> 191 applications. Measure, do not quote.
+
+> [!NOTE]
+> The raid field is 100% Herald of the Sun — 34 of 34 Mythic logs. Mythic+
+> splits 6 Lightsmith to 4 Herald across 10 keys. Nothing in the guide is
+> validated for Lightsmith in raid, because no such log exists in the sample.
+
+> [!TIP]
+> A buff at very high uptime with a high application rate is usually a trap, not
+> a priority. Afterimage sits at 98.5% uptime and 11.4 applications per minute,
+> which reads like a resource bar. The event stream shows the 20-stack removal
+> at the *same millisecond* as the apply that crossed it, so no reaction is
+> possible. Check the event stream before recommending any stacking buff.

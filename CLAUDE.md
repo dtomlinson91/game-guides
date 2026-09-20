@@ -99,6 +99,148 @@ Four rules hold across every game:
 > tool result. Save the scrape to a file, then grep it for the section you
 > need. The useful content usually sits well after the navigation markup.
 
+## Fire Emblem: Three Houses
+
+Guides live in `fire-emblem-three-houses/`. This game is finished and no longer
+patched, so values do not go stale. That makes datamined sources reliable and
+long-lived. What does change is community consensus on what is worth doing, and
+that consensus is written mostly for Maddening difficulty.
+
+### Research sources
+
+A starting point, not an exclusive one.
+
+| Source | Good for |
+| --- | --- |
+| `fireemblemwiki.org` | **The best source.** MediaWiki, so `?action=raw` returns clean wikitext with no boilerplate. Full mechanics with exact numbers: professor level, lessons, class mastery, adjutants, gambits, battalions |
+| `serenesforest.net/three-houses/` | Datamined tables: proficiencies, growth rates, recruitment, class requirements, monastery activities. Cross-check against the wiki, it carries at least one copy-paste error |
+| `fe3h.com` (Triangle Attack) | Data-driven guide site. The wiki cites it for professor experience and lecture values |
+| `game8.co`, `gamewith.net` | Quick lookups. Thin on mechanics |
+| Reddit | The only source for what a Hard-mode run actually feels like, and for which advice is Maddening-only |
+
+> [!IMPORTANT]
+> **Use `?action=raw` on Fire Emblem Wiki.** `https://fireemblemwiki.org/wiki/
+> <Page>?action=raw` returns plain wikitext through Bright Data. A rendered page
+> or a Serenes Forest page costs roughly 13k tokens of navigation markup before
+> any content. The raw route costs almost none. Note that
+> `/index.php?title=X&action=raw` returns "File not found" — only the `/wiki/`
+> path form works.
+
+> [!CAUTION]
+> Almost every written guide for this game is written for **Maddening**. Its
+> advice is frequently wrong for Hard, not merely excessive. Death Blow and
+> Hit +20 are the clearest case. Always check which difficulty a claim assumes
+> before repeating it.
+
+### Reddit sources
+
+Route requests as described in the global `CLAUDE.md` and the `reddit-search`
+skill. Do not use `WebSearch` for Reddit.
+
+- **`r/FireEmblemThreeHouses`** — the main subreddit and the right one for this
+  game. Active, and helpful on Hard versus Maddening differences.
+- **`r/fireemblem`** — the series subreddit. Broader, more tier-list discussion.
+
+> [!NOTE]
+> Searching `beginner tips` and `hard mode` in `r/FireEmblemThreeHouses`
+> returned 31 and 50 results respectively, and both sets were useful. Two
+> queries were enough. Do not spend more of the discovery quota than that.
+
+### Terminology
+
+- **Route** — the story path after the timeskip. Four exist. Only Black Eagles
+  splits.
+- **Part 1 / Part 2** — before and after the timeskip at Chapter 12.
+- **Skill level** — a letter rank, E to S, in a weapon, a movement type or
+  Authority. Not the same as character level.
+- **Budding talent** — a hidden skill that becomes a strength after 12
+  instructions, and grants an ability or combat art.
+- **Class mastery** — counted in combats, not experience. Grants a permanent
+  ability or combat art.
+- **Professor level** — Byleth's rank, E to A+. Sets activity points, lecture
+  points, battle points, adjutant slots and monthly gold.
+- **Battalion** — an equippable squad. Gates gambits, gated by Authority.
+- **Gambit** — a battalion's special attack. Accuracy runs on Charm.
+- **Player phase / enemy phase** — abbreviated PP and EP. Which phase a build is
+  designed for is the main axis of build discussion for this game.
+
+### Guides written
+
+#### Beginner guide
+
+[`fire-emblem-three-houses/beginner-guide.md`](fire-emblem-three-houses/beginner-guide.md)
+— a first-playthrough reference for Hard / Classic with the Expansion Pass.
+Covers the weekly loop with exact instruction and goal numbers, the Sunday
+choice and both point pools, exploration priority, when grinding is worth a
+battle point, class change rules and every class's requirements, team shape,
+battalions, gambits, adjutants, recruitment with the support-discount tables,
+common mistakes, missable windows, and per-character proficiencies with the
+classes the game itself suggests. **Written 2026-09-20.**
+
+Primary source — Fire Emblem Wiki, raw wikitext:
+
+- <https://fireemblemwiki.org/wiki/Professor_level?action=raw> — every point
+  pool, professor experience thresholds, and per-activity experience
+- <https://fireemblemwiki.org/wiki/Lesson?action=raw> — instruction and goal
+  numbers by difficulty, motivation, group tasks, and the full per-character
+  goal-request table with the class each goal targets
+- <https://fireemblemwiki.org/wiki/Garreg_Mach_Monastery?action=raw> — free-day
+  options and which activities cost a point
+- <https://fireemblemwiki.org/wiki/Skirmish?action=raw> — auxiliary battle cost
+  by difficulty
+- <https://fireemblemwiki.org/wiki/Class_mastery?action=raw>
+- <https://fireemblemwiki.org/wiki/Adjutant?action=raw>
+- <https://fireemblemwiki.org/wiki/Battalion?action=raw>
+- <https://fireemblemwiki.org/wiki/Gambit?action=raw>
+- <https://fireemblemwiki.org/wiki/Divine_Pulse?action=raw>
+- <https://fireemblemwiki.org/wiki/Dark_Flier?action=raw>
+- <https://fireemblemwiki.org/wiki/Abyssian_Exam_Pass?action=raw>
+
+Cross-check — Serenes Forest:
+
+- <https://serenesforest.net/three-houses/characters/skill-levels/>
+- <https://serenesforest.net/three-houses/characters/budding-talents/>
+- <https://serenesforest.net/three-houses/characters/recruitment/>
+- <https://serenesforest.net/three-houses/classes/class-change/>
+- <https://serenesforest.net/three-houses/classes/detailed-view/>
+- <https://serenesforest.net/three-houses/monastery/> — dining-hall,
+  faculty-training, seminars, renown-saint-statues
+
+Reddit — playstyle only, no numbers:
+
+- <https://www.reddit.com/r/FireEmblemThreeHouses/comments/1i8reiq/tips_for_hard_mode_after_being_used_to_normal_for/>
+- <https://www.reddit.com/r/FireEmblemThreeHouses/comments/1bb3qtn/what_should_i_know_about_choosing_a_house_and/>
+
+Sources that failed:
+
+- `fireemblemwiki.org/index.php?title=X&action=raw` — returns "File not found".
+  Use the `/wiki/<Page>?action=raw` form.
+- `fireemblemwiki.org/api.php` — also "File not found". The MediaWiki API is not
+  reachable.
+- Serenes Forest proficiency tables use **images**, not text, for strengths and
+  weaknesses. Parse the filenames: `professor-up` is a strength, `professor-down`
+  a weakness, `professor-stars` a budding talent, and `professor-overlap2` means
+  weakness **and** budding talent together.
+
+> [!CAUTION]
+> Serenes Forest's class detail page lists the Dark Flier's abilities as
+> "Fistfaire, Unarmed Combat, Heal". That is the War Monk row repeated. The real
+> values are Canto, Black Tomefaire and Transmute. Assume that page may hold
+> other copy-paste errors and cross-check any class row that looks odd.
+
+> [!IMPORTANT]
+> Serenes Forest's weekly lesson figures (+28 neutral, +32 strength) are
+> **Normal-difficulty** values and are not labelled as such. Hard is +24 and
+> +28, Maddening +20 and +24. Always state the difficulty next to a skill
+> experience number.
+
+> [!TIP]
+> The most useful table found for "what class should this character be" is the
+> **goal change request** table on the wiki's Lesson page. Every character's
+> optional study goals name the class the developers intended, which is the
+> closest thing to an in-game recommendation. It covers all 30-plus playable
+> characters.
+
 ## Honkai: Star Rail
 
 Guides live in `honkai-star-rail/`. The game changes with every patch, so

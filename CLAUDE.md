@@ -169,6 +169,161 @@ Terms that appear across every guide and are worth using consistently.
   Apocalyptic Shadow (`AS`), Anomaly Arbitration. A character can be strong in
   one and weak in another, so always name the mode.
 
+### Guides written
+
+Guides written for this game, with the sources that produced each one. Add to
+this list rather than replacing it.
+
+#### Ashveil
+
+[`honkai-star-rail/ashveil-builds-and-teams.md`](honkai-star-rail/ashveil-builds-and-teams.md)
+— three Ashveil builds: main DPS, Follow-up ATK support for Aventurine •
+Waveflair, and sub-DPS for Acheron. Opens with a three-column quick-reference
+table. Covers the core loop, all three team sheets, the "wind set" argument,
+teammate builds for Mortenax Blade, relic and ornament rankings, speed tuning,
+the sustain question, Light Cones and Eidolon value. **Written 2026-09-20 for
+version 4.5. Restructured twice the same day: first to drop Feixiao and split
+by role, then to add the Acheron build.**
+
+A Feixiao section was written and then removed at the user's request. The
+research behind it still holds if it is ever wanted: Ashveil appears in 9 of
+Feixiao's 10 ranked MoC teams, but her best team sits at rank 287 with a 0.08%
+appearance rate, and Prydwen's Feixiao page has not been recalculated since
+patch 4.0.
+
+Kit text, trace values, relic rankings, usage statistics and ranked teams:
+
+- <https://www.prydwen.gg/star-rail/characters/ashveil>
+- <https://www.prydwen.gg/star-rail/characters/aventurine-waveflair>
+- <https://www.prydwen.gg/star-rail/characters/blade-mortenax> — Mortenax Blade
+- <https://www.prydwen.gg/star-rail/characters/acheron> — kit and ranked teams
+  only. Patch 4.0, and it mentions Ashveil zero times
+- <https://www.prydwen.gg/star-rail/characters/feixiao> — researched, not used
+- <https://www.prydwen.gg/star-rail/guides/relic-sets> — exact set text, small
+  enough to grep in one pass
+
+Independent cross-check:
+
+- <https://www.icy-veins.com/honkai-star-rail/ashveil-guide-best-builds>
+- <https://www.icy-veins.com/honkai-star-rail/ashveil-best-teams>
+- <https://honkai-star-rail.fandom.com/wiki/The_Wind-Soaring_Valorous> — second
+  source for relic set text
+
+Reddit — the only source for the wind set argument and for speed tuning:
+
+- <https://www.reddit.com/r/Ashveil_Mains/comments/1wjcg6i/here_is_a_better_showcase_for_main_dps_ashveil/>
+- <https://www.reddit.com/r/Ashveil_Mains/comments/1wi4dum/i_own_top12_ashveil_build_on_fribbels_ama/>
+- <https://www.reddit.com/r/Ashveil_Mains/comments/1wkb3b0/ashblade_speed_tuning/>
+- <https://www.reddit.com/r/Ashveil_Mains/comments/1whzw1z/is_aventurine_sp_optimal/>
+- <https://www.reddit.com/r/AcheronMainsHSR/comments/1w0erzq/robin_or_ashveil_for_e2_acheron/>
+- <https://www.reddit.com/r/HonkaiStarRail_leaks/comments/1rwpixx/acheron_e0s1_cipher_e0s1_ashveil_e0s1_topaz_lc/>
+- <https://www.reddit.com/r/FeixiaoMains_/comments/1rml2ze/should_i_switch_to_4pc_eagle_with_ashveil_coming/>
+
+Sources that failed:
+
+- `game8.co` — returned an empty body through Bright Data.
+- `hsr.keqingmains.com` — no Ashveil guide exists. Its Acheron guide does exist
+  but is marked "Updated for Version 2.3" and names neither Ashveil nor
+  Mortenax Blade. **Check the version banner on every KQM page before trusting
+  it.** Several are years stale.
+- `icy-veins.com/honkai-star-rail/acheron-best-teams` — loads, dated 29 Mar
+  2026, and contains neither Ashveil nor Mortenax Blade in any team.
+- `prydwen.gg/star-rail/characters/mortenax-blade` — "Character Not Found". The
+  slug puts the base name first: `blade-mortenax`. Guess a slug once, then use
+  `WebSearch` with `allowed_domains: ["prydwen.gg"]` rather than guessing again.
+- Prydwen's "MoC/PF/AS Statistics" and "Calculations" tabs render client-side
+  and return nothing.
+
+> [!IMPORTANT]
+> Several 4.x characters carry a **branching trace** that reads the Paths of the
+> other three team members at the start of battle, and the wrong fourth member
+> silently disables the whole team's premise. Aventurine • Waveflair's A4 makes
+> his Elation Skill count as a Follow-up ATK only while he is the **only**
+> Elation unit. Mortenax Blade's A6 gives himself 75% DMG only while he is the
+> **only** Nihility unit, and otherwise redirects it to ally Ultimate DMG. Read
+> every teammate's A4 and A6 for a Path condition before writing a team sheet.
+
+> [!IMPORTANT]
+> Prydwen team tables carry **no text**. The character names live only in image
+> `alt` attributes. Parse the raw markup for `alt="..."`, not the stripped
+> text, or every team reads as an empty row. Rank and appearance rate do appear
+> in the stripped text, in the same order as the teams.
+
+> [!CAUTION]
+> **Reddit enthusiasm is often about a leak that never shipped.** r/AcheronMainsHSR
+> threads from late August 2026 call an Ashveil and Acheron team "gigastonks" and
+> "bis" on the strength of leaked changes giving Acheron a Follow-up ATK. Those
+> changes are not live in 4.5. Date every Reddit claim, then confirm the
+> mechanic it assumes actually exists before repeating the conclusion.
+
+> [!CAUTION]
+> Relic set text on guide pages goes stale. The Wind-Soaring Valorous 2-piece
+> is **ATK +12%**, confirmed on Prydwen and the wiki. Many pages, and a
+> `WebSearch` summary, still state 6% Wind DMG. Confirm every set bonus against
+> two sources.
+
+> [!NOTE]
+> Character subreddits are thin, exactly as the Reddit section above warns.
+> Three of the six Ashveil threads opened had no comments at all. The one real
+> discussion of the wind set is a screenshot argument between two players with
+> no controlled test. Say so in the guide rather than presenting it as a result.
+
+> [!WARNING]
+> Reddit `.rss` comment feeds through Bright Data return an **empty body** on
+> roughly half of attempts. Repeat the same request and it usually succeeds. The
+> HTML thread page returned a "Prove your humanity" gate. Subreddit listing
+> paths such as `r/<sub>/new.rss` are refused outright by Bright Data and need
+> `curl`, which the `reddit-search` skill already documents.
+
+#### Welt
+
+[`honkai-star-rail/welt-builds-and-teams.md`](honkai-star-rail/welt-builds-and-teams.md)
+— Welt in two roles: the sustain replacement in a sustainless Aventurine •
+Waveflair and Ashveil team, and the second Nihility unit in an Acheron team.
+Covers the Weightless loop and Ultimate timing, both team sheets, a Welt against
+Robin • Summeretto comparison, his two separate relic loadouts, stat targets,
+what the rest of the team must change, Light Cones and Eidolon value.
+**Written 2026-09-20 for version 4.5.**
+
+Kit text, trace values, relic rankings and ranked teams:
+
+- <https://www.prydwen.gg/star-rail/characters/welt>
+- <https://www.prydwen.gg/star-rail/characters/acheron>
+- <https://www.prydwen.gg/star-rail/characters/robin-summeretto>
+- <https://www.prydwen.gg/star-rail/characters/blade-mortenax>
+
+Reddit — support build numbers, and what players actually run:
+
+- <https://www.reddit.com/r/WeltMains/comments/1whicxi/what_do_i_build_for_a_sub_dpssupport_welt_e4/>
+- `r/WeltMains` and `r/AcheronMainsHSR` recent listings, by `curl`
+
+> [!CAUTION]
+> **Prydwen alt-version slugs are not predictable.** Mortenax Blade lives at
+> `characters/blade-mortenax`, base name first. Aventurine • Waveflair lives at
+> `characters/aventurine-waveflair`, also base name first. A wrong slug returns
+> a "Character Not Found" page with **HTTP 200**, not an error, so check the
+> stripped text before concluding a character has no page.
+
+> [!IMPORTANT]
+> **Path gates multipliers, so check the Path before the kit.** Acheron's A4
+> scales her damage to 115% or 160% on the count of Nihility allies. Mortenax
+> Blade's A6 changes target entirely on whether another Nihility ally exists.
+> Swapping one support for another of a different Path can move team damage more
+> than any relic choice. Read every trace for a Path condition first.
+
+> [!CAUTION]
+> **Elation DMG ignores generic DMG% buffs.** Prydwen states this in both the
+> Welt review and the Mortenax Blade review. It makes Welt's A2 trace, worth up
+> to 100% DMG, completely dead for an Elation damage dealer while still working
+> for their Lightning and Fire teammates. Check the damage type before quoting
+> any DMG% buff as a team gain.
+
+> [!NOTE]
+> Prydwen character pages carry a "Last review update", a "Last major
+> build/calcs update" and a "Last profile update" near the top. Read all three.
+> Acheron's page was current at patch 4.0 while the characters compared against
+> her released in 4.2 and 4.5, which is why it names neither.
+
 ## World of Warcraft
 
 Guides live in `world-of-warcraft/`, with class rotations under

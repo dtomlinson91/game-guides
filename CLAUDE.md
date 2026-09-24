@@ -33,6 +33,49 @@ introductory paragraph and its alerts, before the first `##` section.
 > warning` becomes `#the-chapter-10-warning`. A short script that compares
 > every `](#...)` link against the headers catches a broken link at once.
 
+## Guide voice
+
+Write every guide for any reader of the knowledge base, not as a reply to the
+request that produced it. A reader who never saw that request must find
+nothing odd in the text.
+
+- Do not mirror the request. No "this answers question 1", "the question you
+  asked", "your six questions", or "yes, you can" as a reply.
+- Cover the requester's questions as topics. A quick-reference table may list
+  common questions, phrased generically: "When is grinding needed?", not
+  "When should I grind?".
+- Address the player neutrally. Use the imperative ("Promote at level 10") or
+  describe the game ("A unit promotes at level 10"). Do not refer to the
+  requester's own run, save or history.
+- Recommendations are fine, but state them as advice for a type of player
+  ("Normal suits a story-first run"), not as advice to one person.
+
+## Citations
+
+Every guide ends with a `## Sources` section, and the body cites it with
+numbered markers such as `[1]` or `[3][7]`.
+
+- **Do not name a source in the body.** No "Game8 says", "the wiki's tables",
+  or "Serenes Forest lists". Put a number where the name would go.
+- **Keep the kind of evidence visible.** "Players report [12]" and "one
+  ranking rates her C tier [9]" are fine, because the guide must still say
+  when advice came from players rather than from data. See rule 4 under
+  [Research](#research).
+- **Disagreements still name both sides by number,** and say which one the
+  guide follows: "One source says Chapter 13 [35]. The shop tables say Chapter
+  9 [9]. This guide follows the shop tables."
+- **Number the list in groups:** the game's own data or datamined sources
+  first, then other wikis and guide sites, then community threads. Continue
+  the numbering across groups. Each entry is a link with a short note on what
+  it supplied. Dates on community threads only when known.
+- Each group may sit in a `<details open>` block so the list can be folded.
+- Before committing, check that every cited number exists in the list and
+  every listed entry is cited.
+
+> [!NOTE]
+> The guides written before 2026-09-24 name their sources inline. Convert a
+> guide to numbered citations when it is next edited.
+
 ## Section order
 
 Order sections by **how often the reader returns to them**, most frequent
@@ -85,7 +128,7 @@ record with a one-line outline and the URLs that produced it. Note any source
 that failed, and why. This is the part that saves the next agent time, so do it
 even when the sources were the obvious ones.
 
-Four rules hold across every game:
+Five rules hold across every game:
 
 1. **Research the subject. Do not answer from memory.** These games change with
    every patch. Damage values, tier placements, and recommended builds go stale
@@ -99,6 +142,27 @@ Four rules hold across every game:
    should do. A log states what strong players did. Where a log or telemetry
    source exists, check every rotation and priority claim against it before you
    repeat the claim in a guide.
+5. **Explain how each system works, not only what to do with it.** A guide
+   must leave the reader able to reason about a system they have not seen
+   advice for. For every system the guide touches, research and state:
+   - what it is, and what it feeds into;
+   - what is **permanent** and what is **temporary**, and what belongs to the
+     character against what belongs to the item or slot;
+   - how often it can be used, what limits or resets it, and what it costs;
+   - what can be moved, swapped or undone, and what cannot;
+   - how it interacts with the other systems.
+
+   Keep it at the level of the concept. A reader needs "inherited skills stay
+   with the unit when the ring moves", not the full cost table for every
+   skill. Give a short systems overview near the top of the guide, then one
+   "how it works" part inside each system's section.
+
+> [!TIP]
+> Write these as explicit research questions before searching: "does X stay
+> when Y is removed", "how many times per map", "what resets it". A reader's
+> confusion usually sits in exactly these questions, and guide sites rarely
+> answer them directly. The Fire Emblem Engage ring questions needed a
+> dedicated research pass and three extra sources to answer.
 
 > [!CAUTION]
 > Rule 4 is not theoretical. Icy Veins and Wowhead both state that a raiding
@@ -293,7 +357,9 @@ engraving, Somniel activities, donation costs and a plan, supports, difficulty
 choice and the Expansion Pass. **Written 2026-09-24.** The same day it gained a
 table of contents, a ring-mechanics section (what stays with the unit and what
 goes with the ring, passing rings around, engaging, bond levels, how
-inheritance works), and a section on catching up benched early units.
+inheritance works), and a section on catching up benched early units. It was
+then rewritten in the neutral guide voice, gained a "How Engage works" systems
+overview, and moved to numbered citations with a 70-entry Sources list.
 
 Ring mechanics — added sources:
 

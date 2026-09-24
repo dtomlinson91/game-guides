@@ -15,6 +15,24 @@ headers of two to four words, an introductory paragraph under every header, and
 GitHub alerts (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`,
 `> [!CAUTION]`) where the reader needs to stop and read.
 
+## Table of contents
+
+Every guide carries a table of contents. Put it directly after the
+introductory paragraph and its alerts, before the first `##` section.
+
+- List every `##` section as an anchor link, in document order.
+- Nest the `###` sections of long sections one level under their parent. Leave
+  out `###` sections of short ones, so the list stays scannable.
+- Do not list the table of contents itself or the page title.
+- Regenerate it after any reorder or rename. Then check every `(#anchor)` in
+  the file against the headers, as the reorder tip below describes.
+
+> [!TIP]
+> GitHub builds an anchor from a header by lowercasing it, dropping punctuation
+> other than hyphens, and replacing spaces with hyphens. `## The Chapter 10
+> warning` becomes `#the-chapter-10-warning`. A short script that compares
+> every `](#...)` link against the headers catches a broken link at once.
+
 ## Section order
 
 Order sections by **how often the reader returns to them**, most frequent
@@ -240,6 +258,169 @@ Sources that failed:
 > optional study goals name the class the developers intended, which is the
 > closest thing to an in-game recommendation. It covers all 30-plus playable
 > characters.
+
+## Fire Emblem Engage
+
+Guides live in `fire-emblem-engage/`. The game is finished at patch 2.0.0 and
+no longer patched, so datamined values do not go stale. As with Three Houses,
+almost all community advice and every tier list assumes **Maddening**. Check
+which difficulty a claim assumes before repeating it.
+
+### Research sources
+
+A starting point, not an exclusive one.
+
+| Source | Good for |
+| --- | --- |
+| `fireemblemwiki.org` | **The best source.** Use `/wiki/<Page>?action=raw`. Donations, skirmish scaling, seals and shop stock by chapter, bond costs, SP rules, class requirements, per-chapter deployment slots (`ally=` field on each chapter page) |
+| `serenesforest.net/engage/` | Recruitment, base stats, growths, proficiencies (`characters/other-data/`), Bond Ring pull rates. Tables are **plain text** here, not images |
+| `game8.co` | Tier list stated for Normal and Hard, pairings, inheritance costs. **Carries errors**, see below |
+| `gamerant.com`, `rpgsite.net` | Independent pairing and tier cross-checks. Gamer Guides mirrors Game8, so it is not independent |
+| Reddit `r/fireemblem` | How the game plays in practice. `r/FireEmblemEngage` returned 0 results and then HTTP 403. `r/FEEngage` may be the real Engage subreddit and was not searched |
+
+### Guides written
+
+#### Beginner guide
+
+[`fire-emblem-engage/beginner-guide.md`](fire-emblem-engage/beginner-guide.md)
+— a first-playthrough reference for Normal or Hard. Covers quick answers to six
+beginner questions, the between-chapter routine, a chapter roadmap of recruits
+and unlocks, when to grind and how skirmishes scale, combat basics, common
+mistakes, the Chapter 10 ring-loss warning, missables, team building, a roster
+table with each unit's default promotion, class changes and proficiency
+sources, every Emblem with pairings, best inheritable skills, Bond Rings and
+engraving, Somniel activities, donation costs and a plan, supports, difficulty
+choice and the Expansion Pass. **Written 2026-09-24.** The same day it gained a
+table of contents, a ring-mechanics section (what stays with the unit and what
+goes with the ring, passing rings around, engaging, bond levels, how
+inheritance works), and a section on catching up benched early units.
+
+Ring mechanics — added sources:
+
+- <https://fireemblem.fandom.com/wiki/Emblem_Ring>,
+  <https://fireemblem.fandom.com/wiki/Engage>,
+  <https://fireemblem.fandom.com/wiki/Engrave> — per-pair bond, no mid-battle
+  swaps, one copy of each ring, engravings survive ring loss
+- <https://www.thegamer.com/fire-emblem-engage-emblem-rings-complete-guide/> —
+  inheritance needs bond, not the ring equipped
+- <https://www.gamerguides.com/fire-emblem-engage/guide/classes/changing-classes/how-to-learn-weapon-proficiencies-in-fire-emblem-engage>
+  — proficiency is permanent
+- <https://gameskinny.com/6a5xm/how-to-swap-emblem-rings-in-fire-emblem-engage>
+- <https://www.gamespot.com/articles/fire-emblem-engage-how-emblem-and-bond-rings-work/1100-6510733/>
+
+Catch-up — added sources:
+
+- Wiki raw: Mercurius, Parthia (Lucina's, not Marth's), Professor's_Guidance
+  (Mentorship; worked on the second attempt), Nobility (Lineage),
+  Novice_Book (SP only, no EXP), Starsphere_(skill)
+- <https://serenesforest.net/engage/characters/growth-rates/> — early joiners
+  average 266 total personal growth, late joiners 284
+- <https://serenesforest.net/engage/classes/maximum-stats/>
+- <https://game8.co/games/Fire-Emblem-Engage/archives/402404> — EXP farming
+- <https://game8.co/games/Fire-Emblem-Engage/archives/403090> — skirmish reroll
+- Reddit `r/fireemblem` threads 113epd5, 1d94rjf, 1894fdt, 13aue4c, 10qn984,
+  11b4i3t, 15h7kuz, 10kqc6x — catch-up habits and the game-over EXP trick
+
+> [!WARNING]
+> **Two ring questions stay unconfirmed.** No source says whether bond levels
+> with the six Chapter 10 rings survive until the rings return. The best lead,
+> a GameFAQs thread titled "Do not neglect your early emblem bond levels!", is
+> blocked. The engage meter size also conflicts: 8 steps per attack on Fire
+> Emblem Wiki against 6 combats on Fandom. Players' reports support the wiki.
+> A WebSearch summary also claimed that bond level travels with the ring. That
+> is wrong. Bond is stored per unit and Emblem.
+
+> [!NOTE]
+> The EXP formula likely sits in a Google Sheet linked from Reddit thread
+> 15h7kuz. Bright Data refuses `docs.google.com` with "This endpoint is not
+> supported".
+
+Primary source — Fire Emblem Wiki, raw wikitext (`/wiki/<Page>?action=raw`):
+
+- Somniel, Donation, Skirmish, Arena, Master_Seal, Second_Seal, Reclass,
+  Class_change, Class_change/Nintendo_Switch_games, Proficiency, Experience,
+  Difficulty, Gameplay_modes, Draconic_Time_Crystal, Turn_rewind, Attack_speed,
+  Break, Weapon_triangle, Unit_type, Support, Paralogue, Emblem_Rings, Emblem,
+  Skill_point, List_of_classes_in_Fire_Emblem_Engage,
+  List_of_skills_in_Fire_Emblem_Engage, List_of_chapters_in_Fire_Emblem_Engage,
+  The_Fell_Dragon_Sombron, and the Emblem character pages (Marth, Sigurd,
+  Celica, Micaiah, Roy, Leif, Lucina, Lyn, Ike, Byleth, Corrin) under their
+  `=={{FE17}}==` header
+- Skill pages: Canto, Desperation, Speed_%2B, Draconic_Hex,
+  Lunar_Brace_(skill), Dual_Assist
+
+Cross-check — Serenes Forest:
+
+- <https://serenesforest.net/engage/characters/recruitment/>
+- <https://serenesforest.net/engage/characters/other-data/> — proficiencies
+- <https://serenesforest.net/engage/characters/growth-rates/>
+- <https://serenesforest.net/engage/characters/personal-skills/>
+- <https://serenesforest.net/engage/weapons-items/bond-rings/> — pull rates
+
+Guide sites — rankings and pairings only:
+
+- <https://game8.co/games/Fire-Emblem-Engage/archives/402818> — tier list,
+  Normal and Hard
+- <https://game8.co/games/Fire-Emblem-Engage/archives/401367> — class change
+- <https://game8.co/games/Fire-Emblem-Engage/archives/401515> — inheritance
+- <https://game8.co/games/Fire-Emblem-Engage/archives/403103> — pairings
+- <https://game8.co/games/Fire-Emblem-Engage/archives/403692> — DLC
+- <https://gamerant.com/fire-emblem-engage-tier-list/>
+- <https://www.rpgsite.net/feature/13734-fire-emblem-engage-emblem-ring-unlock-list>
+- <https://www.rpgsite.net/feature/13739-fire-emblem-engage-emblem-pairings-best-rings-for-each-character>
+
+Reddit — playstyle, grinding, Somniel and donation opinion:
+
+- <https://www.reddit.com/r/fireemblem/comments/13eo89q/> — best "wish I knew"
+  thread
+- <https://www.reddit.com/r/fireemblem/comments/1nmz99b/>
+- <https://www.reddit.com/r/fireemblem/comments/1ot1tzs/> — Somniel priorities
+  and a donation schedule
+- <https://www.reddit.com/r/fireemblem/comments/10zq05p/> — donations
+- <https://www.reddit.com/r/fireemblem/comments/1vz35e4/> — first-ever player
+  on Hard
+- <https://www.reddit.com/r/fireemblem/comments/1h7fpog/>,
+  <https://www.reddit.com/r/fireemblem/comments/1q4jstt/>,
+  <https://www.reddit.com/r/fireemblem/comments/1qsh87i/> — promotion, Hard
+  versus Maddening
+- <https://www.reddit.com/r/fireemblem/comments/10pd0cp/> — Hard/Classic Emblem
+  evaluation (post only, no comments)
+- <https://www.reddit.com/r/fireemblem/comments/16nm1rx/> — Maddening community
+  tier list
+
+Sources that failed:
+
+- Wiki pages that do not exist return a roughly 185 KB Chrome error page, not
+  an error: `Engrave`, `Bond_fragment`, `Bond_Fragment`. Engraving data lives on
+  the `Somniel` page. `Tempest_Trials` is the Heroes mode; Engage's is on
+  `Somniel`.
+- Empty bodies: `Fire_Emblem_Engage`,
+  `Downloadable_content_in_Fire_Emblem_Engage`, `Professor's_Guidance`.
+- `serenesforest.net/engage/miscellaneous/calculations/` redirects to Shadow
+  Dragon. **No source documents Engage's kill-EXP formula.**
+- Serenes Forest forums return empty bodies. GameFAQs returns "Request
+  Blocked".
+
+> [!CAUTION]
+> **Game8 recommends classes units cannot enter.** Panette to Warrior needs
+> Bow, Anna to Sage needs Tome, Yunaka to Swordmaster needs Sword, and Vander,
+> Louis or Amber to Great Knight needs a second weapon. It also lists Pandreo
+> at Chapter 14 (really 12) and Goldmary at Anna's paralogue (really Chapter
+> 16). Check every class suggestion against the unit's proficiencies on Serenes
+> Forest.
+
+> [!IMPORTANT]
+> Reddit numbers checked against the wiki: unlimited rewinds on Normal and 10
+> per map on Hard (true), doubling at 5 Speed (true), Brodia level 5 costing
+> 90,000 gold (true). "Skirmishes scale off your 5 strongest units" is **false**
+> as worded: enemy level is the average of your top X units, where X is the
+> map's deployment count, plus 2. The "99-turn hidden limit" is unverified for
+> Engage and was left out.
+
+> [!NOTE]
+> The wiki's shop stock tables name tabs by chapter. A tab named "Chapter 9"
+> opens once Chapter 8 is cleared. Master Seals are in the shop from Chapter 9,
+> not Chapter 13 as Game8 says.
 
 ## Honkai: Star Rail
 

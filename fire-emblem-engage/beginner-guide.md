@@ -56,6 +56,54 @@ while you play.
 
 </details>
 
+## Contents
+
+- [Quick answers](#quick-answers)
+- [Between every chapter](#between-every-chapter)
+- [Chapter roadmap](#chapter-roadmap)
+- [When to grind](#when-to-grind)
+  - [Grind only when](#grind-only-when)
+  - [Free EXP first](#free-exp-first)
+  - [How skirmishes work](#how-skirmishes-work)
+  - [How long to grind](#how-long-to-grind)
+- [Keeping early favourites](#keeping-early-favourites)
+  - [Why they fall behind](#why-they-fall-behind)
+  - [What grinding costs](#what-grinding-costs)
+  - [The catch-up recipe](#the-catch-up-recipe)
+  - [Early units worth keeping](#early-units-worth-keeping)
+- [Combat basics](#combat-basics)
+- [Common mistakes](#common-mistakes)
+  - [The Chapter 10 warning](#the-chapter-10-warning)
+- [Missable content](#missable-content)
+- [Team building](#team-building)
+  - [Slots per chapter](#slots-per-chapter)
+  - [A balanced team](#a-balanced-team)
+  - [What is not viable](#what-is-not-viable)
+- [Characters to train](#characters-to-train)
+- [Changing classes](#changing-classes)
+  - [Promotion](#promotion)
+  - [What the game intends](#what-the-game-intends)
+  - [Reclassing](#reclassing)
+  - [Getting new weapons](#getting-new-weapons)
+  - [Classes worth knowing](#classes-worth-knowing)
+- [Emblem rings](#emblem-rings)
+  - [What stays, what goes](#what-stays-what-goes)
+  - [Passing rings around](#passing-rings-around)
+  - [Sync and engage](#sync-and-engage)
+  - [Bond levels](#bond-levels)
+  - [Every Emblem](#every-emblem)
+  - [Pairing rules](#pairing-rules)
+- [Skill inheritance](#skill-inheritance)
+  - [How it works](#how-it-works)
+  - [Best-value skills](#best-value-skills)
+- [Bond rings and engraving](#bond-rings-and-engraving)
+- [Somniel activities](#somniel-activities)
+- [Region donations](#region-donations)
+- [Supports](#supports)
+- [Difficulty and modes](#difficulty-and-modes)
+- [Expansion Pass](#expansion-pass)
+- [Sources](#sources)
+
 ---
 
 ## Quick answers
@@ -69,6 +117,9 @@ The short answer to each question you asked. Each row links to the full section.
 | **How should I spend free time?** | Arena, meal, ring skills, dogs on the farm, then move on. Skip fishing, workouts and cosmetics. [Between every chapter](#between-every-chapter) |
 | **How do I build a team?** | Train about 12 units. Bring 2 or more healers and 1 or 2 bow users. Bench early units freely when stronger ones join after Chapter 11. On Normal and Hard almost any team works. [Team building](#team-building) |
 | **How do the rings work?** | Equip one Emblem ring per unit. Engage often, not just for bosses. The lasting value is the skills you **inherit** with SP. [Emblem rings](#emblem-rings) |
+| **Can I pass rings around?** | Yes, freely, between battles. Bond level, inherited skills and weapon proficiencies stay with the unit when the ring moves on. [What stays, what goes](#what-stays-what-goes) |
+| **Can I engage more than once?** | Yes. As many times per map as the meter allows. The meter starts full on every map. [Sync and engage](#sync-and-engage) |
+| **Can I keep my early favourites?** | Yes. Early units have similar growth rates. Late joiners just arrive at a higher level. You can catch a unit up with no story cost. [Keeping early favourites](#keeping-early-favourites) |
 | **Should I level up regions?** | A little. Level 2 in each country costs 5,000 gold and pays back in forging ore and food. Brodia is worth level 3. Levels 4 and 5 are a waste. Skipping them costs you nothing important. [Region donations](#region-donations) |
 
 ---
@@ -90,6 +141,7 @@ are the ones who burn out.
 4. **Ring Chamber: inherit skills.** Spend SP on the skills in
    [Skill inheritance](#skill-inheritance). Watch any waiting bond
    conversations. Bond EXP stops at levels 5, 10 and 20 until you watch them.
+   Polish a ring for a small bond gain.
 5. **Café: eat one meal.** It buffs the **whole army** for the next battle.
    Invite two units to build their support.
 6. **Farm: keep dogs.** The farm holds 5 animals. Dogs give iron, steel and
@@ -173,7 +225,11 @@ These give EXP without grinding. Use them before any skirmish.
    Micaiah's ring makes this stronger.
 4. **EXP boosters.** Byleth's **Mentorship** skill gives 1.2 times EXP to the
    user and adjacent allies. It costs 250 SP to inherit. Marth's engage weapon
-   Mercurius doubles EXP.
+   **Mercurius** and Lucina's engage weapon **Parthia** double EXP. Both need
+   bond level 10 and work only while engaged.
+
+For bringing a benched favourite back up to strength, see
+[Keeping early favourites](#keeping-early-favourites).
 
 ### How skirmishes work
 
@@ -206,6 +262,114 @@ the problem is usually positioning, not levels. Read
 > Too much grinding makes later chapters boring. Players who overlevel report
 > that they could "mindlessly advance" and win. It also makes skirmishes harder
 > for everyone else, because skirmishes scale to your top units.
+
+---
+
+## Keeping early favourites
+
+Yes, you can keep your early characters all game, and you can catch a benched
+one back up **without advancing the story**. Grinding in Engage costs only
+real time. This section explains why early units fall behind, and the most
+efficient way to bring one back.
+
+### Why they fall behind
+
+Early units do **not** have worse growth rates. They fall behind because late
+joiners arrive already promoted, with many free levels.
+
+- Serenes Forest's growth tables give early joiners a combined personal growth
+  of about 266 on average, and late joiners about 284. That is a gap of about 2
+  percentage points per stat. Chloé (310) and Céline (305) grow better than
+  most late joiners.
+- Kagetsu, Panette, Merrin and Pandreo all join as **level 1 in an advanced
+  class**, with stats to match. One player called the Solm recruits of Chapters 12
+  and 13 "15 FREE levels".
+- Level-matched comparisons in the same player essay show the gap nearly closes.
+  Chloé against Pandreo and Amber against Panette come out close once both
+  reach the same total level.
+- A unit at level 20 in an advanced class can use a Second Seal to return to
+  level 1 of the **same** class. It keeps its stats and class skill, and keeps
+  growing until it reaches the class's stat caps. No source names a limit on
+  how many times you can do this.
+
+> [!NOTE]
+> Vander is the one real exception. He joins promoted with the lowest growth
+> rates in the cast, and every source says he fades. Etie and Boucheron are
+> the other early units most often called hard to keep.
+
+### What grinding costs
+
+Nothing, except real time. There is no calendar. After each battle the Somniel
+moves to the next time of day (morning, afternoon, evening, night). That
+changes only the fortune-teller's hours, which fish you can catch and where
+your allies stand. The story never moves until you pick the next chapter.
+
+The only side effect is skirmish scaling. Enemy level follows your
+highest-level units. Every level your top team gains makes future skirmishes
+harder.
+
+### The catch-up recipe
+
+Use these steps together on the unit you want to bring back. They are listed
+roughly from most to least useful.
+
+1. **Promote at level 10** with a Master Seal. Then reclass with a Second Seal
+   only if you want to. Never use a Second Seal to go back into a **base**
+   class, because the unit must climb 10 levels again.
+2. **Stack EXP boosters on that unit.**
+   - Byleth's **Mentorship**: ×1.2 for the user and adjacent allies. Byleth
+     bond 3, or inherit it for 250 SP.
+   - Edelgard's **Lineage** (Expansion Pass): ×1.2, 150 SP. Stacks with
+     Mentorship for ×1.44.
+   - Marth's **Mercurius** or Lucina's **Parthia**: ×2 while engaged. Both need
+     bond level 10 with that Emblem.
+3. **Give the unit a staff.** A healer earns EXP on every heal, whatever its
+   stats. Micaiah's Engage Attack, **Great Sacrifice**, heals the whole army at
+   once. Game8 puts it at about 120 EXP, more than one full level.
+4. **Feed it kills in skirmishes.** Skirmish enemies are set to your **top**
+   units' level, so a weak unit fights enemies above its own level. That gives
+   it **more** EXP per kill. Bring 2 or 3 strong units. Let them weaken enemies,
+   then let the weak unit take the kill. Pick a map with a narrow chokepoint.
+   Kills give far more EXP than hits that do not kill.
+5. **Use training battles.** These are skirmishes at Firene Castle, Brodia
+   Castle or Solm Palace. Every survivor gets 30 EXP, and nobody dies, even in
+   Classic.
+6. **Use all 3 arena fights after every battle.** Put the weak unit in them
+   with a Bond Ring equipped for SP. Players report the arena refreshes after
+   any battle, skirmishes included.
+7. **Rewind freely.** On Normal the rewind is unlimited, so a risky kill costs
+   nothing.
+
+> [!TIP]
+> On Normal and Hard, players report that EXP is **kept after a game over**.
+> If a skirmish goes badly after your weak unit gained a lot of EXP, you can
+> let Alear fall, decline the rewind and retry. The unit keeps the EXP. SP,
+> bond, items and drops are **not** kept. Three separate player threads
+> describe this. It does not work on Maddening.
+
+> [!NOTE]
+> Skirmishes appear over real time (one every 3 hours) and after you clear
+> battles (one per 3 battles on Normal, one per 5 on Hard). Game8 describes
+> moving the Switch clock forward one day to spawn new ones. That fits the
+> wiki's real-time rule, but this guide did not test it.
+
+### Early units worth keeping
+
+Players on Normal and Hard report that these early units work well all game
+with investment: **Chloé, Louis, Yunaka, Alcryst, Citrinne, Lapis, Diamant and
+Amber**. One player's Chapter 20 Hard team still ran Clanne, Alfred, Chloé,
+Yunaka and Diamant. Another said a Céline Great Knight with Ike "carried the
+game" on Hard / Classic.
+
+Early units also have one real edge over late joiners. They can inherit
+**Canter** from Sigurd before Chapter 10. Late joiners arrive after Sigurd's
+ring is gone and cannot get it until Chapter 17.
+
+> [!IMPORTANT]
+> On Normal and Hard you do not need perfect play. A favourite at a slight
+> disadvantage still clears every map. The recipe above makes catching up
+> efficient, so you can keep the characters you care about without making the
+> run deliberately weak.
 
 ---
 
@@ -249,8 +413,9 @@ Check this list when the game starts to feel hard or unfair.
    good reason to wait. Promote at level 10. See
    [Changing classes](#changing-classes).
 2. **Spreading EXP across the whole army.** The game gives you more units than
-   slots. Train about 12. Many strong units join already promoted after Chapter
-   11, so early units can go to the bench.
+   slots. Train about 12 at a time. Many strong units join already promoted
+   after Chapter 11. If you want to keep a favourite, focus EXP on them rather
+   than on everyone. See [Keeping early favourites](#keeping-early-favourites).
 3. **Units with no ring.** A unit with no ring earns **zero SP**. Give every
    unit without an Emblem a Bond Ring. A Bond Ring earns half the SP of an
    Emblem ring.
@@ -284,8 +449,15 @@ between.
 >
 > The game warns you too. The rings come back between Chapters 17 and 22.
 
-Inherited skills and proficiencies stay on the unit when the ring goes. Only
-the ring's sync effects leave.
+Inherited skills, spent SP, weapon proficiencies and engraved weapons all stay
+on the unit when the ring goes. Only the ring's sync and engage effects leave.
+See [What stays, what goes](#what-stays-what-goes).
+
+> [!NOTE]
+> No source states whether a unit's bond level with a lost Emblem is still
+> there when the ring returns. Bond is stored per unit and Emblem, so it
+> probably is. Treat that as likely, not confirmed. Either way, anything you
+> **bought** with the bond before Chapter 10 is safe.
 
 Expansion Pass bracelets are **not** taken.
 
@@ -358,7 +530,9 @@ their losses came from play habits, not from roster choice:
 > **New recruits will outclass your early units. That is normal.** From
 > Chapter 11, most new units arrive promoted or at level 15 to 19. One player
 > put it this way: "You aren't doing something wrong if your 5th best unit looks
-> like garbage compared to three new ones you were just handed."
+> like garbage compared to three new ones you were just handed." To keep an
+> early favourite anyway, see
+> [Keeping early favourites](#keeping-early-favourites).
 
 ---
 
@@ -564,31 +738,98 @@ This answers question 5. The rings are Engage's main system. Each unit can
 equip one ring. The ring does two things: **sync** while worn, and **engage**
 when you trigger it.
 
+### What stays, what goes
+
+The single most useful fact about rings: **some benefits belong to the ring,
+and some belong to the unit.** When you take a ring off, the ring's benefits
+leave with it. The unit's benefits stay for the rest of the game.
+
+| Benefit | Belongs to | When you remove the ring |
+| --- | --- | --- |
+| Sync stat bonuses and sync skills | The ring | Gone. The next wearer gets them, at **their own** bond level |
+| Engage weapons, engage skills, Engage Attack | The ring, while engaged | Gone |
+| **Bond level** with that Emblem | **The unit–Emblem pair** | **Kept.** The unit keeps its bond and can build on it later |
+| **Inherited skills** | **The unit** | **Kept** |
+| **Weapon proficiency** earned from bond | **The unit** | **Kept, permanently** |
+| **SP** | **The unit** | **Kept** |
+
+So a ring is a tool you lend out, and the skills, weapons and bond it leaves
+behind are permanent upgrades. That is why passing rings around is good play,
+not a waste.
+
+### Passing rings around
+
+You can move rings as often as you like. There is no cost and no penalty.
+
+- **Where:** on the Somniel, on the world map (**+** button, then Emblem
+  Rings), and on the pre-battle screen.
+- **Not during a battle.** Once a map starts, the rings stay where they are.
+- **One ring per unit, one unit per ring.** There is only one copy of each
+  Emblem. If you give a ring to a new unit, the game takes it off the old one.
+- **Bond is per unit.** If Marth moves from Alear to Kagetsu, Kagetsu starts at
+  **his own** bond level with Marth (level 1 if they have never fought
+  together). Alear keeps her bond level with Marth for later.
+- **Any number of units can build bond with the same Emblem.** Each pair has its
+  own level. One Emblem can teach skills to your whole army over time.
+
+A common pattern: a unit wears an Emblem until bond level 5 or higher, inherits
+the skill it wants, and then passes the ring to the next unit.
+
 ### Sync and engage
 
-- **Sync** is the passive state. The unit gets stat bonuses and the Emblem's
-  sync skills. Both grow with bond level.
-- **Engage** is a transformation that lasts **3 turns**. Bond level 11 adds a
-  fourth turn. While engaged the unit gets:
-  - the Emblem's **engage weapons**, usable by any class;
+A ring has two states. Sync is always on. Engage is a button you press.
+
+- **Sync** is the passive state while the ring is worn. The unit gets stat
+  bonuses and the Emblem's sync skills. Both grow with that unit's bond level.
+- **Engage** is a transformation that lasts **3 turns**. It starts on your turn
+  and ends at the start of your fourth turn. Bond level 11 adds a fourth turn.
+  While engaged the unit gets:
+  - the Emblem's **engage weapons**, usable by any class. Weapons in Engage
+    never break;
   - one or more **engage skills**;
-  - one **Engage Attack**, usable once per engage. It never misses.
-- **The engage meter** is full at the start of every map. It has 8 steps. It
-  gains 1 step each time the unit attacks, is attacked, or uses a staff on an
-  ally. It fills at once on an **Emblem Energy** tile. It empties when the
-  engage ends.
+  - one **Engage Attack**, usable **once per engage**. It never misses.
+- **You can engage many times per map.** The only limit is the engage meter.
+- **The engage meter** starts **full on every map**. It does not carry over
+  between maps. It empties when the engage ends. It refills by about one step
+  for each attack the unit makes or takes, and by using a staff on an ally. It
+  fills at once if the unit ends its turn on an **Emblem Energy** tile.
+- **Press Engage before the unit acts.** You can move first, then engage, then
+  attack. There is no button to end an engage early.
+
+> [!NOTE]
+> The Fire Emblem Wiki counts the meter as 8 steps, one per attack. The Fandom
+> wiki counts 6 combats. Players report that a double attack fills 2 steps,
+> which supports the Fire Emblem Wiki. In practice, a unit that fights every
+> turn can engage again every few turns.
 
 ### Bond levels
 
-Bond level runs from 1 to 20. It is **capped at 10** until you clear that
-Emblem's paralogue.
+Bond level runs from 1 to 20 for each unit and Emblem pair. It is **capped at
+10** until you clear that Emblem's paralogue. Expansion Pass bracelets have all
+20 levels from the start.
 
-- Raise it by fighting with the ring, by Arena "Emblem training" (costs Bond
-  Fragments), and by polishing the ring in the Ring Chamber.
-- Level 5 unlocks skill inheritance. Levels 1, 10 and 15 unlock engage weapons.
-  Several levels unlock weapon proficiency.
-- Arena bond training costs 100 fragments per level up to level 5, then 300 per
-  level to level 10, then 500 per level to level 20.
+- **Fighting** with the ring raises it. The unit must act. A unit that only
+  waits or uses an item gains no bond.
+- **Arena Emblem training** raises the bond between a unit and an Emblem you
+  choose, for Bond Fragments. The unit does not need to wear the ring. It costs
+  100 fragments per level up to level 5, then 300 per level to level 10, then
+  500 per level to level 20.
+- **Ring polishing** in the Ring Chamber gives a small bond gain between the
+  ring's Emblem and the unit you pick. It is available again after each battle.
+- **Bond conversations** at levels 5, 10 and 20 block further bond EXP until you
+  watch them in the Ring Chamber.
+
+What bond levels unlock, for most Emblems:
+
+| Bond level | Unlocks |
+| --- | --- |
+| 1 | First engage weapon |
+| 5 | Skill inheritance starts |
+| Varies (2 to 9) | Weapon proficiencies. See [Getting new weapons](#getting-new-weapons) |
+| 10 | Second engage weapon. Needs a watched conversation |
+| 11 | Engage lasts 4 turns |
+| 15 | Third engage weapon |
+| 20 | Engage meter is one step shorter |
 
 ### Every Emblem
 
@@ -640,19 +881,42 @@ in inherited skills. Some rules that help:
 
 ## Skill inheritance
 
-Inheritance is where the rings pay off permanently. A unit spends SP to learn
-an Emblem's skill. The skill stays after the ring goes.
+Inheritance is where the rings pay off permanently. A unit spends its own SP
+to learn an Emblem's skill. The skill stays with the unit for the rest of the
+game, whichever ring it wears.
 
-- **SP gain:** 1 SP per 1 EXP with an Emblem ring. 1 SP per 2 EXP with a Bond
-  Ring. **None with no ring.**
-- Inheritance needs **bond level 5** or higher with that Emblem. Higher skills
-  need higher bond levels.
-- A unit can learn any number of skills but can **equip only 2** at a time.
-  Change them in Manage Skills.
-- SP cannot be refunded.
-- A higher tier of a skill costs less if you already bought the lower tier.
-- Inherit skills from Emblems the unit is **not** wearing. A skill often does
-  not stack with the same Emblem's sync skill.
+### How it works
+
+1. **The unit earns SP.** It gets 1 SP per 1 EXP with an Emblem ring, and 1 SP
+   per 2 EXP with a Bond Ring. It gets **none with no ring**. Each unit has its
+   own SP pool. SP keeps building at max level.
+2. **The unit builds bond** with an Emblem to level 5 or higher. Each skill has
+   its own bond level on top of that.
+3. **You buy the skill** in the Ring Chamber, or at the Arena. The unit does
+   **not** need to wear that ring at the time. It needs only the bond level and
+   the SP.
+4. **You equip it.** A unit can learn any number of skills, but can equip only
+   **2 inherited skills** at a time. Change them in Manage Skills on the
+   Somniel or on the pre-battle screen. Changing them is free.
+
+Rules worth knowing:
+
+- **SP cannot be refunded.** Choose with some care, but a wrong pick on Normal
+  or Hard costs little.
+- **Every unit can learn the same skill.** There is no limit. Ten units can all
+  inherit Canter, if each pays the SP.
+- **Higher tiers cost less** if you already bought the lower tier. You pay only
+  the difference.
+- **Inherit from Emblems the unit is not wearing.** A skill often does not stack
+  with the same Emblem's sync skill while that ring is worn.
+- **Some skills cannot be inherited:** engage skills, Engage Attacks, and a few
+  sync skills such as Dragon Vein and Dual Strike.
+- Inherited skills and SP spent **survive the Chapter 10 ring loss**.
+
+> [!NOTE]
+> An older Game8 page says units have three skill slots. That came from
+> pre-release footage. Every current source, including Game8's own inheritance
+> page, says two.
 
 ### Best-value skills
 
@@ -705,8 +969,11 @@ costs Bond Fragments (Game8 says 100 to 1,000) and gives small permanent stat
 changes. Each engraving can sit on one weapon at a time.
 
 - Game8 recommends Marth (Beginnings) or Sigurd (Holy) as safe choices.
-- The six rings lost at Chapter 10 take their engravings with them until they
-  return. Engrave before Chapter 10 if you want them.
+- Each Emblem's engraving sits on **one weapon at a time**. Engraving a second
+  weapon removes it from the first.
+- An engraving already on a weapon **stays** when the ring is lost at Chapter
+  10. But you cannot put a lost Emblem's engraving on a new weapon until the
+  ring returns. Engrave before Chapter 10 if you want them.
 
 ---
 

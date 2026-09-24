@@ -771,3 +771,72 @@ Live spell values — checked against tooltips, not guides:
 > which reads like a resource bar. The event stream shows the 20-stack removal
 > at the *same millisecond* as the apply that crossed it, so no reaction is
 > possible. Check the event stream before recommending any stacking buff.
+
+#### Holy Paladin — Lightsmith
+
+[`world-of-warcraft/rotations/holy-paladin-lightsmith-mplus-rotation.md`](world-of-warcraft/rotations/holy-paladin-lightsmith-mplus-rotation.md)
+— Mythic+ rotation on the Lightsmith hero tree, written for a reader who knows
+Herald. Covers what changes from Herald, the damage loop and the healing loop,
+proc spending, the Avenging Wrath window, burst healing, cooldown gaps, a check
+of the Reddit claim that Lightsmith plays for damage through Shield of the
+Righteous, buttons you will not press, troubleshooting, observed rates, buffs
+to track, stats and gear, talents that change buttons, and two macros.
+**Written 2026-09-24 from 16 keys at level 21 to 22.**
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 16 Mythic+ keys, 2 from each of the 8 dungeons in zone 55, from page 1 of
+  `characterRankings` with `metric: hps`. Page 1 holds keys 20 to 22 only.
+- 13 distinct players, CN 9, EU 5, US 2. 494 minutes, 283 Avenging Wrath
+  windows, 23,835 casts.
+- Hero tree from a `table(dataType: Casts, abilityID: 432459)` query per parse.
+  Holy Bulwark casts mark Lightsmith. 33 of 44 top-10 parses were Lightsmith.
+
+Live spell values — nether tooltips, checked against the logs:
+
+- `https://nether.wowhead.com/tooltip/spell/<id>?dataEnv=1&locale=0` for 432459,
+  432472, 415091, 460822, 387178, 414193, 1271436, 275773, 1241413, 85673,
+  82326, 414273, 1296656, 1296657, 31884 and 375576.
+- <https://murlok.io/paladin/holy/lightsmith/m+> — top-50 talent picks and
+  stats. The only source whose stat order matched the logs.
+
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/holy-paladin-pve-healing-mythic-plus-tips>
+- <https://www.icy-veins.com/wow/holy-paladin-pve-healing-rotation-cooldowns-abilities>
+- <https://www.icy-veins.com/wow/holy-paladin-pve-healing-spec-builds-talents>
+- <https://www.icy-veins.com/wow/holy-paladin-pve-healing-stat-priority>
+- <https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer>
+- <https://www.wowhead.com/guide/classes/paladin/holy/rotation-cooldowns-pve-healer>
+- <https://www.method.gg/guides/holy-paladin/playstyle-and-rotation>
+- <https://maxroll.gg/wow/class-guides/holy-paladin-mythic-plus-guide>
+
+Sources that failed:
+
+- Reddit — `r/HolyPaladin` does not exist (search redirects with 302). The
+  other two searches hit the rate limit (empty body, then 429). No thread was
+  found for the claim the user read.
+- WCL `CombatantInfo` gear entries carry item IDs but no names or slot fields.
+  The array index is the slot: 12 and 13 are trinkets. Take item names from the
+  `gear` list in any `table` result, which does carry them.
+- `CombatantInfo` came back empty for one log (L15). It was not an error.
+- Wowhead guide text sits in `WH.markup` JavaScript, not in the HTML.
+- Icy Veins talent trees render client-side. Maxroll's stat priority is an
+  image.
+
+> [!CAUTION]
+> Avenging Wrath's tooltip says 2 minutes and 20 seconds, or 30 with Sanctified
+> Wrath. On Lightsmith Holy, all 16 logs show an **18.0-second** window and a
+> **90-second** floor. Measure it rather than quoting it.
+
+> [!IMPORTANT]
+> Lightsmith Holy has **zero** Divine Toll, Beacon of Virtue, Eternal Flame,
+> Holy Prism and Consecration casts. Consecration still deals 21% of damage,
+> because Righteous Judgment drops it on every Judgment. Maxroll recommends
+> Lightsmith but still lists Divine Toll and Eternal Flame in its priority.
+
+> [!TIP]
+> A cast pair 60 ms apart is not always a macro. Holy Light followed by Flash of
+> Light hit 693 such pairs. The global cooldown ends during the 2-second cast,
+> so a queued instant fires at once. Check that the first spell is instant
+> before you call a pair a macro.

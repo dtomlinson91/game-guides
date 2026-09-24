@@ -191,7 +191,9 @@ would mislead you if you built a bar from the tooltip alone.
 
 No sampled raid log played Lightsmith, so nothing above is validated for it.
 Mythic+ splits 6 Lightsmith to 4 Herald across 10 keys, and the Lightsmith bar
-is a different set. If you swap, track these instead.
+is a different set. If you swap, track these instead. The
+[Lightsmith Mythic+ guide](holy-paladin-lightsmith-mplus-rotation.md#buffs-to-track)
+has the full list, measured from 16 more keys.
 
 - **Divine Guidance** (460822) — your next Consecration carries the stored
   damage and healing. 17.75 applications per minute, the busiest buff in that build

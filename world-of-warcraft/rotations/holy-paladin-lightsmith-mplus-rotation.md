@@ -86,6 +86,36 @@ Light that spends it.
 > queueing, not a macro. The global cooldown ends during the 2-second cast, so
 > the instant Flash of Light fires the moment Holy Light lands.
 
+## Choosing the loop
+
+The field chooses the loop from how much damage the group took in the last
+few seconds. The switch is sharp and it holds in every log. Every Word of
+Glory and Shield of the Righteous cast is bucketed below by the damage the
+four non-tank players took in the 3 seconds before it, as a share of their
+average health.
+
+| Group damage, last 3 s | Word of Glory share of spenders | Infusion of Light on Flash of Light | Divine Purpose on Word of Glory |
+| --- | --- | --- | --- |
+| Calm, under 10% | **22%** | 42% (Judgment 44%) | 18% |
+| Moderate, 10–30% | **67%** | 73% | 63% |
+| Heavy, 30–50% | **87%** | 83% | 83% |
+| Spike, 50% or more | **89%** | 86% | 84% |
+
+The rule this gives:
+
+1. **Group calm:** spend Holy Power on Shield of the Righteous. Spend Infusion
+   of Light on Judgment or Flash of Light. Spend Divine Purpose on Shield of
+   the Righteous.
+2. **Group taking damage:** switch every spender to Word of Glory, and every
+   Infusion of Light to Flash of Light.
+
+> [!IMPORTANT]
+> The rule held in **16 of 16 logs**. In every log, the Word of Glory share
+> rose from calm to moderate to heavy. The player with the fewest Shield of
+> the Righteous casts, 4.1 per minute, also had the highest Word of Glory share
+> when the group was calm, at 41%. That player spent healing Holy Power when
+> nobody needed it, and dealt the least damage in the sample.
+
 ## Spending procs
 
 Each proc below goes to one or two buttons. The table shows where the field
@@ -106,8 +136,9 @@ spent them, measured across every removal in 16 logs. Almost none expire.
 > let 13% of them fall off. Spend both instant Holy Lights inside the window.
 
 > [!NOTE]
-> Divine Purpose splits almost evenly. It is a free spender, so spend it on
-> whichever loop you are in. Do not hold it for one button.
+> Divine Purpose and Infusion of Light look evenly split only because the
+> totals mix calm and busy moments. Split by group damage, each one has a clear
+> target. See [choosing the loop](#choosing-the-loop).
 
 ## Avenging Wrath
 
@@ -158,32 +189,84 @@ Holy Power to spend.
 
 ## Burst healing
 
-No single burst-heal combo appears in the logs. The healing loop is the burst.
-Avenging Wrath makes it stronger, and a few cooldowns sit around it.
+This section lines the Holy Paladin's casts up against the group's damage
+taken, second by second. A **spike** here means the four non-tank players
+lost 50% or more of their average health in 3 seconds, after at least 5 calm
+seconds. The 16 keys hold 156 such spikes. They are dangerous: in 99 of them,
+a non-tank player fell below 30% health within 6 seconds.
 
-The strongest sequence the data supports is inside Avenging Wrath:
+> [!IMPORTANT]
+> **The answer to a spike is the rotation, not a cooldown.** Your total cast
+> rate does not change: 50.5 casts per minute at baseline, 50.6 in the first 6
+> seconds of a spike. You press different buttons, not more of them. Only 31
+> of 156 spikes landed inside Avenging Wrath.
 
-1. **Word of Glory** with Empyrean Legacy — it also casts Light of Dawn.
-2. **Holy Light**, instant from Hand of Divinity — it grants Infusion of Light.
-3. **Flash of Light** with Infusion of Light.
-4. **Holy Light** again, the second instant one.
-5. **Flash of Light** again.
+Casts per minute at baseline, and in the first 6 seconds after a spike starts:
 
-Outside Avenging Wrath, run the healing loop at full speed and add these:
+| Button | Baseline | Spike, first 6 s | Change |
+| --- | --- | --- | --- |
+| Flash of Light | 10.0 | **13.2** | +32% |
+| Holy Light | 3.5 | **4.7** | +37% |
+| Word of Glory | 8.3 | **9.6** | +16% |
+| Divine Protection | 0.68 | **1.41** | doubles |
+| Aura Mastery | 0.23 | 0.51 | doubles |
+| Shield of the Righteous | 8.6 | 6.6 | −24% |
+| Judgment | 6.1 | 3.9 | −37% |
+| Holy Shock | 5.5 | 4.3 | −22% |
 
-- **Holy Armaments** — Holy Bulwark is an absorb of 15% of maximum health plus
-  2% every 2 seconds, for 20 seconds. Put it on the player who takes the next
-  hit.
-- **Aura Mastery** — the field casts it about every 3.5 minutes (median 211
-  seconds), not on a fixed cycle. Hold it for a named mechanic.
-- **Lay on Hands** — median gap 279 seconds. Laying Down Arms takes 15 seconds
-  off it each time an Armament fades.
+### The response
+
+The logs show the same response to a spike, in this order:
+
+1. **Finish the current global.** The first cast after a spike starts is still
+   Shield of the Righteous in 40 of 156 spikes. The first heal lands a median
+   **2.75 seconds** after the damage.
+2. **Holy Light**, if you can afford a 2-second cast. It grants Infusion of
+   Light.
+3. **Flash of Light** with Infusion of Light. From the third cast on, Flash of
+   Light and Word of Glory are the two most common casts at every position.
+4. **Word of Glory** with every Holy Power and every Divine Purpose. In a
+   spike, 89% of spenders are Word of Glory.
+5. **Repeat** Holy Light, Flash of Light, Flash of Light, Word of Glory until
+   the group recovers.
+
+Inside Avenging Wrath the same loop gets stronger. Empyrean Legacy adds a Light
+of Dawn to your first Word of Glory, and Hand of Divinity makes two Holy Lights
+instant.
+
+> [!TIP]
+> Close the gap on the first two globals. A 2.75-second median to the first
+> heal means most players lose one to two globals to a queued damage cast. On a
+> known mechanic, start the Holy Light before the damage lands.
+
+### Cooldowns at a spike
+
+The field seldom answers a spike with a major cooldown. The count below is how
+many casts of each fell from 6 seconds before to 8 seconds after a spike
+started, out of all casts in the sample.
+
+| Cooldown | Near a spike | Before the spike | Reading |
+| --- | --- | --- | --- |
+| Soulcoiler Ritual Vessel | 28 of 190 | **21** of 28 | Used ahead of known damage |
+| Holy Bulwark | 43 of 520 | 19 of 43 | Often placed ahead |
+| Divine Protection | 36 of 315 | 11 of 36 | Mostly in the first 3 s, to survive it yourself |
+| Avenging Wrath | 28 of 283 | 12 of 28 | Not saved for spikes |
+| Aura Mastery | 16 of 105 | 6 of 16 | Held for something else |
+| Lay on Hands | 5 of 75 | 0 of 5 | Single-target emergencies only |
+| Blessing of Sacrifice | 5 of 100 | 1 of 5 | Not a group tool |
 
 > [!NOTE]
-> This sample does not measure burst healing directly. It does not line casts up
-> against spikes in damage taken, so this section shows what the field pressed,
-> not how it answered a specific hit. Treat the order as a pattern, not a
-> measured response.
+> Aura Mastery and Lay on Hands rarely line up with these spikes. The field
+> presses Aura Mastery about every 3.5 minutes, so it is held for specific
+> dungeon mechanics that this measure does not isolate. A mechanic that hits
+> one player hard, or builds slowly, does not register as a group spike here.
+
+> [!WARNING]
+> The spike measure has three limits. It counts only damage that landed, so
+> an absorbed hit still counts while a dodged one does not. Health values come
+> only from damage events, so the "below 30%" count can include a player a heal
+> had already topped up. And the spike count varies from 1 to 21 per key.
+> Three keys hold 57 of the 156 spikes between them.
 
 ## Cooldown use
 
@@ -266,9 +349,8 @@ These abilities appear in written guides or on the Herald bar, and have zero
 or near-zero casts in all 16 logs.
 
 - **Divine Toll** — zero casts. Holy Armaments takes its talent node.
-- **Beacon of Virtue** — zero casts. The field uses Beacon of Light (11 of 16
-  logs) or Beacon of Faith (9 of 16). Most logs recast a beacon 0 to 3 times
-  per key, so it is a setup button, not a rotation button.
+- **Beacon of Virtue** — zero casts. The field places Beacon of Light and
+  Beacon of Faith before the key and leaves them. See [beacons](#beacons).
 - **Eternal Flame** — zero casts. Word of Glory is the healing spender.
 - **Holy Prism** — zero casts.
 - **Consecration** — zero casts, 21% of damage. Judgment drops it.
@@ -280,6 +362,63 @@ or near-zero casts in all 16 logs.
 > Maxroll recommends Lightsmith for Mythic+, but its priority and cooldown
 > sections still name Divine Toll, Holy Prism and Eternal Flame. Lightsmith
 > does not have those buttons. Skip those sections of that guide.
+
+## Beacons
+
+The field places its beacons before the key starts and touches them only when
+something forces a change. Across 16 keys, the median is **2 beacon casts
+per key**. Two keys have none at all.
+
+> [!IMPORTANT]
+> **Neither beacon goes on the tank.** Both go on DPS players, almost always
+> ranged ones. Over the whole sample, beacon holders were DPS for 657 minutes,
+> the Holy Paladin for 39 minutes and the tank for 6 minutes. The tank
+> receives a median **8%** of beacon transfer healing, range 3% to 15%.
+
+Who held a beacon for at least 30% of a key, across 27 such holders:
+
+| Holder | Count |
+| --- | --- |
+| Elemental Shaman | 13 |
+| Arcane Mage | 8 |
+| Arms Warrior | 2 |
+| Assassination Rogue | 2 |
+| Demonology Warlock, Shadow Priest, the Holy Paladin | 1 each |
+
+Beacon of Light and Beacon of Faith follow the same pattern. At least 10 of
+16 keys run both. The other six show events for Beacon of Light only. A Beacon of Faith that
+sat on one player all key would leave no event, so those six may run both too.
+
+> [!NOTE]
+> The beacon does **not** follow the DPS player who takes the most damage. The
+> main holder took the least damage of the three DPS players in 13 of 27 cases,
+> and the most in only 6. The logs show the placement but not the reason for it.
+> One likely reason: the tank already gets heavy healing from every source,
+> and a ranged player stays in range for the whole pull. The cost is small.
+> Beacon transfer overheals 35%, against 30% for all of your healing.
+
+### When to recast
+
+The field recasts a beacon in two cases only:
+
+1. **The holder dies.** 21 of 22 unplanned beacon drops happened within 3
+   seconds of the holder's death. The field replaced the beacon a median 8.5
+   seconds later, on the same player 13 times and on another player 6 times.
+   Three drops were never replaced.
+2. **A planned move.** 20 casts moved a beacon from one player to another at
+   the same instant. 12 of them went from one DPS player to another. 12 of the
+   20 came after minute 18 of the key, which may mean a change for the last
+   boss. The logs cannot confirm that.
+
+> [!TIP]
+> Put Beacon of Light on your raid frames through the **Group Buffs** tab. The
+> beacon drops silently when its holder dies, and 3 of 22 drops in this sample
+> were never replaced for the rest of the key.
+
+> [!NOTE]
+> The Holy Paladin receives a median 17% of beacon transfer healing, even in
+> keys where neither beacon sits on them. That healing may come from a talent
+> or an apex effect. This analysis did not identify its source.
 
 ## Troubleshooting
 
@@ -296,6 +435,11 @@ check in your log.
   few Shield of the Righteous casts and many Holy Lights runs dry first.
 - **Avenging Wrath feels empty.** Check that Hammer of Wrath appears 7 or 8
   times a minute inside it, and that you enter with Holy Power.
+- **You spend Holy Power on the wrong spender.** Check your Word of Glory
+  share when the group is calm. The field keeps it near 22% and raises it to
+  89% in a spike. See [choosing the loop](#choosing-the-loop).
+- **Your first heal after a spike is late.** The field median is 2.75 seconds.
+  On a known mechanic, start Holy Light before the damage lands.
 - **Healing falls behind on a pull.** Check Holy Light. The field casts 3.3 per
   minute. Without it, Infusion of Light comes only from Judgment's 20%
   chance, and your Flash of Light loses its biggest heal.
@@ -479,6 +623,9 @@ this before trusting any number above.
 - **13 distinct players.** 9 logs from CN, 5 from EU and 2 from US.
 - **494 minutes of keys.** 56 boss pulls, 92 AoE pulls, 283 Avenging Wrath
   windows and 23,835 casts.
+- **Group damage taken** for all five players, 89,361 non-melee damage
+  events with the target's health attached. The spike analysis in
+  [burst healing](#burst-healing) comes from these.
 - **Only 6 genuine single-target pulls.** That is enough for the rates above,
   and not enough for a firm single-target rotation.
 

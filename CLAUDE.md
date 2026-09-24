@@ -781,7 +781,9 @@ proc spending, the Avenging Wrath window, burst healing, cooldown gaps, a check
 of the Reddit claim that Lightsmith plays for damage through Shield of the
 Righteous, buttons you will not press, troubleshooting, observed rates, buffs
 to track, stats and gear, talents that change buttons, and two macros.
-**Written 2026-09-24 from 16 keys at level 21 to 22.**
+**Written 2026-09-24 from 16 keys at level 21 to 22.** Burst healing and the
+spender rule were added the same day, measured against 156 group damage
+spikes.
 
 Primary source — Warcraft Logs, through the MCP server:
 
@@ -834,6 +836,28 @@ Sources that failed:
 > Holy Prism and Consecration casts. Consecration still deals 21% of damage,
 > because Righteous Judgment drops it on every Judgment. Maxroll recommends
 > Lightsmith but still lists Divine Toll and Eternal Flame in its priority.
+
+> [!TIP]
+> **Burst healing needs the group's damage taken, not the healer's casts.**
+> The query that worked, one call per key with no paging needed:
+> `events(fightIDs: [..], dataType: DamageTaken, startTime, endTime,
+> includeResources: true, limit: 10000, filterExpression: "ability.id != 1 and
+> type = 'damage'")`. It drops melee swings, leaving 3,600 to 7,600 events per
+> key. The target's health is on the event only when `resourceActor` is 2, or
+> when it is 1 and `sourceID` equals `targetID`. Reading it on 1 alone
+> silently loses most players. The `graph` query returns a smoothed rolling
+> average and cannot show a spike.
+
+> [!TIP]
+> **Beacon holders.** Query `events(dataType: Buffs, sourceID: <healer>,
+> abilityID: 53563)` and `156910` with `playerDetails(fightIDs: [..])` for roles.
+> A beacon placed before the key logs no apply, so a player whose first event
+> is `removebuff` or `refreshbuff` held it from the start. A beacon that never
+> moved logs **nothing**. For that case, read the `targets` of the
+> `Beacon of Light` (53652) entry in the healing table, which shows who
+> received the transfer. A small `graphql` result comes back inline, not as a
+> file. Add `masterData { actors(type: "Player") { id name } }` to force a
+> file you can parse.
 
 > [!TIP]
 > A cast pair 60 ms apart is not always a macro. Holy Light followed by Flash of

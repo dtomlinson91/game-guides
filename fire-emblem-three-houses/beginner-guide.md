@@ -9,26 +9,26 @@ the game's own suggested classes point to.
 
 Start with [How Three Houses works](#how-three-houses-works) and
 [The weekly loop](#the-weekly-loop). Use the rest as a lookup while playing.
-Numbers in square brackets, such as [1], point to the [Sources](#sources) list
+Numbers in square brackets, such as [[1]](#ref-1), point to the [Sources](#sources) list
 at the end.
 
 > [!IMPORTANT]
 > **A save cannot be bricked.** Character level does not reset on a class
-> change [6]. A passed exam is never lost [37]. A broken weapon can be repaired
-> [16]. Only a few decisions are truly one-way:
+> change [[6]](#ref-6). A passed exam is never lost [[37]](#ref-37). A broken weapon can be repaired
+> [[16]](#ref-16). Only a few decisions are truly one-way:
 >
 > - **The house**, chosen in the prologue. See
 >   [Choosing a house](#choosing-a-house).
 > - **The one Dancer** per playthrough, decided at the White Heron Cup in
->   Chapter 9 [27].
-> - **Recruiting**, which closes at the end of Part 1 [25].
-> - **The Classic or Casual choice**, fixed when the save starts [50].
+>   Chapter 9 [[27]](#ref-27).
+> - **Recruiting**, which closes at the end of Part 1 [[25]](#ref-25).
+> - **The Classic or Casual choice**, fixed when the save starts [[50]](#ref-50).
 >
 > See [Windows that close](#windows-that-close) for the full list.
 
 > [!TIP]
 > Difficulty can be lowered at any time from the options menu, but never
-> raised [19]. Starting on Hard therefore costs nothing, because Normal stays
+> raised [[19]](#ref-19). Starting on Hard therefore costs nothing, because Normal stays
 > available if Hard stops being fun.
 
 <details>
@@ -118,22 +118,22 @@ knowing which things belong to the unit and last, and which are temporary.
 
 **The calendar.** Part 1 runs month by month. A month holds four or five
 weeks. Each week has a lesson on Monday and a free day on Sunday. The last week
-of the month is the story mission [2][3].
+of the month is the story mission [[2]](#ref-2)[[3]](#ref-3).
 
 **The two resources that drive everything:**
 
 1. **Professor level.** Byleth's rank. It sets how many units Byleth can teach,
    how many things Byleth can do on a free day, how many battles a free day
-   allows, and how many adjutants can deploy [1]. Raising it early compounds
+   allows, and how many adjutants can deploy [[1]](#ref-1). Raising it early compounds
    into every later month.
 2. **Skill levels.** Each unit's rank in every weapon and movement type. They
    decide which weapons a unit can use and which class exams it can pass
-   [10][34].
+   [[10]](#ref-10)[[34]](#ref-34).
 
 **How they connect.** Instruction and battle raise skill levels. Skill levels
 unlock class exams. A class gives stats and abilities while the unit is in it.
 Fighting in a class counts towards its **mastery**, which grants an ability the
-unit keeps in every class [5]. Supports between units feed adjutants, gambits
+unit keeps in every class [[5]](#ref-5). Supports between units feed adjutants, gambits
 and recruiting.
 
 **What lasts and what does not.** This table answers the question most
@@ -141,29 +141,29 @@ systems raise: what stays when something changes.
 
 | Thing | Belongs to | Lasts? |
 | --- | --- | --- |
-| Character level | The unit | Permanent. A class change never resets it [6] |
-| Skill levels | The unit | Kept in every class [37]. No source describes a way to lose them |
-| Budding talent | The unit | Permanent once unlocked. The skill becomes a strength [2][35] |
-| Passed class exams | The unit | Permanent. Switch between passed classes before any battle [37][41] |
-| Class stat modifiers and class abilities | The class | Only while the unit is in that class [8][37] |
-| Mastery abilities | The unit | Equip in any class. Some mastery combat arts are locked to their class [5] |
-| Supports | The pair of units | No source describes a loss. Some stop advancing at story points [14] |
-| Battalion level | The battalion | The battalion keeps its own level. It is never lost at 0 endurance [11] |
-| Battalion endurance | The battalion | Carries over between battles. Refill it at the guild [11] |
-| Gambit uses | The battalion | Refill at the end of every battle [12] |
-| Weapon durability | The weapon | Carries over. At 0 the weapon breaks but is not lost [16] |
-| Spell uses | The unit | Refill at the end of every battle [16] |
-| Divine Pulse charges | Byleth | Refill for each battle [43] |
-| Motivation | The unit | Carries from week to week [2] |
-| Professor level | Byleth | No source describes a way to lose it [1] |
-| Seals | The inventory | Used up by any exam attempt, pass or fail [7] |
+| Character level | The unit | Permanent. A class change never resets it [[6]](#ref-6) |
+| Skill levels | The unit | Kept in every class [[37]](#ref-37). No source describes a way to lose them |
+| Budding talent | The unit | Permanent once unlocked. The skill becomes a strength [[2]](#ref-2)[[35]](#ref-35) |
+| Passed class exams | The unit | Permanent. Switch between passed classes before any battle [[37]](#ref-37)[[41]](#ref-41) |
+| Class stat modifiers and class abilities | The class | Only while the unit is in that class [[8]](#ref-8)[[37]](#ref-37) |
+| Mastery abilities | The unit | Equip in any class. Some mastery combat arts are locked to their class [[5]](#ref-5) |
+| Supports | The pair of units | No source describes a loss. Some stop advancing at story points [[14]](#ref-14) |
+| Battalion level | The battalion | The battalion keeps its own level. It is never lost at 0 endurance [[11]](#ref-11) |
+| Battalion endurance | The battalion | Carries over between battles. Refill it at the guild [[11]](#ref-11) |
+| Gambit uses | The battalion | Refill at the end of every battle [[12]](#ref-12) |
+| Weapon durability | The weapon | Carries over. At 0 the weapon breaks but is not lost [[16]](#ref-16) |
+| Spell uses | The unit | Refill at the end of every battle [[16]](#ref-16) |
+| Divine Pulse charges | Byleth | Refill for each battle [[43]](#ref-43) |
+| Motivation | The unit | Carries from week to week [[2]](#ref-2) |
+| Professor level | Byleth | No source describes a way to lose it [[1]](#ref-1) |
+| Seals | The inventory | Used up by any exam attempt, pass or fail [[7]](#ref-7) |
 
 > [!NOTE]
 > Three of those rows rest on implication rather than a direct statement.
 > No source states outright that skill levels, supports and professor level
 > can never drop. No source describes any way to lose them either. The
 > Lesson page implies that motivation carries over, because it refers to a
-> unit that "began the week with 50 motivation or less" [2].
+> unit that "began the week with 50 motivation or less" [[2]](#ref-2).
 
 ---
 
@@ -188,25 +188,25 @@ full section.
 
 The routine to repeat every week of Part 1. Once learned, it makes the game
 feel much smaller. The last week of each month is the story mission. Every
-other week has a lesson on Monday and a free day on Sunday [2][3].
+other week has a lesson on Monday and a free day on Sunday [[2]](#ref-2)[[3]](#ref-3).
 
 Do these steps in order each week.
 
 1. **Set goals.** Give each unit two skills to study, or one skill to
    specialise in. One skill pays 1.5 times the experience of that skill inside
-   a two-skill pair [2].
+   a two-skill pair [[2]](#ref-2).
 2. **Instruct.** Teach as many units as the lecture points allow. Professor
-   level sets that limit [1]. See [The Sunday choice](#the-sunday-choice).
+   level sets that limit [[1]](#ref-1). See [The Sunday choice](#the-sunday-choice).
 3. **Answer the student question.** A student sometimes asks a question after
    instruction. A correct answer is the largest single source of professor
-   experience in the game [1]. It also returns 0, 25 or 50 motivation [2].
+   experience in the game [[1]](#ref-1). It also returns 0, 25 or 50 motivation [[2]](#ref-2).
 4. **Handle goal-change requests.** A student may ask to change their goals.
-   Accepting or declining changes nothing mechanically [2]. Accept when the
+   Accepting or declining changes nothing mechanically [[2]](#ref-2). Accept when the
    goal matches the class planned for that unit. The request names the class
    the game intends, which is where the "Game suggests" column in
    [Character reference](#character-reference) comes from.
 5. **Assign a group task.** Pick two units. This trains a movement skill and
-   pays gold and Smithing Stones [2].
+   pays gold and Smithing Stones [[2]](#ref-2).
 6. **Spend Sunday.** Choose Explore, Fight, Seminar or Rest. See
    [The Sunday choice](#the-sunday-choice).
 
@@ -214,10 +214,10 @@ Do these steps in order each week.
 
 How one instruction turns into skill experience. Each unit holds up to 100
 motivation, in steps of 25. One instruction costs 25 motivation, so a unit at
-full motivation takes four instructions in one week [2].
+full motivation takes four instructions in one week [[2]](#ref-2).
 
 Each instruction rolls a result. The result multiplies the skill experience
-[2][34].
+[[2]](#ref-2)[[34]](#ref-34).
 
 | Result | Weakness | Neutral | Strength |
 | --- | --- | --- | --- |
@@ -226,7 +226,7 @@ Each instruction rolls a result. The result multiplies the skill experience
 | Great (×1.5) | +3 | +6 | +9 |
 | Perfect (×2) | +4 | +8 | +12 |
 
-Three rules follow from that table [2].
+Three rules follow from that table [[2]](#ref-2).
 
 - A unit can only get "Bad" if it began the week at 50 motivation or less.
   High motivation deletes the worst outcome.
@@ -235,15 +235,15 @@ Three rules follow from that table [2].
 - After a "Bad" result, choose to critique or console. The right choice for
   that character returns 25 motivation.
 
-**What raises motivation.** Rest raises it slightly for every student [3].
-Seminars give each attendee 50 [2]. Returning a lost item raises it for a
-student in Byleth's class [3]. Tea parties, meals, gifts and being the battle
-MVP also raise it [17][49].
+**What raises motivation.** Rest raises it slightly for every student [[3]](#ref-3).
+Seminars give each attendee 50 [[2]](#ref-2). Returning a lost item raises it for a
+student in Byleth's class [[3]](#ref-3). Tea parties, meals, gifts and being the battle
+MVP also raise it [[17]](#ref-17)[[49]](#ref-49).
 
 ### Goal and task numbers
 
 What the weekly goals and group tasks pay. Goals pay out at the end of the
-week. **These values are lower on Hard than on Normal** [2][19].
+week. **These values are lower on Hard than on Normal** [[2]](#ref-2)[[19]](#ref-19).
 
 | Difficulty | Weakness | Neutral | Strength |
 | --- | --- | --- | --- |
@@ -253,11 +253,11 @@ week. **These values are lower on Hard than on Normal** [2][19].
 
 > [!IMPORTANT]
 > One datamined table lists +28 neutral and +32 strength without naming a
-> difficulty [34]. Those are the **Normal** values. Always check the
+> difficulty [[34]](#ref-34). Those are the **Normal** values. Always check the
 > difficulty next to a skill experience number.
 
 Group tasks train Riding (Stable Duty), Heavy Armour (Weeding) or Flying (Sky
-Watch) for two units [2].
+Watch) for two units [[2]](#ref-2).
 
 | Result | Reward | Weakness | Neutral | Strength |
 | --- | --- | --- | --- | --- |
@@ -265,12 +265,12 @@ Watch) for two units [2].
 | Perfect | 5 Smithing Stones, 1,000 gold | +8 | +12 | +16 |
 
 A "Perfect" result is more likely when both units have a strength in the skill
-and a high support rank with each other [2].
+and a high support rank with each other [[2]](#ref-2).
 
 ### Skill rank costs
 
 How much skill experience each rank needs. The cost rises steeply, so plan the
-two skills a unit's target class needs and ignore the rest [34].
+two skills a unit's target class needs and ignore the rest [[34]](#ref-34).
 
 | Rank | Experience to the next rank |
 | --- | --- |
@@ -286,7 +286,7 @@ two skills a unit's target class needs and ignore the rest [34].
 > [!NOTE]
 > Fighting also trains skills. Each attack gives +1 to +3 in one weapon, one
 > movement skill and Authority, depending on weakness or strength. A miss pays
-> the same as a kill [34]. That is small per hit, but it adds up across a map
+> the same as a kill [[34]](#ref-34). That is small per hit, but it adds up across a map
 > and costs nothing.
 
 ---
@@ -294,7 +294,7 @@ two skills a unit's target class needs and ignore the rest [34].
 ## The Sunday choice
 
 Every free day offers four options, and only one can be picked. This decision
-shapes the month, so it gets a table of its own [3].
+shapes the month, so it gets a table of its own [[3]](#ref-3).
 
 | Option | What it spends | What it gives |
 | --- | --- | --- |
@@ -303,7 +303,7 @@ shapes the month, so it gets a table of its own [3].
 | **Seminar** | Nothing | Skill experience for a group of units at once, plus some motivation |
 | **Rest** | Nothing | A small motivation refill for every student, plus 5 durability on the Sword of the Creator |
 
-Professor level sets both point pools [1]. This is why professor level is the
+Professor level sets both point pools [[1]](#ref-1). This is why professor level is the
 most valuable thing to build early.
 
 | Professor level | Activity points | Lecture points | Battle points | Adjutants | Monthly gold |
@@ -321,7 +321,7 @@ most valuable thing to build early.
 
 > [!IMPORTANT]
 > Professor level **C** is a hard gate. Below C, Master class exams cannot be
-> taken, and their requirements are hidden [1][6]. Reach C before planning any
+> taken, and their requirements are hidden [[1]](#ref-1)[[6]](#ref-6). Reach C before planning any
 > Master class.
 
 A reasonable default is **two Explore days and two Fight days per month**. Lean
@@ -335,11 +335,11 @@ Rest only when motivation has collapsed across the class.
 
 Exploring is where the game hides most of its value, and where most new players
 waste points. The key fact is that **most exploration activities are free**.
-Activity points refill each free day and cannot be raised mid-exploration [3].
+Activity points refill each free day and cannot be raised mid-exploration [[3]](#ref-3).
 
 ### Free activities
 
-The activities that cost no activity points [1][3]. Do all of these every
+The activities that cost no activity points [[1]](#ref-1)[[3]](#ref-3). Do all of these every
 Explore day, before spending a point on anything.
 
 | Activity | Gives |
@@ -354,43 +354,43 @@ Explore day, before spending a point on anything.
 | Watching supports | Support ranks, which feed adjutants and gambits |
 
 > [!TIP]
-> The Owl Feather is liked by every character in the game [3]. Buy them
+> The Owl Feather is liked by every character in the game [[3]](#ref-3). Buy them
 > whenever a merchant stocks them, and give them to anyone whose gift list is
 > unknown.
 
 ### Paid activities
 
-Seven activities cost one activity point each [3][39]. Spend points in roughly
+Seven activities cost one activity point each [[3]](#ref-3)[[39]](#ref-39). Spend points in roughly
 this order.
 
 1. **Faculty Training.** 20 skill experience for Byleth, plus 10 more for a
    strength. A "Great" result adds 50%. Byleth's budding talent needs six
    sessions in Faith. Each instructor teaches only their own skills, and
-   several are absent in specific chapters [39].
+   several are absent in specific chapters [[39]](#ref-39).
 2. **Share a Meal.** Raises support between two characters and Byleth, raises
    their motivation, and pays 50 to 200 professor experience depending on
    whether they like the dish. Today's Special costs no ingredients, once per
-   Sunday [1][39].
+   Sunday [[1]](#ref-1)[[39]](#ref-39).
 3. **Choir Practice.** Raises Faith for both students and Byleth, and Authority
-   for Byleth [3]. The cheapest Authority Byleth will ever get.
+   for Byleth [[3]](#ref-3). The cheapest Authority Byleth will ever get.
 4. **Tea Party.** Support with one unit, and up to +2 Charm for both with good
-   topics. Charm drives gambit accuracy, so this is not cosmetic [17].
+   topics. Charm drives gambit accuracy, so this is not cosmetic [[17]](#ref-17).
 5. **Sauna** (Expansion Pass). Support, plus a skill-experience boost for both
-   units for the rest of the month. One visit per unit per month [3].
+   units for the rest of the month. One visit per unit per month [[3]](#ref-3).
 6. **Cooking Together.** Support with one unit and 75 to 150 professor
-   experience [1].
+   experience [[1]](#ref-1).
 7. **Tournament.** Gold and weapons. 100 professor experience for a loss, 300
-   for a win [1].
+   for a win [[1]](#ref-1).
 
 > [!NOTE]
 > The monastery page's summary list names five activities that cost a point
 > and leaves out Tea Party and Sauna. The same page's own Tea Party and Sauna
-> sections both state a cost of one point [3]. This guide follows the specific
+> sections both state a cost of one point [[3]](#ref-3). This guide follows the specific
 > sections.
 
 ### Experience thresholds
 
-The cumulative professor experience each level needs [1]. The early ranks come
+The cumulative professor experience each level needs [[1]](#ref-1). The early ranks come
 fast and the late ones do not, so the first few months are where the
 compounding happens.
 
@@ -408,14 +408,14 @@ compounding happens.
 
 The student question after instruction dwarfs everything else. At professor
 level C and above it pays 1,000 experience, or 1,200 if the student likes the
-answer [1]. A good fish pays about 30.
+answer [[1]](#ref-1). A good fish pays about 30.
 
 ### Renown and statues
 
 How to spend renown, and what to buy first. Renown comes from battles and
 quests. Spend it at the four saint statues in the cathedral, from Chapter 5.
 Costs are cumulative, so 10,000 renown clears one statue completely. Rewards
-carry into New Game+ [40].
+carry into New Game+ [[40]](#ref-40).
 
 | Renown | Cethleann | Cichol | Macuil | Indech |
 | --- | --- | --- | --- | --- |
@@ -435,7 +435,7 @@ Divine Pulse charges next.
 
 > [!NOTE]
 > The weapon and skill rewards such as "Axe +1" add experience when Byleth
-> **instructs** in that skill [40]. They do not change combat.
+> **instructs** in that skill [[40]](#ref-40). They do not change combat.
 
 ---
 
@@ -445,7 +445,7 @@ The battle rules that decide most fights. Check this section when a map goes
 wrong.
 
 **Doubling.** A unit attacks twice when its Attack Speed is **4 or more** above
-the target's [32]. Attack Speed is Speed minus a penalty for a weapon too heavy
+the target's [[32]](#ref-32). Attack Speed is Speed minus a penalty for a weapon too heavy
 for the unit's Strength:
 
 ```
@@ -457,19 +457,19 @@ Three consequences follow.
 - A heavy weapon on a low-Strength unit removes doubling.
 - Unequipping a weapon can stop an enemy doubling the unit, which sometimes
   saves it.
-- **A combat art never doubles.** The only exception is One-Two Punch [32].
-  Neither do Meteor, Bolting, Luna and Bohr Χ [32].
+- **A combat art never doubles.** The only exception is One-Two Punch [[32]](#ref-32).
+  Neither do Meteor, Bolting, Luna and Bohr Χ [[32]](#ref-32).
 
 **Physical against magic.** Armoured enemies have high Defence and low
 Resistance. A team with only physical damage stalls against them, so keep
 magic users in the squad.
 
 **Bows against fliers.** Almost every bow deals bonus damage to flying units
-[20]. An archer is the answer to enemy pegasus and wyvern riders.
+[[20]](#ref-20). An archer is the answer to enemy pegasus and wyvern riders.
 
 **Divine Pulse.** Byleth's rewind. It undoes up to 50 turns, and fires
-automatically on a game over if charges remain [15]. The charges refill for
-each battle [43].
+automatically on a game over if charges remain [[15]](#ref-15). The charges refill for
+each battle [[43]](#ref-43).
 
 | Source | Charges |
 | --- | --- |
@@ -479,18 +479,18 @@ each battle [43].
 | Each of the four saint statues, at 3,000 renown | +1 each |
 | **Maximum on Normal and Hard** | **13** |
 
-Figures from [15]. Maddening caps at 10.
+Figures from [[15]](#ref-15). Maddening caps at 10.
 
 **Weapon durability.** Each weapon use costs durability. At 0 the weapon becomes
 a Broken or Drained item. It is **not lost**, and the blacksmith can repair it
-for half its shop value plus ore [16]. Spells refill every use at the end of
-each battle [16]. The Sword of the Creator repairs for 2 Umbral Steel and 2,500
-gold, or 5 points per Rest day [3][16].
+for half its shop value plus ore [[16]](#ref-16). Spells refill every use at the end of
+each battle [[16]](#ref-16). The Sword of the Creator repairs for 2 Umbral Steel and 2,500
+gold, or 5 points per Rest day [[3]](#ref-3)[[16]](#ref-16).
 
 **Crests.** A Crest is innate and inherited. It gives a random chance of a
 bonus on a weapon attack, combat art or spell. It can trigger on a miss but
 only applies on a hit. Any Crest bearer can use a Hero's Relic without losing
-10 HP after combat [18].
+10 HP after combat [[18]](#ref-18).
 
 ---
 
@@ -498,21 +498,21 @@ only applies on a hit. Any Crest bearer can use a Hero's Relic without losing
 
 Grinding worries most new Hard players, and the answer is short: **on Hard
 grinding is capped, and it is rarely needed.** Hard gives about 70% of
-Normal's experience against a same-level enemy [19], but players still report
-clearing the main story with almost no grinding [51].
+Normal's experience against a same-level enemy [[19]](#ref-19), but players still report
+clearing the main story with almost no grinding [[51]](#ref-51).
 
 **Why grinding is capped.** On Normal, the first two auxiliary battles on a free
-day cost nothing, so grinding is unlimited [4]. On Hard and Maddening, **every
+day cost nothing, so grinding is unlimited [[4]](#ref-4). On Hard and Maddening, **every
 auxiliary battle and every paralogue consumes a battle point**. Byleth holds 1
-battle point until professor level C+, then 2, then 3 at A+ [1]. With about
+battle point until professor level C+, then 2, then 3 at A+ [[1]](#ref-1). With about
 four free days a month, a professor at C+ can fight at most eight times, and
 only by never exploring. That trade is the real cost of grinding.
 
 > [!NOTE]
-> Two pages say an auxiliary battle on Hard costs "an activity point" [4][19].
+> Two pages say an auxiliary battle on Hard costs "an activity point" [[4]](#ref-4)[[19]](#ref-19).
 > The professor level page says battle points govern auxiliary battles and
-> paralogues [1], and the monastery page lists Fight as a separate choice from
-> Explore [3]. This guide follows the professor level page. The practical
+> paralogues [[1]](#ref-1), and the monastery page lists Fight as a separate choice from
+> Explore [[3]](#ref-3). This guide follows the professor level page. The practical
 > effect is the same either way: on Hard, nothing about fighting is free.
 
 **Reasons to grind.** Four situations justify a battle over the monastery.
@@ -520,17 +520,17 @@ only by never exploring. That trade is the real cost of grinding.
 1. **A needed unit is more than two levels behind the squad.** Deploy them in
    an auxiliary battle and let them take the kills.
 2. **A class mastery is the goal.** Mastery is counted in combats, not
-   experience, so it only comes from fighting [5]. See
+   experience, so it only comes from fighting [[5]](#ref-5). See
    [Class mastery](#class-mastery).
 3. **Gold or materials are short.** Auxiliary battles pay gold and monastery
    items, and human bosses drop a bullion.
 4. **A paralogue is open.** Always take it. A paralogue costs the same battle
    point as an auxiliary battle, is harder, and pays far better. One
-   paralogue decides whether Dedue returns after the timeskip [28].
+   paralogue decides whether Dedue returns after the timeskip [[28]](#ref-28).
 
 **Reasons not to.** Two situations make a battle the worse choice.
 
-- Everything clears comfortably [51].
+- Everything clears comfortably [[51]](#ref-51).
 - Professor level is still below C. An Explore day is worth more at that
   stage, because it raises every future month's point budget.
 
@@ -538,17 +538,17 @@ only by never exploring. That trade is the real cost of grinding.
 battle point.
 
 - **Adjutants.** An adjutant gains 50% of the host's level experience, and all
-  of its skill and class mastery experience, without a deployment slot [13].
-- **Seminars.** Free skill experience for a group [2].
+  of its skill and class mastery experience, without a deployment slot [[13]](#ref-13).
+- **Seminars.** Free skill experience for a group [[2]](#ref-2).
 - **The Knowledge Gem.** Doubles skill and class mastery experience for the
-  holder [10]. The Experience Gem does the same for level experience.
+  holder [[10]](#ref-10). The Experience Gem does the same for level experience.
 
 ---
 
 ## Changing class
 
 Three Houses has no fixed promotion lines. Any unit can enter any class if it
-passes the exam [6]. That freedom is why the system feels unclear, so this
+passes the exam [[6]](#ref-6). That freedom is why the system feels unclear, so this
 section explains the shape of it first.
 
 ### How classes work
@@ -556,34 +556,34 @@ section explains the shape of it first.
 What a class gives, and what stays when the unit leaves it.
 
 1. **Level does not reset.** Promotion costs nothing. Certify as soon as an
-   exam passes, unless the unit is staying to finish a mastery [6].
+   exam passes, unless the unit is staying to finish a mastery [[6]](#ref-6).
 2. **A pass is permanent.** A passed exam is never retaken. Switch between any
    passed class from the Inventory menu before a battle or at the start of a
-   week [37][41].
+   week [[37]](#ref-37)[[41]](#ref-41).
 3. **A class raises low stats.** Any stat below the new class's base is raised
-   to that base [6][37]. The class also grants stat modifiers, and those last
-   only while the unit is in the class [37].
+   to that base [[6]](#ref-6)[[37]](#ref-37). The class also grants stat modifiers, and those last
+   only while the unit is in the class [[37]](#ref-37).
 4. **Almost every class can use almost every weapon.** Two exceptions only.
    Gauntlets cannot be used on a horse or a flier. Reason and Faith magic only
-   work in a magic class [37].
-5. **Abilities come in three kinds** [8]:
+   work in a magic class [[37]](#ref-37).
+5. **Abilities come in three kinds** [[8]](#ref-8):
    - **1 personal ability.** Fixed to the character.
    - **3 class abilities.** Active only while in that class.
    - **5 equipped abilities.** Chosen freely outside battle, from anything the
      unit has learned.
 
    A unit also equips up to 3 combat arts. Class arts do not count against
-   that limit [9].
+   that limit [[9]](#ref-9).
 
 > [!NOTE]
 > Two sources disagree on when the stat raise applies. One says on passing the
-> exam [6]. The other says on changing into the class [37]. Neither says
+> exam [[6]](#ref-6). The other says on changing into the class [[37]](#ref-37). Neither says
 > whether the raised value stays after the unit leaves the class.
 
 ### How an exam works
 
 The steps and costs of a class exam. Take exams from the Certification option
-on the calendar screen [6].
+on the calendar screen [[6]](#ref-6).
 
 | Tier | From level | Item needed |
 | --- | --- | --- |
@@ -594,18 +594,18 @@ on the calendar screen [6].
 | Master | 30 | Master Seal, **and professor level C or higher** |
 
 - The exam screen shows a success rate and the suggested skill levels. The
-  closer the unit's skills are to the suggestion, the higher the rate [6].
-- Below 30% the game refuses the attempt [6].
-- **The seal is used up whether the exam passes or fails** [7].
-- Each unit may attempt one exam per week [41].
+  closer the unit's skills are to the suggestion, the higher the rate [[6]](#ref-6).
+- Below 30% the game refuses the attempt [[6]](#ref-6).
+- **The seal is used up whether the exam passes or fails** [[7]](#ref-7).
+- Each unit may attempt one exam per week [[41]](#ref-41).
 
 Abyssian Exam Passes come from the Pagan Altar in Abyss for 750 renown each,
-without limit [21]. Each of the four Ashen Wolves arrives carrying one [22].
+without limit [[21]](#ref-21). Each of the four Ashen Wolves arrives carrying one [[22]](#ref-22).
 
 ### Class mastery
 
 How mastery works and what it costs. One combat gives one mastery point, even
-when the unit did not start the combat [5].
+when the unit did not start the combat [[5]](#ref-5).
 
 | Class tier | Combats to master |
 | --- | --- |
@@ -615,18 +615,18 @@ when the unit did not start the combat [5].
 | Advanced and Special | 150 |
 | Master | 200 |
 
-- The Cethleann statue reward at 2,000 renown adds +1 per combat [40].
+- The Cethleann statue reward at 2,000 renown adds +1 per combat [[40]](#ref-40).
 - The Knowledge Gem or the Mastermind ability doubles it. Both together triple
-  it, not quadruple it [5].
-- **Mastery abilities can be equipped in any class** [5].
+  it, not quadruple it [[5]](#ref-5).
+- **Mastery abilities can be equipped in any class** [[5]](#ref-5).
 - **Mastery combat arts from Beginner and Intermediate classes carry over.**
   Those from Advanced classes and above stay locked to that class. Hunter's
-  Volley, for example, works only as a Sniper [5].
+  Volley, for example, works only as a Sniper [[5]](#ref-5).
 
 ### Masteries worth planning
 
 Most masteries are minor. These are the ones players build towards, because the
-ability outlives the class it came from [5][51].
+ability outlives the class it came from [[5]](#ref-5)[[51]](#ref-51).
 
 | Class | Tier | Mastery reward |
 | --- | --- | --- |
@@ -644,7 +644,7 @@ ability outlives the class it came from [5][51].
 > [!CAUTION]
 > Written guides tell every physical unit to master Brigand for Death Blow, and
 > every unit to pick up Hit +20. **That advice is written for Maddening.** A
-> long-time Hard player calls both close to redundant on Hard [51]. On Hard,
+> long-time Hard player calls both close to redundant on Hard [[51]](#ref-51). On Hard,
 > units fight on the enemy phase often, where Death Blow does nothing, and hit
 > rates are already fine. Treat Death Blow as optional on Hard. This guide
 > follows the Hard-specific account, because the guide-site claim assumes a
@@ -661,56 +661,56 @@ requires much of it.
 ### How battalions work
 
 A battalion is a squad attached to one unit. It grants flat stats and a gambit,
-and it takes damage on that unit's behalf [11].
+and it takes damage on that unit's behalf [[11]](#ref-11).
 
 - **Getting one.** Hire battalions with gold at the Battalion Guild, or earn
-  them from paralogues and quests [11]. Hire and dismiss them at the guild or
-  on the battle preparation screen [45].
+  them from paralogues and quests [[11]](#ref-11). Hire and dismiss them at the guild or
+  on the battle preparation screen [[45]](#ref-45).
 - **Equipping.** A unit may equip a battalion at or below its Authority rank
-  [11].
+  [[11]](#ref-11).
 - **Movement type.** Infantry, armoured and cavalry units may take any
-  battalion. Fliers take flying battalions only [11][42].
+  battalion. Fliers take flying battalions only [[11]](#ref-11)[[42]](#ref-42).
 - **Stats.** A battalion adds flat attack, hit, critical, avoid, protection,
-  resilience and charm. It levels from 1 to 5, and the bonuses grow [11]. The
-  experience belongs to the battalion [42][45].
+  resilience and charm. It levels from 1 to 5, and the bonuses grow [[11]](#ref-11). The
+  experience belongs to the battalion [[42]](#ref-42)[[45]](#ref-45).
 - **Endurance.** A battalion absorbs **half** the damage its unit takes. At 0
-  endurance the unit loses both the stat bonus and the gambit [11].
+  endurance the unit loses both the stat bonus and the gambit [[11]](#ref-11).
 - **Repair.** Endurance does **not** refill after a battle. Replenish it at the
-  guild or on the preparation screen, which costs little gold [11][45]. A
-  battalion at 0 is never lost [11].
+  guild or on the preparation screen, which costs little gold [[11]](#ref-11)[[45]](#ref-45). A
+  battalion at 0 is never lost [[11]](#ref-11).
 
 > [!NOTE]
 > One guide site says flying battalions cannot be equipped by any non-flying
-> class [45]. Two wikis say ground units may equip any battalion [11][42]. This
+> class [[45]](#ref-45). Two wikis say ground units may equip any battalion [[11]](#ref-11)[[42]](#ref-42). This
 > guide follows the wikis.
 
 > [!TIP]
 > Train Authority on everybody, and aim for about B by the timeskip. Players
 > rate a strong battalion as roughly +10 damage, which is more than many
-> level-ups give [51]. Sort the battalion list by attack and take the best one
+> level-ups give [[51]](#ref-51). Sort the battalion list by attack and take the best one
 > each unit can hold.
 
 ### Gambits
 
 A gambit is the battalion's special attack. Each has a limited number of uses
 per battle. Uses refill at the end of the map, and replenishing a battalion
-also restores them [12][45].
+also restores them [[12]](#ref-12)[[45]](#ref-45).
 
 - A gambit can never be counterattacked, can never land a critical hit, and can
-  never double [12].
+  never double [[12]](#ref-12).
 - Accuracy runs on **Charm**, not Dexterity. The gap between the user's Charm
-  and the target's drives the hit rate, capped at ±30 [12].
+  and the target's drives the hit rate, capped at ±30 [[12]](#ref-12).
 - A hit applies *rattled*. The target cannot move, loses its battalion bonus,
-  and cannot use a gambit [12].
+  and cannot use a gambit [[12]](#ref-12).
 - A gambit only kills its primary target. Others in the area survive at 1 HP
-  [12].
+  [[12]](#ref-12).
 - **Gambit Boost.** Allies who could also attack the target add attack and hit,
   scaled by their support rank with the user. Up to three allies plus an
   adjutant count. A pair with no support conversations at all adds nothing
-  [12].
+  [[12]](#ref-12).
 
 Players repeatedly name the same utility gambits as the ones that solve maps:
-Stride, Impregnable Wall, Retribution, Blessing and Dance of the Goddess [51].
+Stride, Impregnable Wall, Retribution, Blessing and Dance of the Goddess [[51]](#ref-51).
 The movement and defence gambits matter more than the offensive ones.
 
 ---
@@ -723,17 +723,17 @@ matter mechanically.
 ### Adjutants
 
 An adjutant is an undeployed unit attached to a deployed unit on the deployment
-screen. It rides along, trains, and helps in combat [13].
+screen. It rides along, trains, and helps in combat [[13]](#ref-13).
 
-- **Slots by professor level:** 1 at C, 2 at B, 3 at A [1][13].
+- **Slots by professor level:** 1 at C, 2 at B, 3 at A [[1]](#ref-1)[[13]](#ref-13).
 - **What the adjutant gains:** 50% of the host's level experience, all skill
   experience except Authority, all class mastery experience, and support
-  points with the host [13][14].
+  points with the host [[13]](#ref-13)[[14]](#ref-14).
 - **Limits:** a flying host may only take a flying adjutant. An adjutant gives
-  no stat bonus to the host. There is no swap mid-battle [13].
-- **If the host falls,** the adjutant leaves the field unharmed [13].
+  no stat bonus to the host. There is no swap mid-battle [[13]](#ref-13).
+- **If the host falls,** the adjutant leaves the field unharmed [[13]](#ref-13).
 
-The adjutant's own class decides which of three behaviours it gives [13].
+The adjutant's own class decides which of three behaviours it gives [[13]](#ref-13).
 
 | Behaviour | Classes | Effect | None / C / B / A / S |
 | --- | --- | --- | --- |
@@ -744,41 +744,41 @@ The adjutant's own class decides which of three behaviours it gives [13].
 > [!WARNING]
 > Because of a bug, the C+, B+ and A+ support ranks count as **no support** for
 > Adjutant Follow-Up, giving only 10%. The bug was fixed in version 1.1.0 and
-> came back in 1.2.0 [13]. Plan around full ranks.
+> came back in 1.2.0 [[13]](#ref-13). Plan around full ranks.
 
 ### Supports
 
 A support is the bond between two units. It feeds adjutants, gambit boosts,
-Linked Attacks and recruiting [14].
+Linked Attacks and recruiting [[14]](#ref-14).
 
 - **Ranks** run C, C+, B, B+, A, A+, S. The point thresholds are the same for
-  every pair. Only Byleth can reach S [14].
+  every pair. Only Byleth can reach S [[14]](#ref-14).
 - **Points stop** just before any support whose conversation has not been
-  watched. Watch conversations as they appear, or the points are wasted [14].
+  watched. Watch conversations as they appear, or the points are wasted [[14]](#ref-14).
 - **In battle,** a Linked Attack, a Gambit Boost, white magic on an ally and
-  finishing a map all give points [14].
+  finishing a map all give points [[14]](#ref-14).
 - **Out of battle,** meals, tea, gifts, lost items and choir give points with
-  Byleth [14].
+  Byleth [[14]](#ref-14).
 - **Some supports lock** with story progress or route. Rhea's supports, for
-  example, cannot advance after Part 1 [14].
+  example, cannot advance after Part 1 [[14]](#ref-14).
 
 ---
 
 ## Recruiting students
 
 From Chapter 2, students from the other two houses and the faculty can join
-Byleth's house [25]. This is how a roster gap gets fixed. Recruited students
+Byleth's house [[25]](#ref-25). This is how a roster gap gets fixed. Recruited students
 arrive at a level that scales with the chapter, with certifications for preset
-classes [25].
+classes [[25]](#ref-25).
 
 ### How the check works
 
 What a student asks of Byleth, and how support lowers it. A student needs **one
 stat value and one skill rank** from Byleth. A faculty member needs only a
 character level. Failing, or declining their offer, locks the option until the
-next weekend [36].
+next weekend [[36]](#ref-36).
 
-Support rank with Byleth lowers both requirements [36].
+Support rank with Byleth lowers both requirements [[36]](#ref-36).
 
 | Support | Skill rank D → | C → | B → | B+ → |
 | --- | --- | --- | --- | --- |
@@ -801,22 +801,22 @@ Support rank with Byleth lowers both requirements [36].
 > [!TIP]
 > **The shortcut that skips all of this.** At B support or higher, a student
 > may ask to join on any free weekday. That offer ignores the stat and skill
-> requirements completely [36]. Build supports through meals, gifts, lost
+> requirements completely [[36]](#ref-36). Build supports through meals, gifts, lost
 > items and tea, and most of the roster recruits itself. The offer is random,
 > so a week may bring none or several.
 
 > [!WARNING]
 > The shortcut does not work for **Caspar or Ferdinand**. Neither can reach B
-> support during Part 1 [36].
+> support during Part 1 [[36]](#ref-36).
 
 > [!NOTE]
 > Stat boosts from a class do **not** count towards the requirement, and
-> neither do stat-boosting abilities [36]. If a check fails when it should
+> neither do stat-boosting abilities [[36]](#ref-36). If a check fails when it should
 > pass, change Byleth to Commoner or Noble and try again.
 
 ### Requirements table
 
-The stat and skill each student asks of Byleth, at no support [36]. Apply the
+The stat and skill each student asks of Byleth, at no support [[36]](#ref-36). Apply the
 discounts above for an existing support rank.
 
 | Character | House | From chapter | Needs |
@@ -856,29 +856,29 @@ Byleth, and few instructors teach it.
 > [!NOTE]
 > A Black Eagles player cannot recruit Hilda, Catherine or Cyril before
 > Chapter 12, and only after siding with the Church. Catherine, Cyril and
-> Shamir then join automatically [25][36]. None of the three can join on
+> Shamir then join automatically [[25]](#ref-25)[[36]](#ref-36). None of the three can join on
 > Crimson Flower.
 
 ### Who leaves or cannot join
 
 Characters the player cannot have, and characters who leave at the timeskip
-depending on route [25][26][29].
+depending on route [[25]](#ref-25)[[26]](#ref-26)[[29]](#ref-29).
 
 - **Never recruitable:** Edelgard, Hubert, Dimitri, Dedue and Claude.
 - **Recruiting closes** at the end of Chapter 12 on Silver Snow, Azure Moon and
-  Verdant Wind, and at the end of Chapter 11 on Crimson Flower [25][26].
+  Verdant Wind, and at the end of Chapter 11 on Crimson Flower [[25]](#ref-25)[[26]](#ref-26).
 - **Siding with the Church** (Silver Snow) loses Edelgard and Hubert
-  permanently [26].
+  permanently [[26]](#ref-26).
 - **Crimson Flower** loses Flayn at the end of Chapter 11, and Seteth never
-  joins [26].
+  joins [[26]](#ref-26).
 - **Dedue** leaves at the end of Part 1. He returns in Azure Moon Chapter 16
   only if his paralogue, *War for the Weak*, was cleared. It is open from
-  Chapter 6 to Chapter 11 [28].
+  Chapter 6 to Chapter 11 [[28]](#ref-28).
 - **Ashe** deserts after Chapter 12 on Silver Snow and Verdant Wind. If he was
   recruited in Part 1, defeat him in Chapter 15 and choose "Persuade" to bring
-  him back [29].
+  him back [[29]](#ref-29).
 - **Lorenz** deserts after Chapter 12 on Silver Snow and Azure Moon. If he was
-  recruited in Part 1, defeat him in Chapter 16 and choose "Persuade" [29].
+  recruited in Part 1, defeat him in Chapter 16 and choose "Persuade" [[29]](#ref-29).
 
 ### Expansion Pass recruits
 
@@ -886,7 +886,7 @@ The Ashen Wolves and Anna come with the Expansion Pass. Jeritza comes with a
 free update.
 
 **The Ashen Wolves.** Each one unlocks after a different chapter of the
-*Cindered Shadows* side story [22].
+*Cindered Shadows* side story [[22]](#ref-22).
 
 | Wolf | Unlocked by clearing *Cindered Shadows* chapter |
 | --- | --- |
@@ -896,33 +896,33 @@ free update.
 | Yuri | 6 |
 
 - Talk to them at the monastery. No stat, skill or support requirement applies
-  [22][46].
-- They can join from main-story Chapter 2 until the end of Part 1 only [46].
+  [[22]](#ref-22)[[46]](#ref-46).
+- They can join from main-story Chapter 2 until the end of Part 1 only [[46]](#ref-46).
 - They join at level 3 in Chapter 2, plus 2 levels per chapter. Level 11 in
-  Chapter 6, level 23 in Chapter 12 [23].
+  Chapter 6, level 23 in Chapter 12 [[23]](#ref-23).
 - Their starting class also changes with the chapter. In Chapter 2 they join as
   Commoner or Noble. From Chapter 3 Balthus joins as a Fighter and Constance
   and Hapi as Monks, with free D ranks. So waiting one chapter helps those
-  three [23][25].
+  three [[23]](#ref-23)[[25]](#ref-25).
 
 > [!CAUTION]
-> Players describe *Cindered Shadows* as harder than the main game [51]. Chapter
+> Players describe *Cindered Shadows* as harder than the main game [[51]](#ref-51). Chapter
 > 1 only opens the Abyss. The Wolves need later chapters, so budget for the
-> side story's harder maps [22].
+> side story's harder maps [[22]](#ref-22).
 
 **Anna.** Talk to her at the marketplace from Chapter 3. She joins at level 5
-as a Myrmidon, with no requirements [24]. One source says she can also be
-recruited in Part 2 [47].
+as a Myrmidon, with no requirements [[24]](#ref-24). One source says she can also be
+recruited in Part 2 [[47]](#ref-47).
 
 **Jeritza.** Crimson Flower only. He joins automatically at the start of
 Chapter 13 as a level 27 Death Knight. He came with free update 1.1.0, so no
-Expansion Pass is needed [22].
+Expansion Pass is needed [[22]](#ref-22).
 
 ---
 
 ## Common mistakes
 
-The failures players name most often [51]. When something feels wrong mid-run,
+The failures players name most often [[51]](#ref-51). When something feels wrong mid-run,
 check this list before anything else.
 
 1. **Splitting up the army.** The most reported cause of a lost unit is one
@@ -932,7 +932,7 @@ check this list before anything else.
 3. **Not using the Dancer.** Giving the best unit a second action every turn is
    usually worth more than anything the Dancer could do alone.
 4. **Letting motivation collapse.** A unit that starts the week at 50 or less
-   can get "Bad" instruction results at half value [2]. Spend a Rest day, or
+   can get "Bad" instruction results at half value [[2]](#ref-2). Spend a Rest day, or
    serve more meals.
 5. **Spreading skill training too thin.** Pick the two skills the target class
    needs. Everything else is waste.
@@ -941,7 +941,7 @@ check this list before anything else.
 7. **Training too many units.** About 10 units deploy on most Part 1 maps. See
    [Deployment slots](#deployment-slots).
 8. **Leaving support conversations unwatched.** Points stop at the next
-   unwatched conversation [14].
+   unwatched conversation [[14]](#ref-14).
 9. **Following Maddening advice.** Maddening guides assume a unit never fights
    on the enemy phase and rarely doubles. Neither assumption holds on Hard.
 
@@ -953,16 +953,16 @@ The one-way content in the game. Nothing here ruins a run, but each is easier
 to catch than to regret.
 
 - **Recruiting** closes at the end of Chapter 12, or Chapter 11 on Crimson
-  Flower [25][26]. Settle the roster before then. The Ashen Wolves close at
-  the end of Part 1 too [46].
+  Flower [[25]](#ref-25)[[26]](#ref-26). Settle the roster before then. The Ashen Wolves close at
+  the end of Part 1 too [[46]](#ref-46).
 - **The Dancer.** The White Heron Cup is in Chapter 9, Ethereal Moon. Pick the
   entrant by the end of the second week. Winning takes **13 Charm**. Talking
   to the entrant starts a practice worth a permanent **+5 Charm**, once, at no
-  activity point cost [27][44][48]. Losing the cup means no Dancer for the
-  whole run [44].
+  activity point cost [[27]](#ref-27)[[44]](#ref-44)[[48]](#ref-48). Losing the cup means no Dancer for the
+  whole run [[44]](#ref-44).
 - **Part 1 paralogues** close after Chapter 11, except *Dividing the World*
-  [26]. Dedue's return depends on one of them [28].
-- **The Black Eagles route split** happens in Chapter 11, Pegasus Moon [26].
+  [[26]](#ref-26). Dedue's return depends on one of them [[28]](#ref-28).
+- **The Black Eagles route split** happens in Chapter 11, Pegasus Moon [[26]](#ref-26).
   1. Reach **C+ support** with Edelgard.
   2. Talk to her that month and accept the trip to Enbarr. The trip skips the
      next instruction day, so taking it on the 22nd costs nothing.
@@ -971,12 +971,12 @@ to catch than to regret.
   Refusing the trip, lacking the support, or not talking to her that month
   locks the run into Silver Snow.
 - **Crimson Flower church battalions** can only be bought until Chapter 11
-  [26].
-- **Lost items** spawn monthly from Chapter 3 [3]. Pick them up while passing.
+  [[26]](#ref-26).
+- **Lost items** spawn monthly from Chapter 3 [[3]](#ref-3). Pick them up while passing.
   They can be returned at any later point.
 - **The Sacred Items Set** sits on Byleth's bed with the Expansion Pass. It
   gives +7 HP, +3 Strength, +3 Speed and +2 Movement, once per playthrough
-  [22].
+  [[22]](#ref-22).
 
 ---
 
@@ -987,11 +987,11 @@ They are guidelines, not requirements.
 
 | Check | Target |
 | --- | --- |
-| Professor level | C by roughly Chapter 5 or 6. That unlocks adjutants, 5 activity points, 5,000 gold a month and Master class exams [1] |
-| Renown spending | The four Experience +5% rewards bought (4,000 renown), then the Divine Pulse charges [40] |
+| Professor level | C by roughly Chapter 5 or 6. That unlocks adjutants, 5 activity points, 5,000 gold a month and Master class exams [[1]](#ref-1) |
+| Renown spending | The four Experience +5% rewards bought (4,000 renown), then the Divine Pulse charges [[40]](#ref-40) |
 | Roster size | Settled on 10 to 12 trained units by about Chapter 8 |
-| Authority | Around B on most units by the timeskip [51] |
-| Divine Pulse | 13 charges by late game on Hard [15] |
+| Authority | Around B on most units by the timeskip [[51]](#ref-51) |
+| Divine Pulse | 13 charges by late game on Hard [[15]](#ref-15) |
 | Skill planning | Each trained unit has two named skills and a named target class |
 
 ---
@@ -1005,7 +1005,7 @@ character's role is in [Character reference](#character-reference).
 ### Deployment slots
 
 How many units can deploy, including forced units such as Byleth. **Difficulty
-never changes the count** [30].
+never changes the count** [[30]](#ref-30).
 
 | Chapters | Slots |
 | --- | --- |
@@ -1017,9 +1017,9 @@ never changes the count** [30].
 | 13–17 | 9 to 11 |
 | 18 to the end | 10 to 12. Every route's final map allows 12 |
 
-Figures from [30]. On the routes that share maps, Silver Snow allows one unit
+Figures from [[30]](#ref-30). On the routes that share maps, Silver Snow allows one unit
 fewer than Azure Moon and Verdant Wind, because it has no house leader.
-Adjutants add up to three more units without a slot [13].
+Adjutants add up to three more units without a slot [[13]](#ref-13).
 
 Train **about 10 to 12** units seriously and bench the rest. Experience is
 scarcer on Hard, so twenty half-built units is worse than eleven finished ones.
@@ -1035,10 +1035,10 @@ both flier and physical damage.
 | **Tank** | 1 to 2 | Stands in the open on the enemy phase and kills what attacks it. Wants high Defence or high Avoid, plus Vantage or Wrath. Usually a heavy armour class |
 | **Physical damage** | 3 to 4 | Kills one target on the player phase. Wants combat arts and "blow" abilities |
 | **Magic damage** | 2 | Kills armoured enemies, which have low Resistance. Reason magic |
-| **Archer** | 1 | Attacks from range 2 and deals bonus damage to fliers [20] |
+| **Archer** | 1 | Attacks from range 2 and deals bonus damage to fliers [[20]](#ref-20) |
 | **Healer** | 2 | Faith magic. At least one with Physic for range. A Bishop doubles white magic uses |
 | **Flier** | 1 to 2 | Ignores terrain and carries the map. Pegasus and wyvern classes |
-| **Dancer** | 1 | Gives one ally an extra turn. Only one per playthrough [27] |
+| **Dancer** | 1 | Gives one ally an extra turn. Only one per playthrough [[27]](#ref-27) |
 
 Cavalry classes, such as Paladin or Bow Knight, add **Canto**: the unit can
 move again after acting. Flying classes add Canto and also ignore terrain.
@@ -1047,19 +1047,19 @@ more than raw stats do.
 
 > [!IMPORTANT]
 > Take the Dancer seriously. Players report that new players skip it and then
-> find maps slow [51]. The Dancer can be any student of the player's own house
+> find maps slow [[51]](#ref-51). The Dancer can be any student of the player's own house
 > with enough Charm. See [Windows that close](#windows-that-close).
 
 ### Real constraints
 
 The only hard limits on team building.
 
-- Fliers may equip **flying battalions only** [11].
-- Gauntlets do not work on a horse or a flier [37].
-- Reason and Faith magic work only in magic classes [37].
+- Fliers may equip **flying battalions only** [[11]](#ref-11).
+- Gauntlets do not work on a horse or a flier [[37]](#ref-37).
+- Reason and Faith magic work only in magic classes [[37]](#ref-37).
 - Several classes are gender-locked. Male only: Brawler, Dark Mage, Hero,
   Grappler, Dark Bishop, War Master, War Monk. Female only: Pegasus Knight,
-  Falcon Knight, Gremory, Dark Flier, Valkyrie, War Cleric [38].
+  Falcon Knight, Gremory, Dark Flier, Valkyrie, War Cleric [[38]](#ref-38).
 
 ---
 
@@ -1072,9 +1072,9 @@ the team role those classes point to.
 - A **budding talent** starts neutral or weak and becomes a strength once
   unlocked, which also grants an ability or combat art. Unlock it with twelve
   instructions in that skill. The first star appears at four. Byleth is the
-  exception: six faculty training sessions, one star every two [2][35].
+  exception: six faculty training sessions, one star every two [[2]](#ref-2)[[35]](#ref-35).
 - **Game suggests** lists the default study goal and the classes each
-  character asks for in their goal-change requests [2]. That is the closest
+  character asks for in their goal-change requests [[2]](#ref-2). That is the closest
   thing the game has to an intended class, and a safe first answer when unsure.
 - **Role** uses the roles in [Roles to cover](#roles-to-cover). It reads the
   suggested classes: a heavy armour suggestion means Tank, a flying class means
@@ -1121,7 +1121,7 @@ Dimitri's house. Physical and lance-heavy, with two dedicated magic users.
 ### Golden Deer
 
 Claude's house. The most mixed roster. Every Golden Deer student stays on the
-Verdant Wind route [29].
+Verdant Wind route [[29]](#ref-29).
 
 | Character | Strong | Weak | Budding talent | Game suggests | Role |
 | --- | --- | --- | --- | --- | --- |
@@ -1181,7 +1181,7 @@ The Ashen Wolves, Anna and Jeritza. See
 Every certifiable class, with the skill levels the exam suggests and the team
 role the class fills. The classes unique to one character are in
 [Unique classes](#unique-classes). Suggested levels are not strict minimums. A unit can pass
-below them at a lower success rate, but not below 30% [6][38].
+below them at a lower success rate, but not below 30% [[6]](#ref-6)[[38]](#ref-38).
 
 ### Beginner classes
 
@@ -1255,7 +1255,7 @@ higher. These are the end-state classes for most of the roster.
 ### Special classes
 
 Expansion Pass classes. Available from level 20 with an Abyssian Exam Pass
-[21].
+[[21]](#ref-21).
 
 | Class | Suggested | Proficient in | Mastery | Role |
 | --- | --- | --- | --- | --- |
@@ -1266,21 +1266,21 @@ Expansion Pass classes. Available from level 20 with an Abyssian Exam Pass
 
 > [!WARNING]
 > One class page lists the Dark Flier's class abilities as "Fistfaire, Unarmed
-> Combat, Heal" [38]. That is the War Monk row repeated. The Dark Flier page
-> gives Canto, Black Tomefaire and Transmute [21]. This guide follows the Dark
+> Combat, Heal" [[38]](#ref-38). That is the War Monk row repeated. The Dark Flier page
+> gives Canto, Black Tomefaire and Transmute [[21]](#ref-21). This guide follows the Dark
 > Flier page.
 
 ### Unique classes
 
 Classes that belong to one character each. Apart from Lord, none of them has an
-exam or needs a seal. The story grants them at fixed points [6][33].
+exam or needs a seal. The story grants them at fixed points [[6]](#ref-6)[[33]](#ref-33).
 
 - **The Part 2 lord classes appear only on that lord's own route.** On other
-  routes the lord is an enemy or leaves the army [33].
-- **Each class joins the unit's passed classes** [6]. It gives stats and
+  routes the lord is an enemy or leaves the army [[33]](#ref-33).
+- **Each class joins the unit's passed classes** [[6]](#ref-6). It gives stats and
   abilities like any other class while the unit is in it.
 - **Mastery works as usual.** The Part 2 advanced lord classes take 150
-  combats to master, and the master-tier ones take 200 [33].
+  combats to master, and the master-tier ones take 200 [[33]](#ref-33).
 
 | Class | Who | Granted | Proficient in | Innate abilities | Mastery | Role |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1295,25 +1295,25 @@ exam or needs a seal. The story grants them at fixed points [6][33].
 | Death Knight | Jeritza | His class when he joins, Crimson Flower only | Lance, Reason, Riding | Canto, Lancefaire | Counterattack | Physical and magic damage (cavalry) |
 | Dancer | The White Heron Cup winner | Winning the cup in Chapter 9 | — | Sword Avoid +20, Sword Dance | — | Dancer |
 
-Sources: [33] for every row except Dancer, which comes from [27][31].
+Sources: [[33]](#ref-33) for every row except Dancer, which comes from [[27]](#ref-27)[[31]](#ref-31).
 
 **How the lord classes play.** Each one gives +2 Charm while the unit is in
-it, which helps gambit accuracy [6].
+it, which helps gambit accuracy [[6]](#ref-6).
 
 - **Armored Lord and Emperor** are armoured classes. The Emperor gives +8
   Defence and −4 Speed. The Armored Lord page lists a weakness to
-  armour-effective weapons [33].
+  armour-effective weapons [[33]](#ref-33).
 - **High Lord and Great Lord** are infantry with no weakness. The Great Lord
-  gives +4 Speed and +2 Movement [33].
+  gives +4 Speed and +2 Movement [[33]](#ref-33).
 - **Wyvern Master and Barbarossa** are fliers with Canto. They take bonus
-  damage from bows. The Barbarossa gives +4 Movement when mounted [33].
+  damage from bows. The Barbarossa gives +4 Movement when mounted [[33]](#ref-33).
 - **Enlightened One** has no weakness to any weapon type. It is the only class
-  with four proficiencies, and it can use both brawling and magic [33].
+  with four proficiencies, and it can use both brawling and magic [[33]](#ref-33).
 
 > [!NOTE]
 > Players report that a lord can switch to another passed class and back to
 > the unique class freely. No data source states this directly. The wiki says
-> only that the lords "gain access" to their classes [6].
+> only that the lords "gain access" to their classes [[6]](#ref-6).
 
 ---
 
@@ -1325,23 +1325,23 @@ and which characters the player cannot have.
 
 | House | Leader | Roster | Notes |
 | --- | --- | --- | --- |
-| Black Eagles | Edelgard | Magic-heavy | The only house with a route split. Fewer paralogues and fewer recruitable characters than the other two [52] |
-| Blue Lions | Dimitri | Physical, lance and cavalry | The most commonly recommended first route [52] |
-| Golden Deer | Claude | Mixed, bow-leaning | Every Golden Deer student stays on Verdant Wind [29] |
+| Black Eagles | Edelgard | Magic-heavy | The only house with a route split. Fewer paralogues and fewer recruitable characters than the other two [[52]](#ref-52) |
+| Blue Lions | Dimitri | Physical, lance and cavalry | The most commonly recommended first route [[52]](#ref-52) |
+| Golden Deer | Claude | Mixed, bow-leaning | Every Golden Deer student stays on Verdant Wind [[29]](#ref-29) |
 
 Blue Lions or Golden Deer suit a first Hard run. The Black Eagles roster leans
 on magic, which makes the early chapters harder. Its route split also adds a
-decision that is hard to judge on a blind playthrough [52].
+decision that is hard to judge on a blind playthrough [[52]](#ref-52).
 
 > [!NOTE]
 > The house choice does not lock out most characters. Every student except
 > Edelgard, Hubert, Dimitri, Dedue and Claude can join any house, and the
-> B-support shortcut makes that easy [36]. Pick the house for its leader and
+> B-support shortcut makes that easy [[36]](#ref-36). Pick the house for its leader and
 > story, not for statistics.
 
 > [!IMPORTANT]
 > On Black Eagles, the route split needs C+ support with Edelgard and a
-> conversation with her in Chapter 11 [26]. Missing it gives Silver Snow with
+> conversation with her in Chapter 11 [[26]](#ref-26). Missing it gives Silver Snow with
 > no warning. See [Windows that close](#windows-that-close).
 
 ---
@@ -1358,104 +1358,104 @@ Points where the sources conflict, and which one this guide follows.
 
 | Subject | Disagreement | This guide follows |
 | --- | --- | --- |
-| Death Blow and Hit +20 | Guide sites call them near-mandatory. A long-time Hard player calls both close to redundant on Hard [51] | The Hard-specific account. The guide-site claim assumes Maddening |
-| Weekly goal experience | One table lists 28 neutral and 32 strength [34] | Those are Normal values. Hard is 24 and 28 [2] |
-| Auxiliary battle cost on Hard | "Activity point" [4][19] against battle points [1] | Battle points. The effect is the same: nothing about fighting is free |
-| Tea Party and Sauna cost | The monastery page's summary list omits them. Its own sections give one point each [3] | The specific sections |
-| Flying battalions on ground units | Not allowed [45] against allowed [11][42] | Allowed, following both wikis |
-| When a class raises low stats | On passing the exam [6] against on changing class [37] | Neither. The guide states both |
-| Dark Flier abilities | The class detail page repeats the War Monk row [38] | The Dark Flier page: Canto, Black Tomefaire, Transmute [21] |
+| Death Blow and Hit +20 | Guide sites call them near-mandatory. A long-time Hard player calls both close to redundant on Hard [[51]](#ref-51) | The Hard-specific account. The guide-site claim assumes Maddening |
+| Weekly goal experience | One table lists 28 neutral and 32 strength [[34]](#ref-34) | Those are Normal values. Hard is 24 and 28 [[2]](#ref-2) |
+| Auxiliary battle cost on Hard | "Activity point" [[4]](#ref-4)[[19]](#ref-19) against battle points [[1]](#ref-1) | Battle points. The effect is the same: nothing about fighting is free |
+| Tea Party and Sauna cost | The monastery page's summary list omits them. Its own sections give one point each [[3]](#ref-3) | The specific sections |
+| Flying battalions on ground units | Not allowed [[45]](#ref-45) against allowed [[11]](#ref-11)[[42]](#ref-42) | Allowed, following both wikis |
+| When a class raises low stats | On passing the exam [[6]](#ref-6) against on changing class [[37]](#ref-37) | Neither. The guide states both |
+| Dark Flier abilities | The class detail page repeats the War Monk row [[38]](#ref-38) | The Dark Flier page: Canto, Black Tomefaire, Transmute [[21]](#ref-21) |
 
 ### Not verified
 
 Claims that rest on a single source or on implication. Treat them as likely
 rather than confirmed.
 
-- **Motivation carries between weeks.** Implied by [2], not stated.
+- **Motivation carries between weeks.** Implied by [[2]](#ref-2), not stated.
 - **Skill levels, supports and professor level never drop.** No source
   describes a loss, and none states outright that there is none.
 - **Whether a battalion can move freely between units,** and whether it
   survives a class change into a flying class. No source states either.
 - **Whether a raised base stat stays after leaving the class.**
 - **The weight part of the Attack Speed formula.** The threshold of 4 is
-  confirmed [32]. The weight penalty comes from the earlier version of this
+  confirmed [[32]](#ref-32). The weight penalty comes from the earlier version of this
   guide and was not re-checked.
 - **Switching a lord out of a unique class and back.** Player reports only.
-- **Anna in Part 2.** One source only [47].
-- **Classic or Casual cannot be changed.** One source only [50].
+- **Anna in Part 2.** One source only [[47]](#ref-47).
+- **Classic or Casual cannot be changed.** One source only [[50]](#ref-50).
 
 <details open>
 <summary><strong>Fire Emblem Wiki</strong> — game data, read as raw wikitext</summary>
 
-1. [Professor level](https://fireemblemwiki.org/wiki/Professor_level?action=raw) — point pools, experience thresholds and per-activity experience
-2. [Lesson](https://fireemblemwiki.org/wiki/Lesson?action=raw) — instruction, motivation, goals by difficulty, group tasks, seminars, budding talents, and the goal-change request table behind every "Game suggests" entry
-3. [Garreg Mach Monastery](https://fireemblemwiki.org/wiki/Garreg_Mach_Monastery?action=raw) — free-day options, activity costs, gifts and the Owl Feather, lost items, sauna
-4. [Skirmish](https://fireemblemwiki.org/wiki/Skirmish?action=raw) — auxiliary battle cost by difficulty
-5. [Class mastery](https://fireemblemwiki.org/wiki/Class_mastery?action=raw) — combat counts, rewards, which arts carry over
-6. [Class change (Switch games)](https://fireemblemwiki.org/wiki/Class_change/Nintendo_Switch_games?action=raw) — exam tiers, success rate, base stat raise, level kept
-7. [Intermediate Seal](https://fireemblemwiki.org/wiki/Intermediate_Seal?action=raw) — seal used up on a failed exam
-8. [Skills](https://fireemblemwiki.org/wiki/Skills?action=raw) — personal, class and equipped ability slots
-9. [Combat art](https://fireemblemwiki.org/wiki/Combat_art?action=raw) — three equipped arts
-10. [Weapon level](https://fireemblemwiki.org/wiki/Weapon_level?action=raw) — skill levels, Knowledge Gem and Mastermind
-11. [Battalion](https://fireemblemwiki.org/wiki/Battalion?action=raw) — hiring, Authority gate, movement rules, endurance
-12. [Gambit](https://fireemblemwiki.org/wiki/Gambit?action=raw) — uses, hit formula, rattled, Gambit Boost
-13. [Adjutant](https://fireemblemwiki.org/wiki/Adjutant?action=raw) — slots, experience share, behaviours, the support-rank bug
-14. [Support](https://fireemblemwiki.org/wiki/Support?action=raw) — thresholds, point sources, caps and locks
-15. [Divine Pulse](https://fireemblemwiki.org/wiki/Divine_Pulse?action=raw) and [Turn rewind](https://fireemblemwiki.org/wiki/Turn_rewind?action=raw) — charge sources and maximums
-16. [Durability](https://fireemblemwiki.org/wiki/Durability?action=raw) and [Forge](https://fireemblemwiki.org/wiki/Forge?action=raw) — broken weapons, repair costs, spell refill
-17. [Tea Party](https://fireemblemwiki.org/wiki/Tea_Party?action=raw)
-18. [Crests](https://fireemblemwiki.org/wiki/Crests?action=raw)
-19. [Difficulty](https://fireemblemwiki.org/wiki/Difficulty?action=raw) — lowering difficulty, Hard experience rate
-20. [Bow](https://fireemblemwiki.org/wiki/Bow?action=raw) — bonus damage to fliers
-21. [Dark Flier](https://fireemblemwiki.org/wiki/Dark_Flier?action=raw) and [Abyssian Exam Pass](https://fireemblemwiki.org/wiki/Abyssian_Exam_Pass?action=raw)
-22. [Downloadable content in Three Houses](https://fireemblemwiki.org/wiki/Downloadable_content_in_Fire_Emblem:_Three_Houses?action=raw) — Ashen Wolves unlocks, Jeritza, Sacred Items Set
-23. Ashen Wolves stats: [Yuri](https://fireemblemwiki.org/wiki/Yuri/Stats?action=raw), [Balthus](https://fireemblemwiki.org/wiki/Balthus/Stats?action=raw), [Constance](https://fireemblemwiki.org/wiki/Constance/Stats?action=raw), [Hapi](https://fireemblemwiki.org/wiki/Hapi/Stats?action=raw) — join level and class by chapter
-24. [Anna (Three Houses)](https://fireemblemwiki.org/wiki/Anna_(Three_Houses)?action=raw)
-25. [Familiar Scenery](https://fireemblemwiki.org/wiki/Familiar_Scenery?action=raw) — Chapter 2, the recruiting window, Hilda
-26. [Throne of Knowledge](https://fireemblemwiki.org/wiki/Throne_of_Knowledge?action=raw) — Chapter 11, the route split, departures, Part 1 deadlines
-27. [The Cause of Sorrow](https://fireemblemwiki.org/wiki/The_Cause_of_Sorrow?action=raw) — Chapter 9, the White Heron Cup and the Charm practice
-28. [War for the Weak](https://fireemblemwiki.org/wiki/War_for_the_Weak?action=raw) — Dedue's paralogue
-29. [Ashe](https://fireemblemwiki.org/wiki/Ashe?action=raw) and [Lorenz](https://fireemblemwiki.org/wiki/Lorenz_(Three_Houses)?action=raw) — desertion and persuasion by route
-30. Chapter and map pages, from the [list of chapters](https://fireemblemwiki.org/wiki/List_of_chapters_in_Fire_Emblem:_Three_Houses?action=raw) — the `ally=` deployment count on each map, for example [The Magdred Ambush](https://fireemblemwiki.org/wiki/Mutiny_in_the_Mist/The_Magdred_Ambush?action=raw), [Conflict in the Holy Tomb](https://fireemblemwiki.org/wiki/Throne_of_Knowledge/Conflict_in_the_Holy_Tomb?action=raw), [The Battle of Garreg Mach](https://fireemblemwiki.org/wiki/To_War/The_Battle_of_Garreg_Mach?action=raw), [Ambush at Ailell](https://fireemblemwiki.org/wiki/Valley_of_Torment/Ambush_at_Ailell?action=raw), [Following a Dream](https://fireemblemwiki.org/wiki/Following_a_Dream/The_Final_Battle?action=raw), [Oath of the Dagger](https://fireemblemwiki.org/wiki/Oath_of_the_Dagger?action=raw) and [To the End of a Dream](https://fireemblemwiki.org/wiki/To_the_End_of_a_Dream?action=raw)
-31. [Dancer](https://fireemblemwiki.org/wiki/Dancer?action=raw)
-32. [Attack speed](https://fireemblemwiki.org/wiki/Attack_speed?action=raw) — the follow-up threshold, and which attacks cannot double
-33. Unique class pages: [Lord](https://fireemblemwiki.org/wiki/Lord?action=raw), [Enlightened One](https://fireemblemwiki.org/wiki/Enlightened_One?action=raw), [Armored Lord](https://fireemblemwiki.org/wiki/Armored_Lord?action=raw), [Emperor](https://fireemblemwiki.org/wiki/Emperor?action=raw), [High Lord](https://fireemblemwiki.org/wiki/High_Lord?action=raw), [Great Lord](https://fireemblemwiki.org/wiki/Great_Lord?action=raw), [Wyvern Master](https://fireemblemwiki.org/wiki/Wyvern_Master?action=raw), [Barbarossa](https://fireemblemwiki.org/wiki/Barbarossa?action=raw), [Death Knight](https://fireemblemwiki.org/wiki/Death_Knight_(class)?action=raw) — who gets each class, when, proficiencies, abilities and mastery
+1. <a id="ref-1"></a>[Professor level](https://fireemblemwiki.org/wiki/Professor_level?action=raw) — point pools, experience thresholds and per-activity experience
+2. <a id="ref-2"></a>[Lesson](https://fireemblemwiki.org/wiki/Lesson?action=raw) — instruction, motivation, goals by difficulty, group tasks, seminars, budding talents, and the goal-change request table behind every "Game suggests" entry
+3. <a id="ref-3"></a>[Garreg Mach Monastery](https://fireemblemwiki.org/wiki/Garreg_Mach_Monastery?action=raw) — free-day options, activity costs, gifts and the Owl Feather, lost items, sauna
+4. <a id="ref-4"></a>[Skirmish](https://fireemblemwiki.org/wiki/Skirmish?action=raw) — auxiliary battle cost by difficulty
+5. <a id="ref-5"></a>[Class mastery](https://fireemblemwiki.org/wiki/Class_mastery?action=raw) — combat counts, rewards, which arts carry over
+6. <a id="ref-6"></a>[Class change (Switch games)](https://fireemblemwiki.org/wiki/Class_change/Nintendo_Switch_games?action=raw) — exam tiers, success rate, base stat raise, level kept
+7. <a id="ref-7"></a>[Intermediate Seal](https://fireemblemwiki.org/wiki/Intermediate_Seal?action=raw) — seal used up on a failed exam
+8. <a id="ref-8"></a>[Skills](https://fireemblemwiki.org/wiki/Skills?action=raw) — personal, class and equipped ability slots
+9. <a id="ref-9"></a>[Combat art](https://fireemblemwiki.org/wiki/Combat_art?action=raw) — three equipped arts
+10. <a id="ref-10"></a>[Weapon level](https://fireemblemwiki.org/wiki/Weapon_level?action=raw) — skill levels, Knowledge Gem and Mastermind
+11. <a id="ref-11"></a>[Battalion](https://fireemblemwiki.org/wiki/Battalion?action=raw) — hiring, Authority gate, movement rules, endurance
+12. <a id="ref-12"></a>[Gambit](https://fireemblemwiki.org/wiki/Gambit?action=raw) — uses, hit formula, rattled, Gambit Boost
+13. <a id="ref-13"></a>[Adjutant](https://fireemblemwiki.org/wiki/Adjutant?action=raw) — slots, experience share, behaviours, the support-rank bug
+14. <a id="ref-14"></a>[Support](https://fireemblemwiki.org/wiki/Support?action=raw) — thresholds, point sources, caps and locks
+15. <a id="ref-15"></a>[Divine Pulse](https://fireemblemwiki.org/wiki/Divine_Pulse?action=raw) and [Turn rewind](https://fireemblemwiki.org/wiki/Turn_rewind?action=raw) — charge sources and maximums
+16. <a id="ref-16"></a>[Durability](https://fireemblemwiki.org/wiki/Durability?action=raw) and [Forge](https://fireemblemwiki.org/wiki/Forge?action=raw) — broken weapons, repair costs, spell refill
+17. <a id="ref-17"></a>[Tea Party](https://fireemblemwiki.org/wiki/Tea_Party?action=raw)
+18. <a id="ref-18"></a>[Crests](https://fireemblemwiki.org/wiki/Crests?action=raw)
+19. <a id="ref-19"></a>[Difficulty](https://fireemblemwiki.org/wiki/Difficulty?action=raw) — lowering difficulty, Hard experience rate
+20. <a id="ref-20"></a>[Bow](https://fireemblemwiki.org/wiki/Bow?action=raw) — bonus damage to fliers
+21. <a id="ref-21"></a>[Dark Flier](https://fireemblemwiki.org/wiki/Dark_Flier?action=raw) and [Abyssian Exam Pass](https://fireemblemwiki.org/wiki/Abyssian_Exam_Pass?action=raw)
+22. <a id="ref-22"></a>[Downloadable content in Three Houses](https://fireemblemwiki.org/wiki/Downloadable_content_in_Fire_Emblem:_Three_Houses?action=raw) — Ashen Wolves unlocks, Jeritza, Sacred Items Set
+23. <a id="ref-23"></a>Ashen Wolves stats: [Yuri](https://fireemblemwiki.org/wiki/Yuri/Stats?action=raw), [Balthus](https://fireemblemwiki.org/wiki/Balthus/Stats?action=raw), [Constance](https://fireemblemwiki.org/wiki/Constance/Stats?action=raw), [Hapi](https://fireemblemwiki.org/wiki/Hapi/Stats?action=raw) — join level and class by chapter
+24. <a id="ref-24"></a>[Anna (Three Houses)](https://fireemblemwiki.org/wiki/Anna_(Three_Houses)?action=raw)
+25. <a id="ref-25"></a>[Familiar Scenery](https://fireemblemwiki.org/wiki/Familiar_Scenery?action=raw) — Chapter 2, the recruiting window, Hilda
+26. <a id="ref-26"></a>[Throne of Knowledge](https://fireemblemwiki.org/wiki/Throne_of_Knowledge?action=raw) — Chapter 11, the route split, departures, Part 1 deadlines
+27. <a id="ref-27"></a>[The Cause of Sorrow](https://fireemblemwiki.org/wiki/The_Cause_of_Sorrow?action=raw) — Chapter 9, the White Heron Cup and the Charm practice
+28. <a id="ref-28"></a>[War for the Weak](https://fireemblemwiki.org/wiki/War_for_the_Weak?action=raw) — Dedue's paralogue
+29. <a id="ref-29"></a>[Ashe](https://fireemblemwiki.org/wiki/Ashe?action=raw) and [Lorenz](https://fireemblemwiki.org/wiki/Lorenz_(Three_Houses)?action=raw) — desertion and persuasion by route
+30. <a id="ref-30"></a>Chapter and map pages, from the [list of chapters](https://fireemblemwiki.org/wiki/List_of_chapters_in_Fire_Emblem:_Three_Houses?action=raw) — the `ally=` deployment count on each map, for example [The Magdred Ambush](https://fireemblemwiki.org/wiki/Mutiny_in_the_Mist/The_Magdred_Ambush?action=raw), [Conflict in the Holy Tomb](https://fireemblemwiki.org/wiki/Throne_of_Knowledge/Conflict_in_the_Holy_Tomb?action=raw), [The Battle of Garreg Mach](https://fireemblemwiki.org/wiki/To_War/The_Battle_of_Garreg_Mach?action=raw), [Ambush at Ailell](https://fireemblemwiki.org/wiki/Valley_of_Torment/Ambush_at_Ailell?action=raw), [Following a Dream](https://fireemblemwiki.org/wiki/Following_a_Dream/The_Final_Battle?action=raw), [Oath of the Dagger](https://fireemblemwiki.org/wiki/Oath_of_the_Dagger?action=raw) and [To the End of a Dream](https://fireemblemwiki.org/wiki/To_the_End_of_a_Dream?action=raw)
+31. <a id="ref-31"></a>[Dancer](https://fireemblemwiki.org/wiki/Dancer?action=raw)
+32. <a id="ref-32"></a>[Attack speed](https://fireemblemwiki.org/wiki/Attack_speed?action=raw) — the follow-up threshold, and which attacks cannot double
+33. <a id="ref-33"></a>Unique class pages: [Lord](https://fireemblemwiki.org/wiki/Lord?action=raw), [Enlightened One](https://fireemblemwiki.org/wiki/Enlightened_One?action=raw), [Armored Lord](https://fireemblemwiki.org/wiki/Armored_Lord?action=raw), [Emperor](https://fireemblemwiki.org/wiki/Emperor?action=raw), [High Lord](https://fireemblemwiki.org/wiki/High_Lord?action=raw), [Great Lord](https://fireemblemwiki.org/wiki/Great_Lord?action=raw), [Wyvern Master](https://fireemblemwiki.org/wiki/Wyvern_Master?action=raw), [Barbarossa](https://fireemblemwiki.org/wiki/Barbarossa?action=raw), [Death Knight](https://fireemblemwiki.org/wiki/Death_Knight_(class)?action=raw) — who gets each class, when, proficiencies, abilities and mastery
 
 </details>
 
 <details open>
 <summary><strong>Serenes Forest</strong> — datamined tables</summary>
 
-34. [Skill levels](https://serenesforest.net/three-houses/characters/skill-levels/) — strengths and weaknesses, rank costs, combat skill experience
-35. [Budding talents](https://serenesforest.net/three-houses/characters/budding-talents/)
-36. [Recruitment](https://serenesforest.net/three-houses/characters/recruitment/) — requirements, support discounts, the B-support shortcut, Church staff on Black Eagles
-37. [Class change](https://serenesforest.net/three-houses/classes/class-change/) — exam rules, stat raise, class modifiers, weapon rules
-38. [Class detailed view](https://serenesforest.net/three-houses/classes/detailed-view/) — suggested skill levels, gender locks
-39. Monastery: [dining hall](https://serenesforest.net/three-houses/monastery/dining-hall/), [faculty training](https://serenesforest.net/three-houses/monastery/faculty-training/), [seminars](https://serenesforest.net/three-houses/monastery/seminars/)
-40. [Renown and saint statues](https://serenesforest.net/three-houses/monastery/renown-saint-statues/)
+34. <a id="ref-34"></a>[Skill levels](https://serenesforest.net/three-houses/characters/skill-levels/) — strengths and weaknesses, rank costs, combat skill experience
+35. <a id="ref-35"></a>[Budding talents](https://serenesforest.net/three-houses/characters/budding-talents/)
+36. <a id="ref-36"></a>[Recruitment](https://serenesforest.net/three-houses/characters/recruitment/) — requirements, support discounts, the B-support shortcut, Church staff on Black Eagles
+37. <a id="ref-37"></a>[Class change](https://serenesforest.net/three-houses/classes/class-change/) — exam rules, stat raise, class modifiers, weapon rules
+38. <a id="ref-38"></a>[Class detailed view](https://serenesforest.net/three-houses/classes/detailed-view/) — suggested skill levels, gender locks
+39. <a id="ref-39"></a>Monastery: [dining hall](https://serenesforest.net/three-houses/monastery/dining-hall/), [faculty training](https://serenesforest.net/three-houses/monastery/faculty-training/), [seminars](https://serenesforest.net/three-houses/monastery/seminars/)
+40. <a id="ref-40"></a>[Renown and saint statues](https://serenesforest.net/three-houses/monastery/renown-saint-statues/)
 
 </details>
 
 <details open>
 <summary><strong>Other wikis and guide sites</strong></summary>
 
-41. [Fire Emblem Fandom: Certification Exam](https://fireemblem.fandom.com/wiki/Certification_Exam) — one exam per week, switching classes
-42. [Fire Emblem Fandom: Battalion](https://fireemblem.fandom.com/wiki/Battalion)
-43. [Fire Emblem Fandom: Divine Pulse](https://fireemblem.fandom.com/wiki/Divine_Pulse) — charges per battle
-44. [Fire Emblem Fandom: White Heron Cup](https://fireemblem.fandom.com/wiki/White_Heron_Cup) — one practice, Dancer lost on a loss
-45. [Triangle Attack: Battalions](https://www.fe3h.com/battalions) — hiring, replenishing, gambit refill
-46. [Game8: Ashen Wolves recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292154)
-47. [Game8: Anna recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292166)
-48. [Game8: White Heron Cup](https://game8.co/games/fire-emblem-three-houses/archives/286838)
-49. [GameWith: motivation](https://gamewith.net/fire-emblem-three-houses/article/show/10296)
-50. [GameWith: Classic and Casual](https://gamewith.net/fire-emblem-three-houses/article/show/10291)
+41. <a id="ref-41"></a>[Fire Emblem Fandom: Certification Exam](https://fireemblem.fandom.com/wiki/Certification_Exam) — one exam per week, switching classes
+42. <a id="ref-42"></a>[Fire Emblem Fandom: Battalion](https://fireemblem.fandom.com/wiki/Battalion)
+43. <a id="ref-43"></a>[Fire Emblem Fandom: Divine Pulse](https://fireemblem.fandom.com/wiki/Divine_Pulse) — charges per battle
+44. <a id="ref-44"></a>[Fire Emblem Fandom: White Heron Cup](https://fireemblem.fandom.com/wiki/White_Heron_Cup) — one practice, Dancer lost on a loss
+45. <a id="ref-45"></a>[Triangle Attack: Battalions](https://www.fe3h.com/battalions) — hiring, replenishing, gambit refill
+46. <a id="ref-46"></a>[Game8: Ashen Wolves recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292154)
+47. <a id="ref-47"></a>[Game8: Anna recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292166)
+48. <a id="ref-48"></a>[Game8: White Heron Cup](https://game8.co/games/fire-emblem-three-houses/archives/286838)
+49. <a id="ref-49"></a>[GameWith: motivation](https://gamewith.net/fire-emblem-three-houses/article/show/10296)
+50. <a id="ref-50"></a>[GameWith: Classic and Casual](https://gamewith.net/fire-emblem-three-houses/article/show/10291)
 
 </details>
 
 <details open>
 <summary><strong>Reddit, r/FireEmblemThreeHouses</strong> — how the game plays on Hard</summary>
 
-51. [Tips for Hard mode after being used to Normal](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1i8reiq/tips_for_hard_mode_after_being_used_to_normal_for/)
-52. [What should I know about choosing a house](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1bb3qtn/what_should_i_know_about_choosing_a_house_and/)
+51. <a id="ref-51"></a>[Tips for Hard mode after being used to Normal](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1i8reiq/tips_for_hard_mode_after_being_used_to_normal_for/)
+52. <a id="ref-52"></a>[What should I know about choosing a house](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1bb3qtn/what_should_i_know_about_choosing_a_house_and/)
 
 </details>

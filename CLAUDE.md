@@ -53,7 +53,15 @@ nothing odd in the text.
 ## Citations
 
 Every guide ends with a `## Sources` section, and the body cites it with
-numbered markers such as `[1]` or `[3][7]`.
+numbered markers such as `[1]` or `[3][7]`. **Every marker is a link to its
+entry in the Sources list,** so a reader can click through to the URL.
+
+- **Write a marker as `[[N]](#ref-N)`.** It renders as "[N]". Two markers
+  together are `[[3]](#ref-3)[[7]](#ref-7)`.
+- **Start each list entry with an anchor:**
+  `3. <a id="ref-3"></a>[Page title](https://...) — what it supplied`.
+- **Link to the entry, not straight to the website.** An entry can hold
+  several URLs, and its note says what the source supplied.
 
 - **Do not name a source in the body.** No "Game8 says", "the wiki's tables",
   or "Serenes Forest lists". Put a number where the name would go.
@@ -70,11 +78,34 @@ numbered markers such as `[1]` or `[3][7]`.
   it supplied. Dates on community threads only when known.
 - Each group may sit in a `<details open>` block so the list can be folded.
 - Before committing, check that every cited number exists in the list and
-  every listed entry is cited.
+  every listed entry is cited. Also check that no bare `[N]` marker is left
+  unlinked.
+
+> [!TIP]
+> This script runs all three checks. It prints empty lists when the guide is
+> clean.
+>
+> ```python
+> import re, sys
+> t = open(sys.argv[1]).read()
+> anchors = set(re.findall(r'<a id="(ref-\d+)"></a>', t))
+> links = set(re.findall(r'\]\(#(ref-\d+)\)', t))
+> print('unresolved', sorted(links - anchors))
+> print('uncited', sorted(anchors - links))
+> print('bare', re.findall(r'(?<!\[)\[(\d+)\](?!\()', t))
+> ```
+>
+> To convert a guide that uses bare markers, apply
+> `re.sub(r'(?<!\[)\[(\d+)\](?!\()', r'[[\1]](#ref-\1)', text)` to the body.
+> In the Sources section, apply it only to prose and tables, not to the list
+> numbers. Add the anchors to the list entries with
+> `re.sub(r'^(\d+)\. (?!<a id)', r'\1. <a id="ref-\1"></a>', src, flags=re.M)`.
 
 > [!NOTE]
 > The guides written before 2026-09-24 name their sources inline. Convert a
-> guide to numbered citations when it is next edited.
+> guide to numbered citations when it is next edited. The Fire Emblem Engage
+> beginner guide uses numbered markers but does not yet link them. Convert it
+> to linked markers when it is next edited.
 
 ## Section order
 

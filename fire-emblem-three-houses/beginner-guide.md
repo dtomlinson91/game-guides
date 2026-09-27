@@ -14,7 +14,7 @@ at the end.
 
 > [!IMPORTANT]
 > **A save cannot be bricked.** Character level does not reset on a class
-> change [6]. A passed exam is never lost [36]. A broken weapon can be repaired
+> change [6]. A passed exam is never lost [37]. A broken weapon can be repaired
 > [16]. Only a few decisions are truly one-way:
 >
 > - **The house**, chosen in the prologue. See
@@ -22,7 +22,7 @@ at the end.
 > - **The one Dancer** per playthrough, decided at the White Heron Cup in
 >   Chapter 9 [27].
 > - **Recruiting**, which closes at the end of Part 1 [25].
-> - **The Classic or Casual choice**, fixed when the save starts [49].
+> - **The Classic or Casual choice**, fixed when the save starts [50].
 >
 > See [Windows that close](#windows-that-close) for the full list.
 
@@ -99,6 +99,12 @@ at the end.
   - [Church and faculty](#church-and-faculty)
   - [Expansion Pass characters](#expansion-pass-characters)
 - [Class reference](#class-reference)
+  - [Beginner classes](#beginner-classes)
+  - [Intermediate classes](#intermediate-classes)
+  - [Advanced classes](#advanced-classes)
+  - [Master classes](#master-classes)
+  - [Special classes](#special-classes)
+  - [Unique classes](#unique-classes)
 - [Choosing a house](#choosing-a-house)
 - [Sources](#sources)
 
@@ -122,7 +128,7 @@ of the month is the story mission [2][3].
    into every later month.
 2. **Skill levels.** Each unit's rank in every weapon and movement type. They
    decide which weapons a unit can use and which class exams it can pass
-   [10][33].
+   [10][34].
 
 **How they connect.** Instruction and battle raise skill levels. Skill levels
 unlock class exams. A class gives stats and abilities while the unit is in it.
@@ -136,10 +142,10 @@ systems raise: what stays when something changes.
 | Thing | Belongs to | Lasts? |
 | --- | --- | --- |
 | Character level | The unit | Permanent. A class change never resets it [6] |
-| Skill levels | The unit | Kept in every class [36]. No source describes a way to lose them |
-| Budding talent | The unit | Permanent once unlocked. The skill becomes a strength [2][34] |
-| Passed class exams | The unit | Permanent. Switch between passed classes before any battle [36][40] |
-| Class stat modifiers and class abilities | The class | Only while the unit is in that class [8][36] |
+| Skill levels | The unit | Kept in every class [37]. No source describes a way to lose them |
+| Budding talent | The unit | Permanent once unlocked. The skill becomes a strength [2][35] |
+| Passed class exams | The unit | Permanent. Switch between passed classes before any battle [37][41] |
+| Class stat modifiers and class abilities | The class | Only while the unit is in that class [8][37] |
 | Mastery abilities | The unit | Equip in any class. Some mastery combat arts are locked to their class [5] |
 | Supports | The pair of units | No source describes a loss. Some stop advancing at story points [14] |
 | Battalion level | The battalion | The battalion keeps its own level. It is never lost at 0 endurance [11] |
@@ -147,7 +153,7 @@ systems raise: what stays when something changes.
 | Gambit uses | The battalion | Refill at the end of every battle [12] |
 | Weapon durability | The weapon | Carries over. At 0 the weapon breaks but is not lost [16] |
 | Spell uses | The unit | Refill at the end of every battle [16] |
-| Divine Pulse charges | Byleth | Refill for each battle [42] |
+| Divine Pulse charges | Byleth | Refill for each battle [43] |
 | Motivation | The unit | Carries from week to week [2] |
 | Professor level | Byleth | No source describes a way to lose it [1] |
 | Seals | The inventory | Used up by any exam attempt, pass or fail [7] |
@@ -211,7 +217,7 @@ motivation, in steps of 25. One instruction costs 25 motivation, so a unit at
 full motivation takes four instructions in one week [2].
 
 Each instruction rolls a result. The result multiplies the skill experience
-[2][33].
+[2][34].
 
 | Result | Weakness | Neutral | Strength |
 | --- | --- | --- | --- |
@@ -232,7 +238,7 @@ Three rules follow from that table [2].
 **What raises motivation.** Rest raises it slightly for every student [3].
 Seminars give each attendee 50 [2]. Returning a lost item raises it for a
 student in Byleth's class [3]. Tea parties, meals, gifts and being the battle
-MVP also raise it [17][48].
+MVP also raise it [17][49].
 
 ### Goal and task numbers
 
@@ -247,7 +253,7 @@ week. **These values are lower on Hard than on Normal** [2][19].
 
 > [!IMPORTANT]
 > One datamined table lists +28 neutral and +32 strength without naming a
-> difficulty [33]. Those are the **Normal** values. Always check the
+> difficulty [34]. Those are the **Normal** values. Always check the
 > difficulty next to a skill experience number.
 
 Group tasks train Riding (Stable Duty), Heavy Armour (Weeding) or Flying (Sky
@@ -264,7 +270,7 @@ and a high support rank with each other [2].
 ### Skill rank costs
 
 How much skill experience each rank needs. The cost rises steeply, so plan the
-two skills a unit's target class needs and ignore the rest [33].
+two skills a unit's target class needs and ignore the rest [34].
 
 | Rank | Experience to the next rank |
 | --- | --- |
@@ -280,7 +286,7 @@ two skills a unit's target class needs and ignore the rest [33].
 > [!NOTE]
 > Fighting also trains skills. Each attack gives +1 to +3 in one weapon, one
 > movement skill and Authority, depending on weakness or strength. A miss pays
-> the same as a kill [33]. That is small per hit, but it adds up across a map
+> the same as a kill [34]. That is small per hit, but it adds up across a map
 > and costs nothing.
 
 ---
@@ -354,17 +360,17 @@ Explore day, before spending a point on anything.
 
 ### Paid activities
 
-Seven activities cost one activity point each [3][38]. Spend points in roughly
+Seven activities cost one activity point each [3][39]. Spend points in roughly
 this order.
 
 1. **Faculty Training.** 20 skill experience for Byleth, plus 10 more for a
    strength. A "Great" result adds 50%. Byleth's budding talent needs six
    sessions in Faith. Each instructor teaches only their own skills, and
-   several are absent in specific chapters [38].
+   several are absent in specific chapters [39].
 2. **Share a Meal.** Raises support between two characters and Byleth, raises
    their motivation, and pays 50 to 200 professor experience depending on
    whether they like the dish. Today's Special costs no ingredients, once per
-   Sunday [1][38].
+   Sunday [1][39].
 3. **Choir Practice.** Raises Faith for both students and Byleth, and Authority
    for Byleth [3]. The cheapest Authority Byleth will ever get.
 4. **Tea Party.** Support with one unit, and up to +2 Charm for both with good
@@ -409,7 +415,7 @@ answer [1]. A good fish pays about 30.
 How to spend renown, and what to buy first. Renown comes from battles and
 quests. Spend it at the four saint statues in the cathedral, from Chapter 5.
 Costs are cumulative, so 10,000 renown clears one statue completely. Rewards
-carry into New Game+ [39].
+carry into New Game+ [40].
 
 | Renown | Cethleann | Cichol | Macuil | Indech |
 | --- | --- | --- | --- | --- |
@@ -429,7 +435,7 @@ Divine Pulse charges next.
 
 > [!NOTE]
 > The weapon and skill rewards such as "Axe +1" add experience when Byleth
-> **instructs** in that skill [39]. They do not change combat.
+> **instructs** in that skill [40]. They do not change combat.
 
 ---
 
@@ -463,7 +469,7 @@ magic users in the squad.
 
 **Divine Pulse.** Byleth's rewind. It undoes up to 50 turns, and fires
 automatically on a game over if charges remain [15]. The charges refill for
-each battle [42].
+each battle [43].
 
 | Source | Charges |
 | --- | --- |
@@ -493,7 +499,7 @@ only applies on a hit. Any Crest bearer can use a Hero's Relic without losing
 Grinding worries most new Hard players, and the answer is short: **on Hard
 grinding is capped, and it is rarely needed.** Hard gives about 70% of
 Normal's experience against a same-level enemy [19], but players still report
-clearing the main story with almost no grinding [50].
+clearing the main story with almost no grinding [51].
 
 **Why grinding is capped.** On Normal, the first two auxiliary battles on a free
 day cost nothing, so grinding is unlimited [4]. On Hard and Maddening, **every
@@ -524,7 +530,7 @@ only by never exploring. That trade is the real cost of grinding.
 
 **Reasons not to.** Two situations make a battle the worse choice.
 
-- Everything clears comfortably [50].
+- Everything clears comfortably [51].
 - Professor level is still below C. An Explore day is worth more at that
   stage, because it raises every future month's point budget.
 
@@ -553,13 +559,13 @@ What a class gives, and what stays when the unit leaves it.
    exam passes, unless the unit is staying to finish a mastery [6].
 2. **A pass is permanent.** A passed exam is never retaken. Switch between any
    passed class from the Inventory menu before a battle or at the start of a
-   week [36][40].
+   week [37][41].
 3. **A class raises low stats.** Any stat below the new class's base is raised
-   to that base [6][36]. The class also grants stat modifiers, and those last
-   only while the unit is in the class [36].
+   to that base [6][37]. The class also grants stat modifiers, and those last
+   only while the unit is in the class [37].
 4. **Almost every class can use almost every weapon.** Two exceptions only.
    Gauntlets cannot be used on a horse or a flier. Reason and Faith magic only
-   work in a magic class [36].
+   work in a magic class [37].
 5. **Abilities come in three kinds** [8]:
    - **1 personal ability.** Fixed to the character.
    - **3 class abilities.** Active only while in that class.
@@ -571,7 +577,7 @@ What a class gives, and what stays when the unit leaves it.
 
 > [!NOTE]
 > Two sources disagree on when the stat raise applies. One says on passing the
-> exam [6]. The other says on changing into the class [36]. Neither says
+> exam [6]. The other says on changing into the class [37]. Neither says
 > whether the raised value stays after the unit leaves the class.
 
 ### How an exam works
@@ -591,7 +597,7 @@ on the calendar screen [6].
   closer the unit's skills are to the suggestion, the higher the rate [6].
 - Below 30% the game refuses the attempt [6].
 - **The seal is used up whether the exam passes or fails** [7].
-- Each unit may attempt one exam per week [40].
+- Each unit may attempt one exam per week [41].
 
 Abyssian Exam Passes come from the Pagan Altar in Abyss for 750 renown each,
 without limit [21]. Each of the four Ashen Wolves arrives carrying one [22].
@@ -609,7 +615,7 @@ when the unit did not start the combat [5].
 | Advanced and Special | 150 |
 | Master | 200 |
 
-- The Cethleann statue reward at 2,000 renown adds +1 per combat [39].
+- The Cethleann statue reward at 2,000 renown adds +1 per combat [40].
 - The Knowledge Gem or the Mastermind ability doubles it. Both together triple
   it, not quadruple it [5].
 - **Mastery abilities can be equipped in any class** [5].
@@ -620,7 +626,7 @@ when the unit did not start the combat [5].
 ### Masteries worth planning
 
 Most masteries are minor. These are the ones players build towards, because the
-ability outlives the class it came from [5][50].
+ability outlives the class it came from [5][51].
 
 | Class | Tier | Mastery reward |
 | --- | --- | --- |
@@ -638,7 +644,7 @@ ability outlives the class it came from [5][50].
 > [!CAUTION]
 > Written guides tell every physical unit to master Brigand for Death Blow, and
 > every unit to pick up Hit +20. **That advice is written for Maddening.** A
-> long-time Hard player calls both close to redundant on Hard [50]. On Hard,
+> long-time Hard player calls both close to redundant on Hard [51]. On Hard,
 > units fight on the enemy phase often, where Death Blow does nothing, and hit
 > rates are already fine. Treat Death Blow as optional on Hard. This guide
 > follows the Hard-specific account, because the guide-site claim assumes a
@@ -659,36 +665,36 @@ and it takes damage on that unit's behalf [11].
 
 - **Getting one.** Hire battalions with gold at the Battalion Guild, or earn
   them from paralogues and quests [11]. Hire and dismiss them at the guild or
-  on the battle preparation screen [44].
+  on the battle preparation screen [45].
 - **Equipping.** A unit may equip a battalion at or below its Authority rank
   [11].
 - **Movement type.** Infantry, armoured and cavalry units may take any
-  battalion. Fliers take flying battalions only [11][41].
+  battalion. Fliers take flying battalions only [11][42].
 - **Stats.** A battalion adds flat attack, hit, critical, avoid, protection,
   resilience and charm. It levels from 1 to 5, and the bonuses grow [11]. The
-  experience belongs to the battalion [41][44].
+  experience belongs to the battalion [42][45].
 - **Endurance.** A battalion absorbs **half** the damage its unit takes. At 0
   endurance the unit loses both the stat bonus and the gambit [11].
 - **Repair.** Endurance does **not** refill after a battle. Replenish it at the
-  guild or on the preparation screen, which costs little gold [11][44]. A
+  guild or on the preparation screen, which costs little gold [11][45]. A
   battalion at 0 is never lost [11].
 
 > [!NOTE]
 > One guide site says flying battalions cannot be equipped by any non-flying
-> class [44]. Two wikis say ground units may equip any battalion [11][41]. This
+> class [45]. Two wikis say ground units may equip any battalion [11][42]. This
 > guide follows the wikis.
 
 > [!TIP]
 > Train Authority on everybody, and aim for about B by the timeskip. Players
 > rate a strong battalion as roughly +10 damage, which is more than many
-> level-ups give [50]. Sort the battalion list by attack and take the best one
+> level-ups give [51]. Sort the battalion list by attack and take the best one
 > each unit can hold.
 
 ### Gambits
 
 A gambit is the battalion's special attack. Each has a limited number of uses
 per battle. Uses refill at the end of the map, and replenishing a battalion
-also restores them [12][44].
+also restores them [12][45].
 
 - A gambit can never be counterattacked, can never land a critical hit, and can
   never double [12].
@@ -704,7 +710,7 @@ also restores them [12][44].
   [12].
 
 Players repeatedly name the same utility gambits as the ones that solve maps:
-Stride, Impregnable Wall, Retribution, Blessing and Dance of the Goddess [50].
+Stride, Impregnable Wall, Retribution, Blessing and Dance of the Goddess [51].
 The movement and defence gambits matter more than the offensive ones.
 
 ---
@@ -770,9 +776,9 @@ classes [25].
 What a student asks of Byleth, and how support lowers it. A student needs **one
 stat value and one skill rank** from Byleth. A faculty member needs only a
 character level. Failing, or declining their offer, locks the option until the
-next weekend [35].
+next weekend [36].
 
-Support rank with Byleth lowers both requirements [35].
+Support rank with Byleth lowers both requirements [36].
 
 | Support | Skill rank D → | C → | B → | B+ → |
 | --- | --- | --- | --- | --- |
@@ -795,22 +801,22 @@ Support rank with Byleth lowers both requirements [35].
 > [!TIP]
 > **The shortcut that skips all of this.** At B support or higher, a student
 > may ask to join on any free weekday. That offer ignores the stat and skill
-> requirements completely [35]. Build supports through meals, gifts, lost
+> requirements completely [36]. Build supports through meals, gifts, lost
 > items and tea, and most of the roster recruits itself. The offer is random,
 > so a week may bring none or several.
 
 > [!WARNING]
 > The shortcut does not work for **Caspar or Ferdinand**. Neither can reach B
-> support during Part 1 [35].
+> support during Part 1 [36].
 
 > [!NOTE]
 > Stat boosts from a class do **not** count towards the requirement, and
-> neither do stat-boosting abilities [35]. If a check fails when it should
+> neither do stat-boosting abilities [36]. If a check fails when it should
 > pass, change Byleth to Commoner or Noble and try again.
 
 ### Requirements table
 
-The stat and skill each student asks of Byleth, at no support [35]. Apply the
+The stat and skill each student asks of Byleth, at no support [36]. Apply the
 discounts above for an existing support rank.
 
 | Character | House | From chapter | Needs |
@@ -850,7 +856,7 @@ Byleth, and few instructors teach it.
 > [!NOTE]
 > A Black Eagles player cannot recruit Hilda, Catherine or Cyril before
 > Chapter 12, and only after siding with the Church. Catherine, Cyril and
-> Shamir then join automatically [25][35]. None of the three can join on
+> Shamir then join automatically [25][36]. None of the three can join on
 > Crimson Flower.
 
 ### Who leaves or cannot join
@@ -890,8 +896,8 @@ free update.
 | Yuri | 6 |
 
 - Talk to them at the monastery. No stat, skill or support requirement applies
-  [22][45].
-- They can join from main-story Chapter 2 until the end of Part 1 only [45].
+  [22][46].
+- They can join from main-story Chapter 2 until the end of Part 1 only [46].
 - They join at level 3 in Chapter 2, plus 2 levels per chapter. Level 11 in
   Chapter 6, level 23 in Chapter 12 [23].
 - Their starting class also changes with the chapter. In Chapter 2 they join as
@@ -900,13 +906,13 @@ free update.
   three [23][25].
 
 > [!CAUTION]
-> Players describe *Cindered Shadows* as harder than the main game [50]. Chapter
+> Players describe *Cindered Shadows* as harder than the main game [51]. Chapter
 > 1 only opens the Abyss. The Wolves need later chapters, so budget for the
 > side story's harder maps [22].
 
 **Anna.** Talk to her at the marketplace from Chapter 3. She joins at level 5
 as a Myrmidon, with no requirements [24]. One source says she can also be
-recruited in Part 2 [46].
+recruited in Part 2 [47].
 
 **Jeritza.** Crimson Flower only. He joins automatically at the start of
 Chapter 13 as a level 27 Death Knight. He came with free update 1.1.0, so no
@@ -916,7 +922,7 @@ Expansion Pass is needed [22].
 
 ## Common mistakes
 
-The failures players name most often [50]. When something feels wrong mid-run,
+The failures players name most often [51]. When something feels wrong mid-run,
 check this list before anything else.
 
 1. **Splitting up the army.** The most reported cause of a lost unit is one
@@ -948,12 +954,12 @@ to catch than to regret.
 
 - **Recruiting** closes at the end of Chapter 12, or Chapter 11 on Crimson
   Flower [25][26]. Settle the roster before then. The Ashen Wolves close at
-  the end of Part 1 too [45].
+  the end of Part 1 too [46].
 - **The Dancer.** The White Heron Cup is in Chapter 9, Ethereal Moon. Pick the
   entrant by the end of the second week. Winning takes **13 Charm**. Talking
   to the entrant starts a practice worth a permanent **+5 Charm**, once, at no
-  activity point cost [27][43][47]. Losing the cup means no Dancer for the
-  whole run [43].
+  activity point cost [27][44][48]. Losing the cup means no Dancer for the
+  whole run [44].
 - **Part 1 paralogues** close after Chapter 11, except *Dividing the World*
   [26]. Dedue's return depends on one of them [28].
 - **The Black Eagles route split** happens in Chapter 11, Pegasus Moon [26].
@@ -982,9 +988,9 @@ They are guidelines, not requirements.
 | Check | Target |
 | --- | --- |
 | Professor level | C by roughly Chapter 5 or 6. That unlocks adjutants, 5 activity points, 5,000 gold a month and Master class exams [1] |
-| Renown spending | The four Experience +5% rewards bought (4,000 renown), then the Divine Pulse charges [39] |
+| Renown spending | The four Experience +5% rewards bought (4,000 renown), then the Divine Pulse charges [40] |
 | Roster size | Settled on 10 to 12 trained units by about Chapter 8 |
-| Authority | Around B on most units by the timeskip [50] |
+| Authority | Around B on most units by the timeskip [51] |
 | Divine Pulse | 13 charges by late game on Hard [15] |
 | Skill planning | Each trained unit has two named skills and a named target class |
 
@@ -1041,7 +1047,7 @@ more than raw stats do.
 
 > [!IMPORTANT]
 > Take the Dancer seriously. Players report that new players skip it and then
-> find maps slow [50]. The Dancer can be any student of the player's own house
+> find maps slow [51]. The Dancer can be any student of the player's own house
 > with enough Charm. See [Windows that close](#windows-that-close).
 
 ### Real constraints
@@ -1049,11 +1055,11 @@ more than raw stats do.
 The only hard limits on team building.
 
 - Fliers may equip **flying battalions only** [11].
-- Gauntlets do not work on a horse or a flier [36].
-- Reason and Faith magic work only in magic classes [36].
+- Gauntlets do not work on a horse or a flier [37].
+- Reason and Faith magic work only in magic classes [37].
 - Several classes are gender-locked. Male only: Brawler, Dark Mage, Hero,
   Grappler, Dark Bishop, War Master, War Monk. Female only: Pegasus Knight,
-  Falcon Knight, Gremory, Dark Flier, Valkyrie, War Cleric [37].
+  Falcon Knight, Gremory, Dark Flier, Valkyrie, War Cleric [38].
 
 ---
 
@@ -1066,7 +1072,7 @@ the team role those classes point to.
 - A **budding talent** starts neutral or weak and becomes a strength once
   unlocked, which also grants an ability or combat art. Unlock it with twelve
   instructions in that skill. The first star appears at four. Byleth is the
-  exception: six faculty training sessions, one star every two [2][34].
+  exception: six faculty training sessions, one star every two [2][35].
 - **Game suggests** lists the default study goal and the classes each
   character asks for in their goal-change requests [2]. That is the closest
   thing the game has to an intended class, and a safe first answer when unsure.
@@ -1088,7 +1094,7 @@ game.
 
 | Character | Strong | Weak | Budding talent | Game suggests | Role |
 | --- | --- | --- | --- | --- | --- |
-| Edelgard | Sword, Axe, Authority, Armour | Bow, Faith | Reason | Default Axe and Authority. Lord, heavy armour | Tank, physical damage |
+| Edelgard | Sword, Axe, Authority, Armour | Bow, Faith | Reason | Default Axe and Authority. Lord, heavy armour. Unique: Armored Lord, then Emperor | Tank, physical damage |
 | Hubert | Bow, Reason, Authority | Axe, Faith, Flying | Lance | Default Reason and Authority. Magic classes, cavalry, Sniper | Magic damage |
 | Ferdinand | Sword, Lance, Axe, Riding | — | Heavy Armour | Default Lance and Axe. Cavalry, Great Knight, heavy armour | Physical damage (cavalry), tank |
 | Linhardt | Reason, Faith | Axe, Brawling | — | Default Reason and Faith. Bishop, magic classes | Healer, magic damage |
@@ -1103,7 +1109,7 @@ Dimitri's house. Physical and lance-heavy, with two dedicated magic users.
 
 | Character | Strong | Weak | Budding talent | Game suggests | Role |
 | --- | --- | --- | --- | --- | --- |
-| Dimitri | Sword, Lance, Authority | Axe, Reason | Riding | Default Lance and Authority. Lord, cavalry | Physical damage (cavalry) |
+| Dimitri | Sword, Lance, Authority | Axe, Reason | Riding | Default Lance and Authority. Lord, cavalry. Unique: High Lord, then Great Lord | Physical damage |
 | Dedue | Lance, Axe, Brawling, Armour | Faith, Riding, Flying | — | Default Axe and Brawling. Heavy armour, Grappler | Tank, physical damage |
 | Felix | Sword, Bow, Brawling | Reason, Authority | Reason | Default Sword and Brawling. Swordmaster, Sniper, Mortal Savant | Physical damage, archer |
 | Mercedes | Reason, Faith | Sword, Lance, Axe, Armour | Bow | Default Reason and Faith. Bishop, Warlock | Healer, magic damage |
@@ -1119,7 +1125,7 @@ Verdant Wind route [29].
 
 | Character | Strong | Weak | Budding talent | Game suggests | Role |
 | --- | --- | --- | --- | --- | --- |
-| Claude | Sword, Bow, Authority, Flying | Lance, Faith | Axe | Default Bow and Authority. Lord, Wyvern Rider | Flier, archer |
+| Claude | Sword, Bow, Authority, Flying | Lance, Faith | Axe | Default Bow and Authority. Lord, Wyvern Rider. Unique: Wyvern Master, then Barbarossa | Flier, archer |
 | Lorenz | Lance, Reason, Riding | Brawling | — | Default Lance and Reason. Cavalry, Dark Knight | Physical damage (cavalry), magic damage |
 | Raphael | Axe, Brawling, Armour | Bow, Reason, Riding | — | Default Axe and Brawling. War Master, heavy armour, Hero | Physical damage, tank |
 | Lysithea | Reason, Faith, Authority | Sword, Lance, Axe, Armour | Sword | Default Reason and Authority. Warlock, Gremory | Magic damage |
@@ -1136,7 +1142,7 @@ goal, so most roles here come from their strengths.
 
 | Character | Strong | Weak | Budding talent | Game suggests | Role |
 | --- | --- | --- | --- | --- | --- |
-| Byleth | Sword, Brawling, Authority | — | Faith | None. Enlightened One is a story class | *Physical damage* |
+| Byleth | Sword, Brawling, Authority | — | Faith | No goal requests. Unique: Enlightened One | Physical damage, healer |
 | Seteth | Sword, Lance, Axe, Authority, Flying | Riding | — | Default Lance and Authority | *Flier, physical damage* |
 | Flayn | Lance, Faith | Armour, Riding | Reason | Default Lance and Faith. Bishop, Gremory | Healer, magic damage |
 | Cyril | Lance, Axe, Bow, Riding, Flying | Reason, Faith | — | Default Axe and Bow. Wyvern Rider, Bow Knight | Archer, flier |
@@ -1159,7 +1165,7 @@ The Ashen Wolves, Anna and Jeritza. See
 | Constance | Sword, Reason, Authority, Flying | Axe, Armour | Brawling | Default Reason and Authority. Dark Flier, War Cleric, Swordmaster | Magic damage, flier |
 | Hapi | Reason, Riding, Flying | Brawling, Authority, Armour | Axe | Default Lance and Reason. Dark Knight, Valkyrie, Wyvern Rider | Magic damage (cavalry) |
 | Anna | Sword, Axe, Bow, Faith | Reason, Authority | Riding | Default Sword and Bow. Sword classes, Great Knight | Physical damage, tank |
-| Jeritza | Sword, Lance, Brawling, Riding | Faith, Authority | Flying | Default Lance and Sword. Joins as Death Knight, a unique class | Physical damage (cavalry) |
+| Jeritza | Sword, Lance, Brawling, Riding | Faith, Authority | Flying | Default Lance and Sword. Unique: Death Knight, his class on joining | Physical and magic damage (cavalry) |
 
 > [!TIP]
 > A budding talent turns a weakness into a strength. Dorothea, Felix and
@@ -1173,8 +1179,9 @@ The Ashen Wolves, Anna and Jeritza. See
 ## Class reference
 
 Every certifiable class, with the skill levels the exam suggests and the team
-role the class fills. Suggested levels are not strict minimums. A unit can pass
-below them at a lower success rate, but not below 30% [6][37].
+role the class fills. The classes unique to one character are in
+[Unique classes](#unique-classes). Suggested levels are not strict minimums. A unit can pass
+below them at a lower success rate, but not below 30% [6][38].
 
 ### Beginner classes
 
@@ -1257,14 +1264,56 @@ Expansion Pass classes. Available from level 20 with an Abyssian Exam Pass
 | Dark Flier (female) | Reason B+, Flying C | Sword, Reason, Flying | Transmute | Magic damage, flier |
 | Valkyrie (female) | Reason B, Riding B | Reason, Faith, Riding | Uncanny Blow | Magic damage (cavalry) |
 
-The **Dancer** is not certifiable by exam. The winner of the White Heron Cup
-receives it, with Sword Avoid +20 and Sword Dance [27][31].
-
 > [!WARNING]
 > One class page lists the Dark Flier's class abilities as "Fistfaire, Unarmed
-> Combat, Heal" [37]. That is the War Monk row repeated. The Dark Flier page
+> Combat, Heal" [38]. That is the War Monk row repeated. The Dark Flier page
 > gives Canto, Black Tomefaire and Transmute [21]. This guide follows the Dark
 > Flier page.
+
+### Unique classes
+
+Classes that belong to one character each. Apart from Lord, none of them has an
+exam or needs a seal. The story grants them at fixed points [6][33].
+
+- **The Part 2 lord classes appear only on that lord's own route.** On other
+  routes the lord is an enemy or leaves the army [33].
+- **Each class joins the unit's passed classes** [6]. It gives stats and
+  abilities like any other class while the unit is in it.
+- **Mastery works as usual.** The Part 2 advanced lord classes take 150
+  combats to master, and the master-tier ones take 200 [33].
+
+| Class | Who | Granted | Proficient in | Innate abilities | Mastery | Role |
+| --- | --- | --- | --- | --- | --- | --- |
+| Lord | Edelgard, Dimitri, Claude | Exam: Sword D+, Authority C, Intermediate Seal | Sword, Lance, Authority | Charm | Resistance +2, Subdue | Physical damage |
+| Enlightened One | Byleth | End of Chapter 10, every route | Sword, Brawling, Faith, Authority | Swordfaire, Terrain Resistance | Sacred Power | Physical damage, healer |
+| Armored Lord | Edelgard | Start of Crimson Flower Chapter 13 | Axe, Authority, Heavy Armour | Charm, Axefaire | Pomp & Circumstance | Tank, physical damage |
+| Emperor | Edelgard | Start of Crimson Flower Chapter 16 | Axe, Authority, Heavy Armour | Charm, Axefaire | Flickering Flower | Tank, physical damage |
+| High Lord | Dimitri | Start of Azure Moon Chapter 13 | Sword, Lance, Authority | Charm, Lancefaire | Pomp & Circumstance | Physical damage |
+| Great Lord | Dimitri | Start of Azure Moon Chapter 16 | Sword, Lance, Authority | Charm, Lancefaire | Paraselene | Physical damage |
+| Wyvern Master | Claude | Start of Verdant Wind Chapter 13 | Bow, Authority, Flying | Charm, Bowfaire, Canto | Pomp & Circumstance | Flier, archer |
+| Barbarossa | Claude | Start of Verdant Wind Chapter 17 | Bow, Authority, Flying | Charm, Bowfaire, Canto | Wind God | Flier, archer |
+| Death Knight | Jeritza | His class when he joins, Crimson Flower only | Lance, Reason, Riding | Canto, Lancefaire | Counterattack | Physical and magic damage (cavalry) |
+| Dancer | The White Heron Cup winner | Winning the cup in Chapter 9 | — | Sword Avoid +20, Sword Dance | — | Dancer |
+
+Sources: [33] for every row except Dancer, which comes from [27][31].
+
+**How the lord classes play.** Each one gives +2 Charm while the unit is in
+it, which helps gambit accuracy [6].
+
+- **Armored Lord and Emperor** are armoured classes. The Emperor gives +8
+  Defence and −4 Speed. The Armored Lord page lists a weakness to
+  armour-effective weapons [33].
+- **High Lord and Great Lord** are infantry with no weakness. The Great Lord
+  gives +4 Speed and +2 Movement [33].
+- **Wyvern Master and Barbarossa** are fliers with Canto. They take bonus
+  damage from bows. The Barbarossa gives +4 Movement when mounted [33].
+- **Enlightened One** has no weakness to any weapon type. It is the only class
+  with four proficiencies, and it can use both brawling and magic [33].
+
+> [!NOTE]
+> Players report that a lord can switch to another passed class and back to
+> the unique class freely. No data source states this directly. The wiki says
+> only that the lords "gain access" to their classes [6].
 
 ---
 
@@ -1276,18 +1325,18 @@ and which characters the player cannot have.
 
 | House | Leader | Roster | Notes |
 | --- | --- | --- | --- |
-| Black Eagles | Edelgard | Magic-heavy | The only house with a route split. Fewer paralogues and fewer recruitable characters than the other two [51] |
-| Blue Lions | Dimitri | Physical, lance and cavalry | The most commonly recommended first route [51] |
+| Black Eagles | Edelgard | Magic-heavy | The only house with a route split. Fewer paralogues and fewer recruitable characters than the other two [52] |
+| Blue Lions | Dimitri | Physical, lance and cavalry | The most commonly recommended first route [52] |
 | Golden Deer | Claude | Mixed, bow-leaning | Every Golden Deer student stays on Verdant Wind [29] |
 
 Blue Lions or Golden Deer suit a first Hard run. The Black Eagles roster leans
 on magic, which makes the early chapters harder. Its route split also adds a
-decision that is hard to judge on a blind playthrough [51].
+decision that is hard to judge on a blind playthrough [52].
 
 > [!NOTE]
 > The house choice does not lock out most characters. Every student except
 > Edelgard, Hubert, Dimitri, Dedue and Claude can join any house, and the
-> B-support shortcut makes that easy [35]. Pick the house for its leader and
+> B-support shortcut makes that easy [36]. Pick the house for its leader and
 > story, not for statistics.
 
 > [!IMPORTANT]
@@ -1309,13 +1358,13 @@ Points where the sources conflict, and which one this guide follows.
 
 | Subject | Disagreement | This guide follows |
 | --- | --- | --- |
-| Death Blow and Hit +20 | Guide sites call them near-mandatory. A long-time Hard player calls both close to redundant on Hard [50] | The Hard-specific account. The guide-site claim assumes Maddening |
-| Weekly goal experience | One table lists 28 neutral and 32 strength [33] | Those are Normal values. Hard is 24 and 28 [2] |
+| Death Blow and Hit +20 | Guide sites call them near-mandatory. A long-time Hard player calls both close to redundant on Hard [51] | The Hard-specific account. The guide-site claim assumes Maddening |
+| Weekly goal experience | One table lists 28 neutral and 32 strength [34] | Those are Normal values. Hard is 24 and 28 [2] |
 | Auxiliary battle cost on Hard | "Activity point" [4][19] against battle points [1] | Battle points. The effect is the same: nothing about fighting is free |
 | Tea Party and Sauna cost | The monastery page's summary list omits them. Its own sections give one point each [3] | The specific sections |
-| Flying battalions on ground units | Not allowed [44] against allowed [11][41] | Allowed, following both wikis |
-| When a class raises low stats | On passing the exam [6] against on changing class [36] | Neither. The guide states both |
-| Dark Flier abilities | The class detail page repeats the War Monk row [37] | The Dark Flier page: Canto, Black Tomefaire, Transmute [21] |
+| Flying battalions on ground units | Not allowed [45] against allowed [11][42] | Allowed, following both wikis |
+| When a class raises low stats | On passing the exam [6] against on changing class [37] | Neither. The guide states both |
+| Dark Flier abilities | The class detail page repeats the War Monk row [38] | The Dark Flier page: Canto, Black Tomefaire, Transmute [21] |
 
 ### Not verified
 
@@ -1331,8 +1380,9 @@ rather than confirmed.
 - **The weight part of the Attack Speed formula.** The threshold of 4 is
   confirmed [32]. The weight penalty comes from the earlier version of this
   guide and was not re-checked.
-- **Anna in Part 2.** One source only [46].
-- **Classic or Casual cannot be changed.** One source only [49].
+- **Switching a lord out of a unique class and back.** Player reports only.
+- **Anna in Part 2.** One source only [47].
+- **Classic or Casual cannot be changed.** One source only [50].
 
 <details open>
 <summary><strong>Fire Emblem Wiki</strong> — game data, read as raw wikitext</summary>
@@ -1369,42 +1419,43 @@ rather than confirmed.
 30. Chapter and map pages, from the [list of chapters](https://fireemblemwiki.org/wiki/List_of_chapters_in_Fire_Emblem:_Three_Houses?action=raw) — the `ally=` deployment count on each map, for example [The Magdred Ambush](https://fireemblemwiki.org/wiki/Mutiny_in_the_Mist/The_Magdred_Ambush?action=raw), [Conflict in the Holy Tomb](https://fireemblemwiki.org/wiki/Throne_of_Knowledge/Conflict_in_the_Holy_Tomb?action=raw), [The Battle of Garreg Mach](https://fireemblemwiki.org/wiki/To_War/The_Battle_of_Garreg_Mach?action=raw), [Ambush at Ailell](https://fireemblemwiki.org/wiki/Valley_of_Torment/Ambush_at_Ailell?action=raw), [Following a Dream](https://fireemblemwiki.org/wiki/Following_a_Dream/The_Final_Battle?action=raw), [Oath of the Dagger](https://fireemblemwiki.org/wiki/Oath_of_the_Dagger?action=raw) and [To the End of a Dream](https://fireemblemwiki.org/wiki/To_the_End_of_a_Dream?action=raw)
 31. [Dancer](https://fireemblemwiki.org/wiki/Dancer?action=raw)
 32. [Attack speed](https://fireemblemwiki.org/wiki/Attack_speed?action=raw) — the follow-up threshold, and which attacks cannot double
+33. Unique class pages: [Lord](https://fireemblemwiki.org/wiki/Lord?action=raw), [Enlightened One](https://fireemblemwiki.org/wiki/Enlightened_One?action=raw), [Armored Lord](https://fireemblemwiki.org/wiki/Armored_Lord?action=raw), [Emperor](https://fireemblemwiki.org/wiki/Emperor?action=raw), [High Lord](https://fireemblemwiki.org/wiki/High_Lord?action=raw), [Great Lord](https://fireemblemwiki.org/wiki/Great_Lord?action=raw), [Wyvern Master](https://fireemblemwiki.org/wiki/Wyvern_Master?action=raw), [Barbarossa](https://fireemblemwiki.org/wiki/Barbarossa?action=raw), [Death Knight](https://fireemblemwiki.org/wiki/Death_Knight_(class)?action=raw) — who gets each class, when, proficiencies, abilities and mastery
 
 </details>
 
 <details open>
 <summary><strong>Serenes Forest</strong> — datamined tables</summary>
 
-33. [Skill levels](https://serenesforest.net/three-houses/characters/skill-levels/) — strengths and weaknesses, rank costs, combat skill experience
-34. [Budding talents](https://serenesforest.net/three-houses/characters/budding-talents/)
-35. [Recruitment](https://serenesforest.net/three-houses/characters/recruitment/) — requirements, support discounts, the B-support shortcut, Church staff on Black Eagles
-36. [Class change](https://serenesforest.net/three-houses/classes/class-change/) — exam rules, stat raise, class modifiers, weapon rules
-37. [Class detailed view](https://serenesforest.net/three-houses/classes/detailed-view/) — suggested skill levels, gender locks
-38. Monastery: [dining hall](https://serenesforest.net/three-houses/monastery/dining-hall/), [faculty training](https://serenesforest.net/three-houses/monastery/faculty-training/), [seminars](https://serenesforest.net/three-houses/monastery/seminars/)
-39. [Renown and saint statues](https://serenesforest.net/three-houses/monastery/renown-saint-statues/)
+34. [Skill levels](https://serenesforest.net/three-houses/characters/skill-levels/) — strengths and weaknesses, rank costs, combat skill experience
+35. [Budding talents](https://serenesforest.net/three-houses/characters/budding-talents/)
+36. [Recruitment](https://serenesforest.net/three-houses/characters/recruitment/) — requirements, support discounts, the B-support shortcut, Church staff on Black Eagles
+37. [Class change](https://serenesforest.net/three-houses/classes/class-change/) — exam rules, stat raise, class modifiers, weapon rules
+38. [Class detailed view](https://serenesforest.net/three-houses/classes/detailed-view/) — suggested skill levels, gender locks
+39. Monastery: [dining hall](https://serenesforest.net/three-houses/monastery/dining-hall/), [faculty training](https://serenesforest.net/three-houses/monastery/faculty-training/), [seminars](https://serenesforest.net/three-houses/monastery/seminars/)
+40. [Renown and saint statues](https://serenesforest.net/three-houses/monastery/renown-saint-statues/)
 
 </details>
 
 <details open>
 <summary><strong>Other wikis and guide sites</strong></summary>
 
-40. [Fire Emblem Fandom: Certification Exam](https://fireemblem.fandom.com/wiki/Certification_Exam) — one exam per week, switching classes
-41. [Fire Emblem Fandom: Battalion](https://fireemblem.fandom.com/wiki/Battalion)
-42. [Fire Emblem Fandom: Divine Pulse](https://fireemblem.fandom.com/wiki/Divine_Pulse) — charges per battle
-43. [Fire Emblem Fandom: White Heron Cup](https://fireemblem.fandom.com/wiki/White_Heron_Cup) — one practice, Dancer lost on a loss
-44. [Triangle Attack: Battalions](https://www.fe3h.com/battalions) — hiring, replenishing, gambit refill
-45. [Game8: Ashen Wolves recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292154)
-46. [Game8: Anna recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292166)
-47. [Game8: White Heron Cup](https://game8.co/games/fire-emblem-three-houses/archives/286838)
-48. [GameWith: motivation](https://gamewith.net/fire-emblem-three-houses/article/show/10296)
-49. [GameWith: Classic and Casual](https://gamewith.net/fire-emblem-three-houses/article/show/10291)
+41. [Fire Emblem Fandom: Certification Exam](https://fireemblem.fandom.com/wiki/Certification_Exam) — one exam per week, switching classes
+42. [Fire Emblem Fandom: Battalion](https://fireemblem.fandom.com/wiki/Battalion)
+43. [Fire Emblem Fandom: Divine Pulse](https://fireemblem.fandom.com/wiki/Divine_Pulse) — charges per battle
+44. [Fire Emblem Fandom: White Heron Cup](https://fireemblem.fandom.com/wiki/White_Heron_Cup) — one practice, Dancer lost on a loss
+45. [Triangle Attack: Battalions](https://www.fe3h.com/battalions) — hiring, replenishing, gambit refill
+46. [Game8: Ashen Wolves recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292154)
+47. [Game8: Anna recruitment](https://game8.co/games/fire-emblem-three-houses/archives/292166)
+48. [Game8: White Heron Cup](https://game8.co/games/fire-emblem-three-houses/archives/286838)
+49. [GameWith: motivation](https://gamewith.net/fire-emblem-three-houses/article/show/10296)
+50. [GameWith: Classic and Casual](https://gamewith.net/fire-emblem-three-houses/article/show/10291)
 
 </details>
 
 <details open>
 <summary><strong>Reddit, r/FireEmblemThreeHouses</strong> — how the game plays on Hard</summary>
 
-50. [Tips for Hard mode after being used to Normal](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1i8reiq/tips_for_hard_mode_after_being_used_to_normal_for/)
-51. [What should I know about choosing a house](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1bb3qtn/what_should_i_know_about_choosing_a_house_and/)
+51. [Tips for Hard mode after being used to Normal](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1i8reiq/tips_for_hard_mode_after_being_used_to_normal_for/)
+52. [What should I know about choosing a house](https://www.reddit.com/r/FireEmblemThreeHouses/comments/1bb3qtn/what_should_i_know_about_choosing_a_house_and/)
 
 </details>

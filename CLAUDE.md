@@ -261,7 +261,8 @@ classes the game itself suggests. **Written 2026-09-20.**
 **Rewritten 2026-09-27** to the current conventions: neutral voice, a table of
 contents, a "How Three Houses works" overview with a permanent-or-temporary
 table, a quick-reference table, a combat basics section, per-chapter
-deployment slots, and 51 numbered citations. Character and class tables gained
+deployment slots, a unique-classes table for the lords, Byleth,
+Jeritza and the Dancer, and 52 numbered citations. Character and class tables gained
 a **Role** column (Tank, physical damage, magic damage, archer, healer, flier),
 read from each character's goal-change requests. The rewrite also corrected
 several claims from the first version: Ashe and Lorenz, the Ashen Wolves
@@ -272,6 +273,10 @@ Added in the 2026-09-27 rewrite — Fire Emblem Wiki raw pages:
 - Mechanics: Class_change/Nintendo_Switch_games, Intermediate_Seal, Skills
   (ability slots), Combat_art, Weapon_level, Support, Turn_rewind, Durability,
   Forge, Tea_Party, Crests, Difficulty, Bow, Attack_speed, Dancer
+- Unique classes: Lord, Enlightened_One, Armored_Lord, Emperor, High_Lord,
+  Great_Lord, Wyvern_Master, Barbarossa, Death_Knight_(class). `Death_Knight`
+  redirects to the Jeritza character page. The class-change page's "Unique
+  classes" table lists every one with the chapter it arrives
 - Roster: Downloadable_content_in_Fire_Emblem:_Three_Houses, Yuri/Stats (and
   Balthus, Constance, Hapi), Anna_(Three_Houses), Ashe,
   Lorenz_(Three_Houses), War_for_the_Weak

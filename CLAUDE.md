@@ -103,9 +103,7 @@ entry in the Sources list,** so a reader can click through to the URL.
 
 > [!NOTE]
 > The guides written before 2026-09-24 name their sources inline. Convert a
-> guide to numbered citations when it is next edited. The Fire Emblem Engage
-> beginner guide uses numbered markers but does not yet link them. Convert it
-> to linked markers when it is next edited.
+> guide to numbered citations when it is next edited.
 
 ## Section order
 

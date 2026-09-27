@@ -258,6 +258,64 @@ battle point, class change rules and every class's requirements, team shape,
 battalions, gambits, adjutants, recruitment with the support-discount tables,
 common mistakes, missable windows, and per-character proficiencies with the
 classes the game itself suggests. **Written 2026-09-20.**
+**Rewritten 2026-09-27** to the current conventions: neutral voice, a table of
+contents, a "How Three Houses works" overview with a permanent-or-temporary
+table, a quick-reference table, a combat basics section, per-chapter
+deployment slots, and 51 numbered citations. Character and class tables gained
+a **Role** column (Tank, physical damage, magic damage, archer, healer, flier),
+read from each character's goal-change requests. The rewrite also corrected
+several claims from the first version: Ashe and Lorenz, the Ashen Wolves
+unlocks, the recruiting deadline, and the route-split timing.
+
+Added in the 2026-09-27 rewrite — Fire Emblem Wiki raw pages:
+
+- Mechanics: Class_change/Nintendo_Switch_games, Intermediate_Seal, Skills
+  (ability slots), Combat_art, Weapon_level, Support, Turn_rewind, Durability,
+  Forge, Tea_Party, Crests, Difficulty, Bow, Attack_speed, Dancer
+- Roster: Downloadable_content_in_Fire_Emblem:_Three_Houses, Yuri/Stats (and
+  Balthus, Constance, Hapi), Anna_(Three_Houses), Ashe,
+  Lorenz_(Three_Houses), War_for_the_Weak
+- Chapters: Familiar_Scenery (recruiting window), Throne_of_Knowledge (route
+  split, departures, Part 1 deadlines), The_Cause_of_Sorrow (White Heron Cup),
+  and the map subpages from List_of_chapters_in_Fire_Emblem:_Three_Houses for
+  deployment slots
+- Other sites: Fandom Certification_Exam, Battalion, Divine_Pulse and
+  White_Heron_Cup; <https://www.fe3h.com/battalions>; Game8 archives 292154
+  (Ashen Wolves), 292166 (Anna) and 286838 (White Heron Cup); GameWith
+  articles 10296 (motivation) and 10291 (Classic and Casual)
+
+> [!TIP]
+> **Deployment slots are in the `ally=` field of each battle-map subpage**,
+> such as `Mutiny_in_the_Mist/The_Magdred_Ambush`, not on the chapter page.
+> The value reads "forced–maximum" and is the same on every difficulty tab.
+> Find the map subpage through the chapter page's `[[/Map|...]]` link. Two
+> chapters, `Conclusion_of_the_Crossing_Roads` and `To_the_End_of_a_Dream`,
+> carry the block on the chapter page itself. A page name with "ó" must be
+> percent-encoded (`F%C3%B3dlan`), or Bright Data returns HTTP 400.
+
+> [!CAUTION]
+> **The first version of this guide carried three wrong claims.** It said a
+> paralogue decides whether Ashe or Lorenz returns. Only Dedue's paralogue
+> does. Ashe and Lorenz desert by route and come back by "Persuade" in battle.
+> It said the Ashen Wolves unlock after *Cindered Shadows* chapter 1. They
+> unlock after chapters 2, 4, 5 and 6. It also placed the Edelgard conversation
+> for the route split in the month before Chapter 11. The conversation happens
+> in the Chapter 11 month.
+
+Sources that failed in the 2026-09-27 rewrite:
+
+- Wiki redirects that return only `#REDIRECT`: `Ability` (use `Skills`),
+  `Skill_level` (use `Weapon_level`), `Crest` (use `Crests`), `Motivation`
+  (use `Lesson`), `Cindered_Shadows`, `Crimson_Flower`.
+- Wiki pages that do not exist: `White_Heron_Cup`, `Route_split`,
+  `Fire_Emblem:_Three_Houses_–_Cindered_Shadows`.
+- `serenesforest.net/three-houses/miscellaneous/calculations/` redirects to
+  Shadow Dragon, as it does for Engage. `Attack_speed` on the wiki gives the
+  follow-up threshold, but its formula sits in an unexpanded template.
+- `Class_change/Nintendo_Switch_games`, `Class_mastery` and `Support` returned
+  an empty body on the first try and worked on retry.
+- No source says whether a battalion moves freely between units, or whether a
+  class's base-stat raise survives leaving the class.
 
 Primary source — Fire Emblem Wiki, raw wikitext:
 

@@ -1,0 +1,7 @@
+services:
+  planner:
+    build: .
+    ports:
+      # 8080 is often taken. Override with PLANNER_PORT=9000 docker compose up -d
+      - "${PLANNER_PORT:-8347}:80"
+    restart: unless-stopped

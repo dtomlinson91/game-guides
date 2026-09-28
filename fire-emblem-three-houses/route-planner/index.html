@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Houses Route Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 2 29 9v14L16 30 3 23V9z' fill='%23d8b36a'/><path d='M16 8l7 4v8l-7 4-7-4v-8z' fill='%23141829'/></svg>">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9v14L16 30 3 23V9z" fill="var(--gold)"/><path d="M16 8l7 4v8l-7 4-7-4v-8z" fill="var(--bg)"/></svg>
+        <div><strong>Garreg Mach</strong><small>Route planner</small></div>
+      </div>
+      <div class="side-h">Runs</div>
+      <nav id="runs" class="runs"></nav>
+      <div class="row gap pad">
+        <button id="new-run" class="btn primary small grow">+ New run</button>
+        <button id="import-run" class="btn ghost small" title="Import an exported run">Import</button>
+        <input id="import-file" type="file" accept="application/json" hidden>
+      </div>
+      <div class="side-h">Run settings</div>
+      <div id="settings" class="settings"></div>
+      <p class="side-foot">Data from the Three Houses beginner guide in this repository, and its sources: Fire Emblem Wiki and Serenes Forest.</p>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div id="title" class="title"></div>
+        <nav id="tabs" class="tabs"></nav>
+      </header>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+  <dialog id="dialog"></dialog>
+  <script src="data.js"></script>
+  <script src="rules.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

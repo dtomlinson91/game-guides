@@ -883,6 +883,13 @@ value source available for any question about how a spec is actually played,
 because it reports what real players pressed rather than what a guide says to
 press.
 
+> [!CAUTION]
+> **This repository is public. Never put credentials in a tracked file.**
+> `.mcp.json` reads the Warcraft Logs client from `${WCL_CLIENT_ID}` and
+> `${WCL_CLIENT_SECRET}`, which are exported in `~/.zshrc`. If the MCP server
+> fails to authenticate, check that Claude Code was started from a shell that
+> loaded them.
+
 Load the schemas before use. They are deferred, so a direct call fails:
 
 ```

@@ -68,8 +68,28 @@ Returns `{page, hasMorePages, count, rankings[]}`. Each ranking carries `name`,
 > Probe several pages, read `hardModeLevel`, and pick pages by the level you
 > want. Never assume page number maps to skill.
 
+> [!IMPORTANT]
+> **Filter by key level with `bracket`, because `page` stops at 20.** A popular
+> spec fills 20 pages before key level 18, and page 21 returns "The maximum
+> page value supported by the API is 20." Pass `bracket: N` to rank one key
+> level only. The bracket is offset by one: `bracket: 17` returned key level
+> 18 for every entry. Probe once and read `hardModeLevel` to confirm the
+> offset. Within a bracket, page 2 is still strong players. Page 8 gave a
+> mid-tier band for Unholy Death Knight.
+
+Each ranking also carries `startTime`, the key's start in epoch milliseconds.
+Use it to drop keys played before a hotfix that changed the spec.
+
 `characterRankings` does **not** expose talents. Derive the hero talent from
 cast and buff signatures instead.
+
+> [!TIP]
+> **Cheapest hero-tree check:** one batched query per 12 candidates of
+> `table(fightIDs: [..], dataType: Casts, sourceID: .., abilityID: <marker>)`.
+> A non-empty `entries` list means the tree is present. The entries list
+> targets, not abilities, when `abilityID` is set. A full casts table without
+> `abilityID` gives ability names but cost about 10 times more, roughly 120
+> points for 12 candidates against 13.
 
 ## 3. Split boss from trash
 

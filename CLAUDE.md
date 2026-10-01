@@ -1331,3 +1331,81 @@ Sources that failed:
 > or Frostscythe, plus a `fake` cast (441426). Neither is a button. Filter both
 > out of any press count. The Frostwyrm's Fury recall logs under its own ID,
 > 1265384, and is off the global cooldown.
+
+#### Unholy DK
+
+[`world-of-warcraft/rotations/unholy-dk-mplus-rotation.md`](world-of-warcraft/rotations/unholy-dk-mplus-rotation.md)
+— Mythic+ rotation for San'layn with a two-handed weapon. Covers the Midnight
+rework (Lesser Ghoul stacks replace Festering Wound), a systems overview, the
+single-target and AoE lists, the target-count swap, the two burst presses
+(Army press and plain Dark Transformation press), the in-window order of
+Putrefy, Soul Reaper and Blightfall, the four button swaps, openers, rates
+split by Army and Dark Transformation state, troubleshooting, observed rates,
+cooldown gaps, buttons not pressed, a no-tier-set section, macros, Cooldown
+Manager buffs, and gear and stats. Numbered citations. **Written 2026-10-01
+from 16 keys at level 16 to 18, played 24 to 29 September 2026.**
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 16 Mythic+ keys, 2 per dungeon in zone 55. `characterRankings` with
+  `bracket: 17` (key 18) and `bracket: 16` or `15` (keys 17 and 16), page 8.
+  CN 7, US 6, EU 3.
+- Hero tree by `table(abilityID: 433895)` per candidate. Vampiric Strike casts
+  mark San'layn. 47 of 48 candidates were San'layn.
+- Three keys from before the 22–23 September Blightfall hotfixes were found by
+  report `startTime` and replaced.
+- 56 boss pulls, 108 trash pulls of 4 or more enemies, 11 single-enemy boss
+  pulls, 518 Dark Transformation windows, 24,609 casts.
+
+Live spell values — nether tooltips and spell pages, IDs in the guide's Sources
+list. Hotfix history from the Wowhead blue tracker post
+<https://www.wowhead.com/blue-tracker/news/us/hotfixes-september-24-2026-world-of-warcraft-blizzard-news-24296142>,
+which lists every hotfix from 13 August to 29 September 2026.
+
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-rotation-cooldowns-abilities>
+  and its `mythic-plus-tips`, `spec-builds-talents` and `stat-priority` pages
+- <https://www.wowhead.com/guide/classes/death-knight/unholy/rotation-cooldowns-pve-dps>
+  and `stat-priority-pve-dps`
+- <https://www.method.gg/guides/unholy-death-knight/playstyle-and-rotation>,
+  `talents` and `stats-races-and-consumables`
+- <https://maxroll.gg/wow/class-guides/unholy-death-knight-mythic-plus-guide> —
+  updated 2026-08-17, recommends Rider, still says "Pestilence"
+- <https://murlok.io/death-knight/unholy/m+> — top-50 hero tree, stats,
+  weapons, rune and talent picks. Slugs for one tree are `/san'layn/m+` and
+  `/rider-of-the-apocalypse/m+`
+
+Reddit:
+
+- <https://www.reddit.com/r/CompetitiveWoW/comments/1w5703v/whats_going_on_with_dps_dk/>
+- <https://www.reddit.com/r/CompetitiveWoW/comments/1wa3y1o/why_do_unholy_dk_magi_spawn_so_far_away/>
+
+Sources that failed:
+
+- `characterRankings` past page 20 — refused. Use the `bracket` argument, as
+  the `wow-rotation-guide` cookbook now describes.
+- Nether still serves tooltips for removed spells (Apocalypse, Festering
+  Wound's old records, Abomination Limb). Check the live tree on murlok before
+  trusting a nether page for Unholy.
+- `wowhead.com/guide/classes/death-knight/unholy/hero-talents` — stale, titled
+  for The War Within 11.2.7.
+- Maxroll openers and stat priority are images.
+- The main-hand rune enchant ID 6245 was not mapped to a name. murlok's
+  Rune of the Apocalypse 48/50 suggests it.
+
+> [!IMPORTANT]
+> Icy Veins, Method and the Wowhead rotation, talent and stat pages share one
+> author, Taeznak, for Unholy. Treat them as one source.
+
+> [!CAUTION]
+> Measure the global cooldown against the next **rotational** press. Counting
+> Dark Transformation as an ordinary press made Army of the Dead look off the
+> global cooldown, because the two share a macro. Excluding that pair showed
+> Army on the global cooldown and Dark Transformation off it.
+
+> [!NOTE]
+> Necrotic Coil (1242174) and Graveyard (383269) appear only in the 30 seconds
+> after Army of the Dead, through the Apex talent. Vampiric Strike (433895)
+> replaces Scourge Strike for the whole of Dark Transformation. Count each pair
+> as one button when comparing rates against a guide.

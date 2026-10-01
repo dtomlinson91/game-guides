@@ -1409,3 +1409,73 @@ Sources that failed:
 > after Army of the Dead, through the Apex talent. Vampiric Strike (433895)
 > replaces Scourge Strike for the whole of Dark Transformation. Count each pair
 > as one button when comparing rates against a guide.
+
+#### Guardian Druid — defensives
+
+[`world-of-warcraft/rotations/guardian-druid-mplus-defensives.md`](world-of-warcraft/rotations/guardian-druid-mplus-defensives.md)
+— Mythic+ defensive cycling for Elune's Chosen with the 4-piece. Covers a
+systems overview, the big-pull opener and a 5-second coverage timeline for
+the first minute, stagger against stack, Ironfur stack distribution,
+Frenzied Regeneration, Survival Instincts, the response to health drops, five
+surprising rules, troubleshooting, danger pulls per dungeon, observed rates,
+cooldown timings, buttons not pressed, one macro, and gear and stats.
+Numbered citations. **Written 2026-10-01 from 16 timed keys at level 21,
+played 20 September to 1 October 2026.** The user asked for logs over
+written guides, because guides are not written for high keys.
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 16 keys, 2 per dungeon in zone 55, from `characterRankings` with
+  `bracket: 20` (key 21), page 1, taken from the middle of each list and
+  timed only (score above 400). Key 22 (`bracket: 21`) held only 1 to 8
+  Guardian tanks per dungeon.
+- Tank rankings are one entry per character, so the lists are short (15 to
+  59 per dungeon at key 21) and the same names recur. Cap each tank at 2 logs.
+- Per log: `Casts` with `includeResources`, `Buffs` with `targetID`,
+  `DamageTaken`, `Healing` and `Deaths`. The fetch procedure ran in four
+  parallel agents writing raw pages to the scratchpad, then one Python pass
+  analysed all of them.
+
+Live spell values — nether tooltips and spell pages, IDs in the guide's
+Sources list. <https://murlok.io/druid/guardian/m+> and
+<https://murlok.io/druid/guardian/talents> for the 12.1 tree and top-50
+picks.
+
+Written guides — read only to check their claims:
+
+- <https://www.icy-veins.com/wow/guardian-druid-pve-tank-rotation-cooldowns-abilities>,
+  `mythic-plus-tips` and `stat-priority`
+- <https://www.wowhead.com/guide/classes/druid/guardian/rotation-cooldowns-pve-tank>
+- <https://www.method.gg/guides/guardian-druid/playstyle-and-rotation>
+- <https://maxroll.gg/wow/class-guides/guardian-druid-mythic-plus-guide>
+
+Sources that failed:
+
+- `DamageTaken` events ignore `targetID`, `sourceID` and
+  `filterExpression: "target.id = X"` and return nothing. Fetch unfiltered
+  and filter on `targetID` in Python.
+- `Buffs` with `targetID` alone returned only self-applied auras. Externals
+  from other players are visible only in the `buffs` string on each damage
+  event.
+- Wowhead search suggestions were refused by Bright Data after one call.
+- Reddit: one r/CompetitiveWoW search found only Season 1 POV threads. The
+  r/wownoob search returned an empty body.
+- One log (`9YBhtf8Mk1LJAHay`) carried no `combatantInfo`, so gear covers 15
+  tanks.
+
+> [!TIP]
+> **Each `DamageTaken` event carries a `buffs` field**, a dot-separated list
+> of every aura on the target at that hit, and the target's health when
+> `resourceActor` is 2. That one stream answers "what was up when the damage
+> landed" and "how low did health go" without joining the buff stream.
+
+> [!IMPORTANT]
+> Rank danger by **unmitigated** intake (`unmitigatedAmount`), not damage
+> taken. Damage taken is already reduced by the defensives under study, so
+> ranking by it hides the moments the defensives covered well.
+
+> [!NOTE]
+> Lunar Beam logs two cast IDs per press, 204066 and 1270292. The second is
+> its damage effect. Count one. Rage of the Sleeper and Renewal are not in
+> the 12.1 tree, and nether serves Rage of the Sleeper only as a Legion
+> artifact trait.

@@ -1479,3 +1479,47 @@ Sources that failed:
 > its damage effect. Count one. Rage of the Sleeper and Renewal are not in
 > the 12.1 tree, and nether serves Rage of the Sleeper only as a Legion
 > artifact trait.
+
+#### Guardian Druid — danger pulls
+
+[`world-of-warcraft/rotations/guardian-druid-mplus-danger-pulls.md`](world-of-warcraft/rotations/guardian-druid-mplus-danger-pulls.md)
+— a per-pull defensive plan for three pulls the user named: the Murder Row
+Punisher pack after Zaen Bladesorrow, the three Voidscar Arena pulls with a
+Devouring Brutalizer, and the Kings' Rest opening Guardians with Bloodlust.
+Each pull has its arrivals, the opener, a 5-second coverage table, what hurts,
+and every tank's press timeline. **Written 2026-10-01 from 24 timed key 21
+runs, 8 per dungeon.** Six per dungeon are the top key 21 runs by tanks not
+already sampled. The other two are the logs from the defensives guide.
+
+Method — splitting chain pulls:
+
+- WCL `dungeonPulls` merges chained packs. Split them by **arrival**: the
+  first `DamageTaken` event from each enemy `(sourceID, sourceInstance)`. A
+  gap over 5 seconds between arrivals starts a new wave. The pull ends at
+  the named enemy's last damage event.
+- Enemy names come from `masterData { actors { id name type gameID } }`.
+- The `buffs` field on each `DamageTaken` event shows which defensives were
+  up on that exact hit. Grouping a named ability's hits by that field gives
+  "damage per hit under Survival Instincts against Barkskin" directly.
+
+> [!IMPORTANT]
+> **Bloodlust is not in the tank's data.** It is not in the `buffs` string on
+> damage events, and `Buffs` with `targetID` returns only self-cast auras.
+> Fetch it as a group cast instead. One batched query covers every log:
+> `report(code) { events(fightIDs, dataType: Casts, hostilityType:
+> Friendlies, filterExpression: "ability.id in (2825, 32182, 80353, 264667,
+> 390386, 466904, 444257)") }`, with one aliased `report` per log.
+
+> [!WARNING]
+> Parallel fetch agents share one tool-results directory. Two agents copied
+> another agent's file by picking the newest one. Tell every fetch agent to
+> copy by the exact path the tool prints, and validate afterwards: every
+> event's `fight` and `timestamp` must sit inside the fight, and the tank's
+> casts must be present.
+
+> [!NOTE]
+> In Kings' Rest, Incarnation was up at key start in all 8 logs and pressed
+> again 42 to 52 seconds in, under its 78.5-second floor. The logs fit a
+> cooldown reset at key start but cannot show it. Enemy buffs, such as the
+> Animated Guardian Enrage, are not fetched. The Soothe timings stand in for
+> the Enrage.

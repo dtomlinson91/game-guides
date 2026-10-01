@@ -22,8 +22,16 @@ ToolSearch  select:mcp__wcl__wcl_graphql,mcp__wcl__wcl_get_events,mcp__wcl__wcl_
 > whose first element holds the real JSON in a `.text` field, so parse
 > defensively.
 
-Rate limit is 3600 points an hour. A full 16-log run costs a small fraction of
-that, so cost is never the constraint.
+Rate limit was 18,000 points an hour on 2026-09-30. A full 16-log run costs a
+small fraction of that: an events call cost about 3 points, and a batched
+`fights` or `table` query about 1.
+
+> [!WARNING]
+> The budget belongs to the API client, not to this session. Any other tool
+> that uses the same `WCL_CLIENT_ID` spends it too. In one run, 12,384 points
+> were spent in an hour in which the session made no successful call. The server then returned HTTP
+> 429 for about 35 minutes, and `wcl_get_rate_limit` itself failed during
+> that time. Wait for the reset in the background. Do not retry in a loop.
 
 ## 1. Find the zone
 

@@ -354,9 +354,9 @@ On the 10 pulls with one enemy only, Obliterate rises to 19.1, Frost Strike to
 14.6, and Frostscythe and Glacial Advance fall to zero [[1]](#ref-1).
 
 > [!NOTE]
-> **Empower Rune Weapon and Howling Blast are the tightest bands.** Empower
-> Rune Weapon sits between 3.9 and 4.8 on bosses in every log. A rate well
-> below that band is a real problem to fix first.
+> **Empower Rune Weapon has one of the tightest bands.** It sits between 3.9
+> and 4.8 on bosses in every log. A rate well below that band is a real
+> problem to fix first.
 
 > [!TIP]
 > Boss rates include adds, because the median boss pull in this sample holds 9
@@ -381,12 +381,17 @@ cooldown. The median shows how often the field actually presses it
 | Mind Freeze | 12.0 s | 23.1 s | 14 to 44 |
 
 > [!CAUTION]
-> Two of these do not match the tooltip. The Raise Dead tooltip gives a
-> 2-minute cooldown, but the logs show a hard floor at 90.0 seconds across 222
-> gaps. Empower Rune Weapon has 2 charges on a 30-second recharge
-> [[3]](#ref-3), which allows about 2 casts a minute, yet the field casts 4.3.
-> Some talent refunds charges or cuts the recharge. This file did not identify
-> which, so measure the rate rather than quote the tooltip.
+> Three of these do not match the tooltip.
+>
+> - The Raise Dead tooltip gives a 2-minute cooldown [[17]](#ref-17). The logs
+>   show a hard floor at 90.0 seconds across 222 gaps.
+> - Empower Rune Weapon has 2 charges on a 30-second recharge [[3]](#ref-3),
+>   which allows about 2 casts a minute. The field casts 4.3.
+> - The Mind Freeze tooltip gives 15 seconds [[17]](#ref-17). The logs show a
+>   floor at 12.0 seconds.
+>
+> A talent or passive probably causes each difference. This file did not
+> identify which, so measure the rate rather than quote the tooltip.
 
 ## Buttons not pressed
 
@@ -397,8 +402,8 @@ Do not look for them on the bars.
   which every top player takes [[12]](#ref-12)[[30]](#ref-30)
 - **Horn of Winter** — now a passive that returns 2 Runes [[14]](#ref-14)
 - **Death and Decay** — zero casts
-- **Chill Streak**, **Soul Reaper** and **Abomination Limb** — absent from the
-  top-50 talent picks [[30]](#ref-30)
+- **Chill Streak**, **Soul Reaper** and **Abomination Limb** — zero casts, and
+  absent from the top-50 talent map [[30]](#ref-30)
 - **Exterminate** — fires automatically. See
   [Four rules that surprise](#four-rules-that-surprise)
 - **Frostbane** and **Shattering Blade** — builds that need Razorice. No
@@ -411,7 +416,10 @@ logs, 82 casts in all [[1]](#ref-1).
 
 Play **Deathbringer**. 47 of 48 checked candidates at key level 16 to 18 cast
 Reaper's Mark 26 to 35 times per key [[1]](#ref-1). The one exception cast it
-twice, which suggests Rider of the Apocalypse or a mid-key swap.
+twice, which suggests Rider of the Apocalypse or a mid-key swap. Icy Veins
+recommends the same dual-wield Deathbringer Breath build for Mythic+
+[[20]](#ref-20). Wowhead recommends Deathbringer with the same import string,
+and does not name a weapon type [[24]](#ref-24).
 
 Deathbringer adds one button, Reaper's Mark, on the same 45-second cooldown as
 Pillar of Frost [[7]](#ref-7). Its other nodes are passive. The ones that
@@ -761,7 +769,7 @@ What the sample does **not** cover:
 14. <a id="ref-14"></a>[Horn of Winter](https://www.wowhead.com/spell=57330/horn-of-winter) — now passive
 15. <a id="ref-15"></a>[Frostreaper](https://www.wowhead.com/spell=1230306/frostreaper) — tooltip links to Icy Onslaught text
 16. <a id="ref-16"></a>[Voracious Heart of Ula'tek](https://www.wowhead.com/item=270175/voracious-heart-of-ulatek) — on-use Strength for 20 seconds, 90-second cooldown. Also the item tooltips for Resonant Bellowstone (250228), Gebbo's Bottomless Bag (270164) and Zul'jin's Guillotine Technique (270173)
-17. <a id="ref-17"></a>Core spells — [Obliterate](https://www.wowhead.com/spell=49020/obliterate), [Frost Strike](https://www.wowhead.com/spell=49143/frost-strike), [Howling Blast](https://www.wowhead.com/spell=49184/howling-blast), [Glacial Advance](https://www.wowhead.com/spell=194913/glacial-advance), [Frostscythe](https://www.wowhead.com/spell=207230/frostscythe) — Rune and Runic Power costs
+17. <a id="ref-17"></a>Core spells — [Obliterate](https://www.wowhead.com/spell=49020/obliterate), [Frost Strike](https://www.wowhead.com/spell=49143/frost-strike), [Howling Blast](https://www.wowhead.com/spell=49184/howling-blast), [Glacial Advance](https://www.wowhead.com/spell=194913/glacial-advance), [Frostscythe](https://www.wowhead.com/spell=207230/frostscythe) — Rune and Runic Power costs. Also [Raise Dead](https://www.wowhead.com/spell=46585/raise-dead) and [Mind Freeze](https://www.wowhead.com/spell=47528/mind-freeze) — tooltip cooldowns of 2 minutes and 15 seconds
 18. <a id="ref-18"></a>[Bonegrinder](https://www.wowhead.com/spell=377098/bonegrinder) and [Enduring Strength](https://www.wowhead.com/spell=377190/enduring-strength) — passive Killing Machine and Pillar rewards
 
 </details>

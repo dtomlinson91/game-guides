@@ -903,7 +903,7 @@ ToolSearch  select:mcp__wcl__wcl_get_fights,mcp__wcl__wcl_get_player_info,mcp__w
 | `wcl_get_table` | The workhorse. Aggregated views: `healing`, `casts`, `damage-taken`, `buffs`, `deaths`, `resources`, and more |
 | `wcl_get_events` | Raw event streams. Use for cast sequences, combos, and anything needing exact timestamps |
 | `wcl_graphql` | Escape hatch. The only route that accepts a **time window**, which `wcl_get_table` does not |
-| `wcl_get_rate_limit` | Points spent this hour. Budget is 3600 per hour, so cost is rarely a problem |
+| `wcl_get_rate_limit` | Points spent this hour. Budget was 18,000 per hour on 2026-09-30. Other tools that use the same client spend the same budget |
 
 **Timestamps are report-relative milliseconds, not fight-relative.** Read the
 fight `startTime` from `wcl_get_fights` and add your offset to it. A window
@@ -1253,3 +1253,81 @@ Sources that failed:
 > Light hit 693 such pairs. The global cooldown ends during the 2-second cast,
 > so a queued instant fires at once. Check that the first spell is instant
 > before you call a pair a macro.
+
+#### Frost DK
+
+[`world-of-warcraft/rotations/frost-dk-mplus-rotation.md`](world-of-warcraft/rotations/frost-dk-mplus-rotation.md)
+— Mythic+ rotation for Deathbringer, dual-wield Breath of Sindragosa. Covers a
+systems overview, the single-target and AoE priority lists with a proc-state
+table, the target-count swap, the two burst presses (Breath press and
+Pillar-only press), Frostwyrm's Fury and its Apex recall, openers, four
+surprising rules, rates split by Breath and Pillar state, troubleshooting,
+observed rates, cooldown gaps, buttons not pressed, a no-tier-set section,
+macros, Cooldown Manager buffs, and gear and stats. It uses the numbered
+citation format. **Written 2026-09-30 from 16 keys at level 16 to 18.**
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- 16 Mythic+ keys, 2 per dungeon in zone 55, from `characterRankings` pages 6
+  and 14. Page 6 is key level 18 (17 on two dungeons), page 14 is 17 (16 on
+  The Blinding Vale and Voidscar Arena). US 5, EU 5, CN 4, TW 2.
+- Hero tree from one batched query per 12 candidates:
+  `table(dataType: Casts, abilityID: 439843)` plus `playerDetails`. Reaper's
+  Mark casts mark Deathbringer. 47 of 48 candidates were Deathbringer.
+- 56 boss pulls, 107 trash pulls of 4 or more enemies, 10 single-enemy boss
+  pulls, 498 Pillar of Frost windows, 26,099 casts.
+
+Live spell values — nether tooltips and spell pages, IDs in the guide's Sources
+list. The research notes are in the session scratchpad, not in the repo.
+
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/frost-death-knight-pve-dps-rotation-cooldowns-abilities>
+  and its `mythic-plus-tips`, `spec-builds-talents` and `stat-priority` pages
+- <https://www.wowhead.com/guide/classes/death-knight/frost/rotation-cooldowns-pve-dps>,
+  `talent-builds-pve-dps` and `stat-priority-pve-dps`
+- <https://www.method.gg/guides/frost-death-knight/playstyle-and-rotation>,
+  `talents` and `stats-races-and-consumables`
+- <https://maxroll.gg/wow/class-guides/frost-death-knight-mythic-plus-guide> —
+  updated 2026-08-17, stale talent and tier values
+- <https://murlok.io/death-knight/frost/deathbringer/m+> — top-50 stats,
+  weapons, runes and talent picks. Matched the logs on every point
+
+Reddit:
+
+- <https://www.reddit.com/r/CompetitiveWoW/comments/1vxe81k/frost_dk/>
+- <https://www.reddit.com/r/CompetitiveWoW/comments/1wjkaro/m_dps_cds_optimisation/>
+
+Sources that failed:
+
+- The WCL API returned HTTP 429 for about 35 minutes mid-run, because another
+  consumer of the same client had spent most of the hourly budget. See the
+  cookbook in the `wow-rotation-guide` skill.
+- Reddit `r/wownoob` search returned an empty body (discovery quota spent).
+- Maxroll openers and stat priority are images.
+- The Frostreaper buff tooltip (1230306) shows Icy Onslaught text, a talent no
+  top player takes. What Frostreaper does was not confirmed.
+- The Wowhead Cooldown Manager page was not re-read. The guide cites the read
+  made for the Retribution Paladin guide.
+
+> [!IMPORTANT]
+> Icy Veins and Method share one author, Taeznak, so they count as one source.
+> Method's Mythic+ build is labelled "Frostbane" but uses the Breath import
+> string from Icy Veins and Wowhead. No sampled log used Razorice.
+
+> [!TIP]
+> `CombatantInfo` gear entries carry a `setID` field. Counting it per player
+> gives the tier-set piece count directly. Set 2055 is the Frost patch 12.1
+> set, and all 16 sampled players had 4 or more pieces.
+
+> [!CAUTION]
+> Three cooldowns in the logs contradict their tooltips: Raise Dead floors at
+> 90 seconds (tooltip 2 minutes), Mind Freeze at 12 seconds (tooltip 15), and
+> Empower Rune Weapon runs at 4.3 casts a minute on 2 charges with a 30-second
+> recharge. The cause was not found for any of them.
+
+> [!NOTE]
+> Exterminate logs as a real cast (441424) 0.52 seconds after each Obliterate
+> or Frostscythe, plus a `fake` cast (441426). Neither is a button. Filter both
+> out of any press count. The Frostwyrm's Fury recall logs under its own ID,
+> 1265384, and is off the global cooldown.

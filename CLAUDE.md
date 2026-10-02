@@ -1523,3 +1523,18 @@ Method — splitting chain pulls:
 > cooldown reset at key start but cannot show it. Enemy buffs, such as the
 > Animated Guardian Enrage, are not fetched. The Soothe timings stand in for
 > the Enrage.
+
+Added 2026-10-02 — the Murder Row pull of Warehouse Workers onto Zaen
+Bladesorrow, from the same 8 logs:
+
+- **Enemy casts and buffs show what an add does.** Fetch
+  `events(dataType: Casts, hostilityType: Enemies, startTime, endTime)` and
+  the same with `dataType: Buffs`, one aliased `report` per log in one
+  query. A `begincast` with no `cast` within the cast time is an interrupt.
+- **`dataType: Dispels` shows every Soothe, Tranquilizing Shot or self
+  dispel,** with the removed aura in `extraAbilityGameID`. It showed that no
+  player removed Back to Work! (1216970), and that tanks remove Zaen's
+  Envenom (474515) from themselves with Remove Corruption.
+- A buff that ends at the same fixed time on every target, here 3.6 seconds,
+  is usually a second caster refreshing it, not a removal. Compare it
+  against the enemy cast times before calling it a dispel.

@@ -1,13 +1,15 @@
 # Guardian Druid — Mythic+ danger pulls
 
-A pull-by-pull defensive plan for three Mythic+ pulls that kill Guardian
+A pull-by-pull defensive plan for four Mythic+ pulls that kill Guardian
 Druids, for Midnight, patch 12.1, Season 2. It shows what strong tanks press
 in the first seconds of each pull and how they cover it to the end. Every
 time, share and damage value comes from 24 timed key level 21 runs on
 Warcraft Logs, 8 per dungeon [[1]](#ref-1).
 
-- [Murder Row](#murder-row-the-punisher-pack) — the pack with a Shivan
-  Punisher straight after the second boss
+- [Murder Row, second boss](#murder-row-adds-onto-zaen-bladesorrow) — the
+  Warehouse Workers pulled onto Zaen Bladesorrow, and the Taskmaster Enrage
+- [Murder Row, after the boss](#murder-row-the-punisher-pack) — the pack
+  with a Shivan Punisher straight after the second boss
 - [Voidscar Arena](#voidscar-arena-the-brutalizer-pulls) — the three pulls
   with a Devouring Brutalizer
 - [Kings' Rest](#kings-rest-the-opening-guardians) — the two Animated
@@ -30,7 +32,13 @@ Warcraft Logs, 8 per dungeon [[1]](#ref-1).
 
 ## Contents
 
-- [One rule for all three](#one-rule-for-all-three)
+- [One rule for every pull](#one-rule-for-every-pull)
+- [Murder Row: adds onto Zaen Bladesorrow](#murder-row-adds-onto-zaen-bladesorrow)
+  - [The adds](#the-adds)
+  - [Back to Work!](#back-to-work)
+  - [How groups avoid it](#how-groups-avoid-it)
+  - [The tank's presses](#the-tanks-presses)
+  - [Zaen pull timelines](#zaen-pull-timelines)
 - [Murder Row: the Punisher pack](#murder-row-the-punisher-pack)
   - [What arrives](#what-arrives)
   - [The first 20 seconds](#the-first-20-seconds)
@@ -55,7 +63,7 @@ Warcraft Logs, 8 per dungeon [[1]](#ref-1).
 - [The sample](#the-sample)
 - [Sources](#sources)
 
-## One rule for all three
+## One rule for every pull
 
 Every one of these pulls is most dangerous in its first 10 seconds. The
 tanks arrive with almost no Ironfur, at a median of 0.7 stacks in the first 5
@@ -82,6 +90,108 @@ builds.
 > [!TIP]
 > Spend the first Rage of a dangerous pull on Ironfur. Each of the first
 > three stacks cuts melee damage more than any later stack does.
+
+## Murder Row: adds onto Zaen Bladesorrow
+
+Groups pull the 6 Warehouse Workers before the second boss and fight them on
+top of Zaen Bladesorrow. The danger is the Keen Taskmaster's Back to Work!,
+an Enrage on the Workers. No tank died on this pull in the 8 logs. The
+lowest health per tank ranged from 28% to 75%.
+
+### The adds
+
+Time 0 in this section is the Workers' first hit on the tank.
+
+- **6 Warehouse Workers** arrive together. Zaen is engaged 9 to 11 seconds
+  later.
+- **2 Keen Taskmasters.** On 5 of 8 logs, 1 or 2 came in with the Workers.
+  The rest joined about a minute later.
+- **The Workers die 39 to 67 seconds after their first hit,** at a median of
+  47 seconds. Until then they deal 44% to 67% of the damage the tank takes.
+
+### Back to Work!
+
+Back to Work! is a 3-second cast. It **Enrages every Warehouse Worker in
+combat within 40 yards, with 200% more attack speed for 20 seconds**
+[[3]](#ref-3).
+
+- **Each Taskmaster casts it about every 25.5 seconds.** With two
+  Taskmasters, the second cast lands about 3.6 seconds after the first and
+  refreshes the Enrage.
+- **When a Taskmaster comes in with the Workers, its first cast starts 3 to 8
+  seconds in.** On 3 of the 4 Enraged logs, the Enrage first landed at 7 to
+  11 seconds, just as Zaen is engaged.
+- **The Enrage multiplies Worker damage.** Workers dealt a median of **18%**
+  of the tank's maximum health per second while Enraged, against **7%**
+  without it. At the 90th percentile it was 32% against 21%. Each hit is
+  not larger. There are about three times as many of them.
+
+> [!IMPORTANT]
+> **No group removed the Enrage.** None of the 8 tanks cast Soothe on this
+> pull, and the dispel events show no player removing Back to Work! from any
+> Worker. Six Workers share one Enrage cast, so a single-target removal does
+> not answer it. The groups answered it in other ways.
+
+### How groups avoid it
+
+The Enrage was up in only 4 of the 8 logs, for 46, 25, 20 and 3 seconds.
+
+1. **Kill the Workers before a Taskmaster casts.** In 4 logs, no Back to
+   Work! landed while a Worker lived. In 3 of those, the Taskmasters came
+   later, and their first cast started 52 to 83 seconds in, after the Workers
+   died. In the fourth, a Taskmaster came in with the Workers but did not
+   start a cast until 83 seconds. The logs do not show why. Crowd control is
+   one possible reason.
+2. **Interrupt it.** One group stopped 3 casts in a row at 29 to 36 seconds
+   and held the Enrage to 3 seconds in total. Begin casts with no matching
+   cast appear in 5 of the 8 logs.
+3. **When it lands, cover it with a major.** Across the 115 Enraged seconds,
+   at least one major was up 89% of the time: Incarnation 64%, Barkskin 36%,
+   Lunar Beam 35% and Survival Instincts 10%.
+
+> [!TIP]
+> Ask the group to kill or interrupt a Taskmaster that comes in with the
+> Workers. The tank's defensives only absorb the Enrage. Interrupts and kill
+> order stop it.
+
+### The tank's presses
+
+| Press | Tanks | When | Notes |
+| --- | --- | --- | --- |
+| Barkskin | 8 of 8 | 1.8 s before to 0.3 s after the first hit | Always the first major |
+| Lunar Beam | 8 of 8 | 3.1 to 15.2 s | |
+| Incarnation | 8 of 8 | 1.5 to 12.9 s on 7 of 8 | One tank held it to 34.3 s, for the second Enrage |
+| Survival Instincts | 4 of 8 | 1.4 to 24.2 s | 3 of the 4 tanks who faced an Enrage used it |
+| Second Barkskin | 8 of 8 | 32.6 to 51.7 s | |
+| Remove Corruption on self | 5 of 8 | 38.8 to 42.7 s | Removes Zaen's Envenom from the tank |
+
+- **The opener is the standard one:** Barkskin at contact, then Lunar Beam
+  and Incarnation about 10 to 13 seconds in, as Barkskin runs low and Zaen
+  joins.
+- **The Enraged tanks spent more.** Of the 4 tanks who faced an Enrage, 3
+  used Survival Instincts at 1.4 to 24.2 seconds. One of them also used a
+  potion at 20.9 seconds. Of the 4 who did not face it, only 1 used Survival
+  Instincts.
+- **Remove Corruption is a defensive here.** The tanks removed Zaen's Envenom
+  from themselves 1 to 3 times per boss. In this window they did it at about
+  40 seconds.
+
+### Zaen pull timelines
+
+Seconds from the Workers' first hit. "Enraged" lists when Back to Work! was
+applied. See [How to read a timeline](#how-to-read-a-timeline). RC is Remove
+Corruption.
+
+| Tank | Enraged | Presses | FR | Lowest health |
+| --- | --- | --- | --- | --- |
+| Knowmedruid | 9, 13, 34, 38 s | B −0.9 · I 10.2 · LB 11.9 · SI 18.6 · B 33.9 · RC 38.8 · LB 60.4 | 7 | 36% |
+| Metalferal | 7, 10, 32, 36 s | B −1.8 · SI 1.4 · I 7.0 · LB 10.8 · B 32.6 | 3 | 44% |
+| Søvka | 11, 36 s | B −0.6 · LB 10.8 · Pot 20.9 · SI 24.2 · B 33.9 · I 34.3 · RC 40.1 | 3 | 46% |
+| Kirabearr | 43 s, 1 Worker | B −0.8 · I 12.7 · LB 14.1 · B 35.5 · RC 42.7 | 1 | 64% |
+| Kockomedved | none | B 0.3 · I 11.3 · LB 15.2 · RC 40.1 · B 51.7 · LB 55.9 | 5 | 28% |
+| Notbychoice | none | B −0.4 · I 1.5 · LB 3.1 · RC 40.2 · B 43.3 · LB 43.5 | 5 | 52% |
+| Pjdruid | none | B −0.4 · I 11.0 · LB 13.0 · SI 18.8 · B 34.4 | 1 | 56% |
+| Zacdruid | none | B −0.7 · LB 11.7 · I 12.9 · B 37.7 · LB 52.4 | 0 | 75% |
 
 ## Murder Row: the Punisher pack
 
@@ -526,9 +636,13 @@ by a fraction of a second.
 - **Pull windows.** Each window starts at the first arrival of the wave that
   holds the named enemy. It ends at the named enemy's last damage, or the
   first wave's last damage on Murder Row.
+- **Zaen Bladesorrow pull.** The same 8 Murder Row logs, plus enemy casts,
+  enemy buffs and dispels from 20 seconds before the boss to 140 seconds
+  after it. These show Back to Work! directly.
 - **Limits.** The sample holds strong tanks only, and every one survived
   these pulls. It shows a plan that works, not the mistake behind a death.
-  Enemy buffs, such as the Guardian Enrage, are not in the data.
+  Enemy buffs were fetched only for the Zaen pull, so the Guardian Enrage
+  in Kings' Rest is not in the data.
 
 ## Sources
 
@@ -537,5 +651,6 @@ by a fraction of a second.
 
 1. <a id="ref-1"></a>Warcraft Logs, through the Warcraft Logs API — 24 Mythic+ keys at level 21, zone 55. Murder Row: `TwxgzJKWLZFNnPpv`, `gR3AvnbyQD8apCJ9`, `1aFHVmcGnANyCPjD`, `73TFmcNdgkRq8Awh`, `LqJg1ZxANdMyz6kR` (fight 2), `6TGZ8m2cbyC4RWPD`, `L3kTwhD7cMZYvHj6`, `pZ1k4BjA3ma7JN6h`. Voidscar Arena: `Zb1TAQ6hfmBnKpXq` (fight 7), `J8V3YzkqFtcXjLHa`, `HqD6Cgk2dV4RKZTw`, `hnjGJ6YmZt7rxkwv`, `1wy9mYQDNdzBRZkV`, `qmbX8MHr3GKP14x7`, `ZK2gkRAwBy9zL7WX`, `GBgQcbrpk8XvqhFj`. Kings' Rest: `9YBhtf8Mk1LJAHay`, `3wNF46pYxQCfDnWA`, `wXNZBp2vYPGmTrQ4`, `Qdr8NwJbPAgchDt3`, `LqJg1ZxANdMyz6kR` (fight 5), `KtgdbAacQBkq8TCX`, `Wk8rGJQRPdMC13Dg`, `Cjf2VdAhFZ79Ygan` — every arrival, press, hit, health reading, Bloodlust time and death
 2. <a id="ref-2"></a>[Guardian Druid — Mythic+ defensives](guardian-druid-mplus-defensives.md) — defensive values, measured cooldowns and durations, and the general big-pull cycle, with its own spell sources
+3. <a id="ref-3"></a>[Back to Work!](https://www.wowhead.com/spell=1216970/back-to-work) — Enrage type, 3-second cast, 200% attack speed for 20 seconds on Warehouse Workers within 40 yards
 
 </details>

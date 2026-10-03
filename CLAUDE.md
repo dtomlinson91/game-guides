@@ -861,6 +861,12 @@ every guide, because a rotation can change completely between seasons. As of
 > intake, the full Warcraft Logs query cookbook, and the six analysis traps that
 > produce confident wrong numbers. Do not rebuild that method from scratch.
 
+> [!IMPORTANT]
+> **To find the trash and boss abilities that need a tank defensive, use the
+> `wow-mplus-tank-busters` skill** in `.claude/skills/wow-mplus-tank-busters/`.
+> It holds the per-dungeon procedure, the analysis script and ten traps. Run it
+> again for each new season.
+
 ### Research sources
 
 A starting point, not an exclusive one.
@@ -1538,3 +1544,54 @@ Bladesorrow, from the same 8 logs:
 - A buff that ends at the same fixed time on every target, here 3.6 seconds,
   is usually a second caster refreshing it, not a removal. Compare it
   against the enemy cast times before calling it a dispel.
+
+### Mythic+ reference
+
+Guides that cover a whole Mythic+ season rather than one spec. They live in
+`world-of-warcraft/mythic-plus/`.
+
+#### Tank busters
+
+[`world-of-warcraft/mythic-plus/season-2-tank-busters.md`](world-of-warcraft/mythic-plus/season-2-tank-busters.md)
+— the trash and boss abilities in all 8 Season 2 dungeons that hit the tank
+hard enough at key 20+ to need a major defensive. Each entry gives the mob,
+the cast ID to alert on, the cast time, the cadence, raw damage as a
+percentage of maximum health, and the damage taken with and without a major
+defensive. Also covers damage amplifiers, heavy group damage on bosses, full
+measurements and the method. **Written 2026-10-03 from 64 timed Guardian Druid
+keys at levels 20 to 22**, built with the `wow-mplus-tank-busters` skill. A
+key 19 Murder Row death to Shield Bash (`FfqQTLNA9m74hdyc`, fight 11) was the
+trigger and the worked example.
+
+Primary source: Warcraft Logs, through the MCP server. 8 runs per dungeon from
+`characterRankings` with `bracket` 19, 20 and 21, taken from the middle of
+each list. The run codes are in the guide's Sources list. The raw files,
+per-dungeon reports and JSON were in the session scratchpad, not in the repo.
+
+Live spell values: nether tooltips for every cast ID, linked per dungeon in
+the guide's Sources list.
+
+> [!TIP]
+> **`target.name` filters `DamageTaken` to one player.** `targetID` and
+> `target.id = X` do not. With `filterExpression: "ability.id != 1 and
+> target.name = '<tank>'"`, a whole key fits in one page of about 2,000
+> events, and a full 8-dungeon season cost under 4,000 points.
+
+> [!TIP]
+> A small `events` result comes back inline. Adding `masterData { abilities {
+> gameID name } }` to the query makes it large enough to save to a file, so
+> parallel agents can copy it by exact path instead of retyping it.
+
+Sources that failed:
+
+- Nether tooltips for Thundering Storm (1299273) returned empty nested links.
+  Poison Spear Volley's tooltip shows a placeholder damage of 35.
+- `Resurrects` is not a valid `EventDataType`, so the query fails.
+- The first version of the script split channels and missed second damage IDs.
+  Both are fixed in the skill's script, and both are in its traps list.
+
+> [!CAUTION]
+> Only 2 tanks died on trash in 64 keys and none on a boss. "Lethal" in the
+> guide is mostly inferred from raw size. The sample holds timed keys from
+> mid-ranked tanks, so it under-represents failure.
+

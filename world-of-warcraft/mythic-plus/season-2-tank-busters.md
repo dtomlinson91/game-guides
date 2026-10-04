@@ -188,7 +188,7 @@ debuffs [[5]](#ref-5)[[14]](#ref-14).
 | Tier | Boss | Ability (cast ID) | Cast | Every | Raw | Taken: none / major | Response |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Kokia Blazehoof | **Searing Blows** (372858) | 3 s channel, 4 hits | 40 s | **359%** | 49% / 39% | Major defensive. Each hit stacks Searing Wounds, a Fire DoT for 8 s, which is not in these figures |
-| 1 | Kyrakka and Erkhart Stormvein | **Stormslam** (381512) | 2.5 s | 23 to 26 s | 157%, Physical and Nature | 56% / 35% | Defensive. Leaves +100% Nature damage taken for 30 s, and it stacks because the gap is shorter. Lowest health seen: 5% |
+| 1 | Kyrakka and Erkhart Stormvein | **Stormslam** (381512) | 2.5 s | 23 to 26 s | 157%, Physical and Nature | 56% / 35% | Defensive. Leaves +100% Nature damage taken for 30 s. It is Magic, and it was gone within 1.4 s at the median, which fits a dispel: it never stacked in 63 casts. Left on, it would stack, because the gap is shorter than 30 s. Lowest health seen: 5% |
 | — | Melidrussa Chillworn | **Frigid Shard** (372808) | 2.5 s | kick | 198% | 36% / 23% | Interrupt it. 165 of 183 were kicked |
 
 ### Kings' Rest bosses

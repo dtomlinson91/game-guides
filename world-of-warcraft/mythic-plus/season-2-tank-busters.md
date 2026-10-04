@@ -322,6 +322,13 @@ Ironfur", and why some entries are Tier 1.
   major defensive reduces them, but healing has to cover the rest.
 - **Raw damage rises with key level.** Most busters were 10% to 25% bigger at
   key 22 than at key 20. Shield Bash went from 145% to 182%.
+- **A stacking debuff turns a covered buster into a lethal one.** At 5
+  Shield Bash stacks, every Physical hit on the tank deals double damage, so a
+  cycle of defensives that worked for the first bashes no longer holds. See
+  [stacking debuffs](#stacking-debuffs).
+- **Two casters of one buster double its rate.** Shield Bash, Sunder Slam,
+  Grievous Gash and Dismember all appear in pairs. Count the casters in the
+  pack before the pull.
 - **Strong tanks covered most casts.** Coverage with a major defensive was 60%
   to 100% per ability. The uncovered casts are where the risk sits.
 - **Bosses are planned, trash is reactive.** Boss busters repeat on a fixed

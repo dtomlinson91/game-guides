@@ -864,8 +864,10 @@ every guide, because a rotation can change completely between seasons. As of
 > [!IMPORTANT]
 > **To find the trash and boss abilities that need a tank defensive, use the
 > `wow-mplus-tank-busters` skill** in `.claude/skills/wow-mplus-tank-busters/`.
-> It holds the per-dungeon procedure, the analysis script and ten traps. Run it
-> again for each new season.
+> It holds the per-dungeon procedure, the analysis scripts and thirteen traps.
+> Run it again for each new season. Its "Stacking debuffs" rule applies to
+> every tank-death analysis too: read the `Debuffs` events on the tank and
+> count the stacks before blaming defensives.
 
 ### Research sources
 
@@ -1594,4 +1596,48 @@ Sources that failed:
 > Only 2 tanks died on trash in 64 keys and none on a boss. "Lethal" in the
 > guide is mostly inferred from raw size. The sample holds timed keys from
 > mid-ranked tanks, so it under-represents failure.
+
+**Updated 2026-10-04** with a "Stacking debuffs" section. The trigger: the key
+19 Shield Bash death came at 5 stacks, because the Bribed Guard and Captain in
+the first pack re-apply one shared 20 s debuff every 6 to 17 s. A tank's key
+22 recording (Pjdruid) shows the answer: an external at 4 stacks, then kill the
+Captain. The section gives the overlap rule (casters needed = floor(cadence ÷
+duration) + 1), a pull-dependent table, melee stacks and boss stacks. It
+added Tectonic Strike and Shred Defense to the trash tables, and corrected
+Stormslam: it never stacked in 63 casts, because it is Magic and is removed.
+
+- Data: one `Debuffs` query per key on the same 64 keys,
+  `filterExpression: "target.name = '<tank>'"`, batched 8 keys per query.
+  About 1 point per key. Analysed with the skill's new `scripts/debuffs.py`.
+- New tooltips: Tectonic Strike (1305225), Shred Defense (1233535), Cold Claws
+  (1305234), Stormslam debuff (381515), Shredding Claws (1238247), Shred Armor
+  (1311695). Glaive Toss (1295035) and Fel Missiles (1216571) returned empty
+  bodies.
+- The key 22 recording has no public link in the guide's Sources. Add one if
+  it is found.
+
+> [!TIP]
+> The log credits every stack of a shared debuff to its first caster. To find
+> who cast each stack, match the debuff event to the enemy hit at the same
+> millisecond. `debuffs.py` does this.
+
+#### Tanking macros
+
+[`world-of-warcraft/tanking-macros.md`](world-of-warcraft/tanking-macros.md)
+— general tank macros that any class can adapt. Starts with a "spell on a
+named mob, fall back to the current target, then swap back" macro, built on
+`/focus`, `/targetexact` and `/target focus`, for Soothing the Territorial
+Matriarch's Mother's Wrath in Den of Nalorakk. Also a mouseover variant and
+the macro rules behind both. **Written 2026-10-03.** Add new tank macros
+here; spec-only macros stay in that spec's guide.
+
+Sources:
+
+- Nether tooltips: Soothe (2908) and Mother's Wrath (1238053).
+- <https://warcraft.wiki.gg/wiki/MACRO_targetexact> and
+  <https://warcraft.wiki.gg/wiki/MACRO_focus>. Both pages are about 100 KB;
+  strip the markup and search for "Usage".
+- Warcraft Logs `Dispels` events with `filterExpression: "ability.id = 2908"`
+  show every Soothe and what it removed, in `extraAbilityGameID`. That
+  confirmed the mob and the Enrage name.
 

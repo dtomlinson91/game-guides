@@ -3,9 +3,10 @@
 The trash and boss abilities in each Season 2 Mythic+ dungeon that hit the
 tank hard enough, at key level 20 and above, to need a major defensive. Each entry gives
 the mob, the cast ID to put on an alert, the cast time, how often one mob
-casts it, and the size of the hit. Midnight, patch 12.1, Season 2. Measured on
-64 timed Guardian Druid keys at levels 20 to 22, 8 per dungeon
-[[1]](#ref-1)–[[8]](#ref-8).
+casts it, and the size of the hit. It also lists the debuffs that stack on the
+tank when a pull holds two or more of their casters. Midnight, patch 12.1,
+Season 2. Measured on 64 timed Guardian Druid keys at levels 20 to 22, 8 per
+dungeon [[1]](#ref-1)–[[8]](#ref-8).
 
 **Raw** is the hit before any mitigation, as a percentage of the tank's
 maximum health without Incarnation. It does not depend on how the tank played,
@@ -399,6 +400,13 @@ How the list was built, so it can be rebuilt next season. The
   "current target" and the tank took most hits.
 - **Tooltips.** Cast time, school and debuffs come from the Wowhead tooltip
   for each cast ID [[10]](#ref-10)–[[17]](#ref-17).
+- **Stacking debuffs.** Every debuff an enemy put on the tank, from a second
+  `Debuffs` query per key. An application that lands while the debuff is
+  still up is a re-application. Each application was matched to the mob that
+  dealt a hit at the same moment, because the log credits a shared stack to
+  its first caster. "Casters per pull" counts the mobs that hit the tank with
+  the ability inside one pull. Durations and stacking come from the tooltips,
+  checked against the log.
 - **Not counted.** Damage-over-time ticks are left out of the per-cast
   figures, so Searing Blows, Hulking Claw and the bleeds cost more than shown.
   Melee passives with no cast event (Duostrike, Ravenous Claws, Hydrastrike)
@@ -417,29 +425,29 @@ How the list was built, so it can be rebuilt next season. The
 <details open>
 <summary>Warcraft Logs</summary>
 
-1. <a id="ref-1"></a>Warcraft Logs API, Altar of Fangs (encounter 12993): `kZz8VWX4LQw7gMFp` (fight 1), `qFTg6AxH3yJBLdcm` (15), `JpqFxB7mvt2zV1N8` (9), `xJNctHfkPd8WvqrM` (9), `z9h1NfHZmk8DrgJ7` (22), `7LJ3tVDRMvd2XTPK` (6), `FtQkhndA86fN9J74` (3), `hwxcqz4Kyvntf9JM` (5) — every hit, cast, interrupt and death, trash and bosses
-2. <a id="ref-2"></a>Warcraft Logs API, Den of Nalorakk (encounter 12825): `3dPRGapmfkwM9xbT` (fight 43), `DafAxT7mckNz18hW` (1), `BFA2kQrMvG1ZCLKg` (4), `d4Hn9Q67qYh2PBJW` (3, the Lightning Bolt death), `rBp1NQhtPyjMHcaR` (1), `4n1MXYCdwPbmNDTF` (8), `fapKD6wqdXnPxVWz` (2), `kFDhvPJxjCnr4RQK` (19)
-3. <a id="ref-3"></a>Warcraft Logs API, Kings' Rest (encounter 61762): `3dPRGapmfkwM9xbT` (fight 42), `4K3XnYVqft7hJdND` (10), `3vQrKaCnN6R9Bh7L` (3), `MKLcn7vy2aF4N83k` (23), `a4JgZpyNdTMk71mR` (9), `BKwbh3HPFgDZC98V` (56), `KPyXJGdr4QNfDg2T` (114), `r1b3W2DkQRyM7HmY` (168)
-4. <a id="ref-4"></a>Warcraft Logs API, Murder Row (encounter 12813): `4AX3ZvVN9MCRqPdm` (fight 27), `PgaHCqNncQjLJbV2` (10), `Lq7nPWXGmcRNvtQf` (5), `m9Yjp3XfcnL7FyHM` (6), `xR2Zm6FpHVYn8gwv` (7), `1mA7j6Lw3TFPCgyN` (3), `L6WkcaVJgjntwKGM` (18), `XnN6crgMBWJaRLKk` (1)
-5. <a id="ref-5"></a>Warcraft Logs API, Ruby Life Pools (encounter 112521): `8ZhGQpH1nXTCLBbm` (fight 13), `BCLbRVKAMPhmtaFT` (8), `FWRQKnAjtTGPBq6r` (8), `Rqj8BZQ9r6mPfnDX` (32), `nKNhT2FyGpJWbMqD` (7), `DaYZz9KNy8gfL26M` (38), `bavyCQr3p71Fx86P` (42), `zqbh4pkCadnyQJcB` (68)
-6. <a id="ref-6"></a>Warcraft Logs API, Temple of Sethraliss (encounter 61877): `13x6ZbAXnpKjzDQf` (fight 1), `3naVqpJzyXhMtZcm` (33), `G9Ja1h4bH2yVtdCQ` (49), `k87pVBRNZT14PHCK` (212), `rKX36VZ4qBdj8zhm` (17), `BKwbh3HPFgDZC98V` (52), `RA39P4Zx6tVWq2FH` (12), `kQYBm6vKz41tXPVN` (1)
-7. <a id="ref-7"></a>Warcraft Logs API, The Blinding Vale (encounter 12859): `3naVqpJzyXhMtZcm` (fight 5), `HqD6Cgk2dV4RKZTw` (28), `G2p3VFvZkxHLdMhn` (1), `fKJdyjgXhNQzPGL8` (12), `zFrMqjVhYT2c9g7t` (21), `7J2fKyVGTmYLC9nq` (2), `bdnjGyKrFV92LPYZ` (1), `nfZkQKPaHhgBGrcA` (3) — also the Spore Spines totals
-8. <a id="ref-8"></a>Warcraft Logs API, Voidscar Arena (encounter 12923): `LqJg1ZxANdMyz6kR` (fight 11), `YfWGgkFKJht1AbXD` (16), `FWRQKnAjtTGPBq6r` (11), `GQKzfg1BxYqhwTFr` (11), `xb67hjtpJm8QyXHF` (13, the Sky Strike death), `RANGfmhc917ZwHWx` (11), `WYBZmQVvgptJxf8M` (1), `k9xghpqAf2GL7yr3` (1)
-9. <a id="ref-9"></a>Warcraft Logs report `FfqQTLNA9m74hdyc`, fight 11 — a key 19 Murder Row death to Shield Bash: 994,628 damage, 16,526 overkill, 3 Ironfur stacks, no major defensive
+1. <a id="ref-1"></a>Warcraft Logs API, Altar of Fangs (encounter 12993): `kZz8VWX4LQw7gMFp` (fight 1), `qFTg6AxH3yJBLdcm` (15), `JpqFxB7mvt2zV1N8` (9), `xJNctHfkPd8WvqrM` (9), `z9h1NfHZmk8DrgJ7` (22), `7LJ3tVDRMvd2XTPK` (6), `FtQkhndA86fN9J74` (3), `hwxcqz4Kyvntf9JM` (5) — every hit, cast, interrupt and death, trash and bosses, and every debuff on the tank
+2. <a id="ref-2"></a>Warcraft Logs API, Den of Nalorakk (encounter 12825): `3dPRGapmfkwM9xbT` (fight 43), `DafAxT7mckNz18hW` (1), `BFA2kQrMvG1ZCLKg` (4), `d4Hn9Q67qYh2PBJW` (3, the Lightning Bolt death), `rBp1NQhtPyjMHcaR` (1), `4n1MXYCdwPbmNDTF` (8), `fapKD6wqdXnPxVWz` (2), `kFDhvPJxjCnr4RQK` (19) — also every debuff on the tank: Shredding Claws and Shred Armor stacks
+3. <a id="ref-3"></a>Warcraft Logs API, Kings' Rest (encounter 61762): `3dPRGapmfkwM9xbT` (fight 42), `4K3XnYVqft7hJdND` (10), `3vQrKaCnN6R9Bh7L` (3), `MKLcn7vy2aF4N83k` (23), `a4JgZpyNdTMk71mR` (9), `BKwbh3HPFgDZC98V` (56), `KPyXJGdr4QNfDg2T` (114), `r1b3W2DkQRyM7HmY` (168) — also every debuff on the tank
+4. <a id="ref-4"></a>Warcraft Logs API, Murder Row (encounter 12813): `4AX3ZvVN9MCRqPdm` (fight 27), `PgaHCqNncQjLJbV2` (10), `Lq7nPWXGmcRNvtQf` (5), `m9Yjp3XfcnL7FyHM` (6), `xR2Zm6FpHVYn8gwv` (7), `1mA7j6Lw3TFPCgyN` (3), `L6WkcaVJgjntwKGM` (18), `XnN6crgMBWJaRLKk` (1) — also every debuff on the tank: Shield Bash stacks and their casters
+5. <a id="ref-5"></a>Warcraft Logs API, Ruby Life Pools (encounter 112521): `8ZhGQpH1nXTCLBbm` (fight 13), `BCLbRVKAMPhmtaFT` (8), `FWRQKnAjtTGPBq6r` (8), `Rqj8BZQ9r6mPfnDX` (32), `nKNhT2FyGpJWbMqD` (7), `DaYZz9KNy8gfL26M` (38), `bavyCQr3p71Fx86P` (42), `zqbh4pkCadnyQJcB` (68) — also every debuff on the tank: Tectonic Strike, Cold Claws, Frozen Solid and Stormslam uptime
+6. <a id="ref-6"></a>Warcraft Logs API, Temple of Sethraliss (encounter 61877): `13x6ZbAXnpKjzDQf` (fight 1), `3naVqpJzyXhMtZcm` (33), `G9Ja1h4bH2yVtdCQ` (49), `k87pVBRNZT14PHCK` (212), `rKX36VZ4qBdj8zhm` (17), `BKwbh3HPFgDZC98V` (52), `RA39P4Zx6tVWq2FH` (12), `kQYBm6vKz41tXPVN` (1) — also every debuff on the tank: Sunder Slam, Venomous Slash and Tainted Strike stacks
+7. <a id="ref-7"></a>Warcraft Logs API, The Blinding Vale (encounter 12859): `3naVqpJzyXhMtZcm` (fight 5), `HqD6Cgk2dV4RKZTw` (28), `G2p3VFvZkxHLdMhn` (1), `fKJdyjgXhNQzPGL8` (12), `zFrMqjVhYT2c9g7t` (21), `7J2fKyVGTmYLC9nq` (2), `bdnjGyKrFV92LPYZ` (1), `nfZkQKPaHhgBGrcA` (3) — also the Spore Spines totals, and every debuff on the tank
+8. <a id="ref-8"></a>Warcraft Logs API, Voidscar Arena (encounter 12923): `LqJg1ZxANdMyz6kR` (fight 11), `YfWGgkFKJht1AbXD` (16), `FWRQKnAjtTGPBq6r` (11), `GQKzfg1BxYqhwTFr` (11), `xb67hjtpJm8QyXHF` (13, the Sky Strike death), `RANGfmhc917ZwHWx` (11), `WYBZmQVvgptJxf8M` (1), `k9xghpqAf2GL7yr3` (1) — also every debuff on the tank: Shred Defense copies
+9. <a id="ref-9"></a>Warcraft Logs report `FfqQTLNA9m74hdyc`, fight 11 — a key 19 Murder Row death to Shield Bash: 994,628 damage, 16,526 overkill, 3 Ironfur stacks, no major defensive. The Shield Bash debuff held 5 stacks, applied in turn by the Captain and the Guard 7 to 17 s apart
 
 </details>
 
 <details open>
 <summary>Spell tooltips</summary>
 
-10. <a id="ref-10"></a>Wowhead tooltips, Altar of Fangs: [Dismember](https://www.wowhead.com/spell=1306911), [Corrosive Fangs](https://www.wowhead.com/spell=1294845), [Rattle](https://www.wowhead.com/spell=1294849); bosses: [Chop Down](https://www.wowhead.com/spell=1301350), [Tail Scythe](https://www.wowhead.com/spell=1298949), [Hydrastrike](https://www.wowhead.com/spell=1298683) — cast times, damage school, the +20% damage taken debuff, armor-ignoring pulses, two-hit Chop Down
-11. <a id="ref-11"></a>Wowhead tooltips, Den of Nalorakk: [Pulverize](https://www.wowhead.com/spell=1240280), [Lightning Bolt](https://www.wowhead.com/spell=1246687); boss: [Forceful Slam](https://www.wowhead.com/spell=1297797) — 12 yd radius and 4 s stun, single-target Nature bolt, 6 yd soak and Demoralizing Scream
+10. <a id="ref-10"></a>Wowhead tooltips, Altar of Fangs: [Dismember](https://www.wowhead.com/spell=1306911), [Corrosive Fangs](https://www.wowhead.com/spell=1294845), [Rattle](https://www.wowhead.com/spell=1294849); bosses: [Chop Down](https://www.wowhead.com/spell=1301350), [Tail Scythe](https://www.wowhead.com/spell=1298949), [Hydrastrike](https://www.wowhead.com/spell=1298683) — cast times, damage school, the +20% damage taken debuff for 20 s, armor-ignoring pulses, two-hit Chop Down
+11. <a id="ref-11"></a>Wowhead tooltips, Den of Nalorakk: [Pulverize](https://www.wowhead.com/spell=1240280), [Lightning Bolt](https://www.wowhead.com/spell=1246687), [Shredding Claws](https://www.wowhead.com/spell=1238247), [Shred Armor](https://www.wowhead.com/spell=1311695); boss: [Forceful Slam](https://www.wowhead.com/spell=1297797) — 12 yd radius and 4 s stun, single-target Nature bolt, 6 yd soak and Demoralizing Scream; −5% armor per stack for 2 s, −10% armor for 5 s
 12. <a id="ref-12"></a>Wowhead tooltips, Kings' Rest: [Soul Crush](https://www.wowhead.com/spell=1302028), [Mortal Bleed](https://www.wowhead.com/spell=1297918); bosses: [Blade Combo](https://www.wowhead.com/spell=268586), [Debilitating Backhand](https://www.wowhead.com/spell=266237), [Tail Thrash](https://www.wowhead.com/spell=265910) — the armor debuff, the 18 s bleed and healing reduction, Shattered Defenses
-13. <a id="ref-13"></a>Wowhead tooltips, Murder Row: [Shield Bash](https://www.wowhead.com/spell=1216529), [Heartstop Poison](https://www.wowhead.com/spell=1216589); bosses: [Chaos Barrage](https://www.wowhead.com/spell=1230298), [Legion Strike](https://www.wowhead.com/spell=473898), [Envenom](https://www.wowhead.com/spell=1222795) — 3 s cast and +20% Physical damage taken; 8 s coating, stacks of −5% maximum health; −80% healing received
-14. <a id="ref-14"></a>Wowhead tooltips, Ruby Life Pools: [Steel Barrage](https://www.wowhead.com/spell=372047), [Fiery Blast](https://www.wowhead.com/spell=1305955), [Fire Maw](https://www.wowhead.com/spell=392394), [Crushing Smash](https://www.wowhead.com/spell=372730); bosses: [Searing Blows](https://www.wowhead.com/spell=372858), [Stormslam](https://www.wowhead.com/spell=381512), [Frigid Shard](https://www.wowhead.com/spell=372808) — 1 s cast and 3 s channel; Fire, Physical and Nature parts; Searing Wounds and the Nature vulnerability
+13. <a id="ref-13"></a>Wowhead tooltips, Murder Row: [Shield Bash](https://www.wowhead.com/spell=1216529), [Heartstop Poison](https://www.wowhead.com/spell=1216589); bosses: [Chaos Barrage](https://www.wowhead.com/spell=1230298), [Legion Strike](https://www.wowhead.com/spell=473898), [Envenom](https://www.wowhead.com/spell=1222795) — 3 s cast and +20% Physical damage taken for 20 s, with no mention of stacking; 8 s coating, stacks of −5% maximum health; −80% healing received
+14. <a id="ref-14"></a>Wowhead tooltips, Ruby Life Pools: [Steel Barrage](https://www.wowhead.com/spell=372047), [Fiery Blast](https://www.wowhead.com/spell=1305955), [Fire Maw](https://www.wowhead.com/spell=392394), [Crushing Smash](https://www.wowhead.com/spell=372730), [Tectonic Strike](https://www.wowhead.com/spell=1305225); bosses: [Searing Blows](https://www.wowhead.com/spell=372858), [Stormslam](https://www.wowhead.com/spell=381512), [Frigid Shard](https://www.wowhead.com/spell=372808), [Stormslam debuff](https://www.wowhead.com/spell=381515), [Cold Claws](https://www.wowhead.com/spell=1305234) — 1 s cast and 3 s channel; Fire, Physical and Nature parts; +25% damage taken per Tectonic Strike stack for 8 s; Searing Wounds; the Nature vulnerability is Magic and stacks; Frozen Solid at 20 Cold Claws
 15. <a id="ref-15"></a>Wowhead tooltips, Temple of Sethraliss: [Head Butt](https://www.wowhead.com/spell=272654), [Venomous Slash](https://www.wowhead.com/spell=1303443), [Sunder Slam](https://www.wowhead.com/spell=1291468); bosses: [Overload](https://www.wowhead.com/spell=1288428), [Tainted Strike](https://www.wowhead.com/spell=1300803), [Lightning Bite](https://www.wowhead.com/spell=1290797) — the stacking +50% Physical damage taken debuff, Overload's attack-speed buff
 16. <a id="ref-16"></a>Wowhead tooltips, The Blinding Vale: [Earthrupture Strike](https://www.wowhead.com/spell=1237855), [Grievous Gash](https://www.wowhead.com/spell=1242135); bosses: [Bedrock Slam](https://www.wowhead.com/spell=1234753), [Thornspike](https://www.wowhead.com/spell=1247685) — Ruptured Earth pool, stacking bleed, Holy impale
-17. <a id="ref-17"></a>Wowhead tooltips, Voidscar Arena: [Brutalize](https://www.wowhead.com/spell=1300243), [Head Bash](https://www.wowhead.com/spell=1245186), [Sky Strike](https://www.wowhead.com/spell=1239856); bosses: [Dark Waves](https://www.wowhead.com/spell=1311923), [Hulking Claw](https://www.wowhead.com/spell=1222642) — 5-hit channel, Fel spittle, damage shared among players hit, Hulking Claw's Nature DoT
+17. <a id="ref-17"></a>Wowhead tooltips, Voidscar Arena: [Brutalize](https://www.wowhead.com/spell=1300243), [Head Bash](https://www.wowhead.com/spell=1245186), [Sky Strike](https://www.wowhead.com/spell=1239856), [Shred Defense](https://www.wowhead.com/spell=1233535); bosses: [Dark Waves](https://www.wowhead.com/spell=1311923), [Hulking Claw](https://www.wowhead.com/spell=1222642) — 5-hit channel, Fel spittle, damage shared among players hit, Hulking Claw's Nature DoT, +20% damage taken for 10 s from Shred Defense
 
 </details>
 
@@ -448,5 +456,12 @@ How the list was built, so it can be rebuilt next season. The
 
 18. <a id="ref-18"></a>[Guardian Druid — Mythic+ defensives](../rotations/guardian-druid-mplus-defensives.md) — how strong tanks cycle Barkskin, Incarnation, Survival Instincts and Ironfur
 19. <a id="ref-19"></a>[Guardian Druid — Mythic+ danger pulls](../rotations/guardian-druid-mplus-danger-pulls.md) — per-pull plans for Murder Row, Voidscar Arena and Kings' Rest
+
+</details>
+
+<details open>
+<summary>Community</summary>
+
+20. <a id="ref-20"></a>Pjdruid, Guardian Druid, key 22 Murder Row recording (no public link recorded) — at 4 Shield Bash stacks the tank calls for Blessing of Sacrifice, then for the Captain to die before the next bash. The debuff then drops
 
 </details>

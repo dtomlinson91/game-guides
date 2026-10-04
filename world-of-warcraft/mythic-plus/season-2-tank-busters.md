@@ -35,6 +35,11 @@ so it is the measure used to rank danger.
   - [The Blinding Vale](#the-blinding-vale)
   - [Murder Row](#murder-row)
   - [Den of Nalorakk](#den-of-nalorakk)
+- [Stacking debuffs](#stacking-debuffs)
+  - [How overlap works](#how-overlap-works)
+  - [Stacks that depend on the pull](#stacks-that-depend-on-the-pull)
+  - [Stacks from melee](#stacks-from-melee)
+  - [Stacks on bosses](#stacks-on-bosses)
 - [Boss alerts](#boss-alerts)
   - [Ruby Life Pools bosses](#ruby-life-pools-bosses)
   - [Kings' Rest bosses](#kings-rest-bosses)
@@ -45,7 +50,6 @@ so it is the measure used to rank danger.
   - [Temple of Sethraliss bosses](#temple-of-sethraliss-bosses)
   - [Den of Nalorakk bosses](#den-of-nalorakk-bosses)
   - [Heavy group damage](#heavy-group-damage)
-- [Damage amplifiers](#damage-amplifiers)
 - [How the danger works](#how-the-danger-works)
 - [Full measurements](#full-measurements)
 - [Method](#method)
@@ -175,6 +179,99 @@ avoidable slam and one missed interrupt [[2]](#ref-2)[[11]](#ref-11).
 | 2 | Avatar of Determination | **Pulverize** (1240280) | 4.0 s | 29 s | 118% | 12 yd area hit plus a 4 s stun. Step out. Tanks were hit by 7 of 41 casts, each time with a major up |
 | — | Stormbound Mystic | **Lightning Bolt** (1246687) | 2.5 s | — | 44%, Nature | Interrupt it. 218 of 262 were kicked. **One missed kick killed a tank** on top of melee damage |
 
+## Stacking debuffs
+
+Some casts leave a debuff that makes the tank take more damage, and many of
+those debuffs stack. One mob alone casts more slowly than its debuff lasts, so
+the debuff drops between its casts. **Two or more casters of the same debuff in
+one pull can re-apply it before it drops.** The debuff then never falls off,
+and every cast adds a stack until a caster dies. Higher keys pull bigger, so
+this happens more often. The group is expected to count the casters, and to
+kill one before the stacks get too high [[1]](#ref-1)–[[8]](#ref-8).
+
+> [!CAUTION]
+> **Shield Bash killed a key 19 tank at 5 stacks.** The Bribed Captain and the
+> Bribed Guard cast it in turn, and no gap between bashes reached its 20 s
+> duration. The debuff lasted the whole pull. The sixth bash landed on +100%
+> Physical damage taken, with no major defensive up, and dealt 995k
+> [[9]](#ref-9).
+
+### How overlap works
+
+The tooltip gives the debuff's duration and the cast time. The log gives how
+often one mob casts it. Together they show how many casters keep the debuff
+up.
+
+1. **The debuff never drops while every gap between two applications is
+   shorter than its duration.** The gap counts casts from every caster, not
+   from one mob.
+2. **One caster keeps it up alone only if it casts faster than the debuff
+   lasts.** Tainted Strike (every 11 s, lasts 25 s) does this, and Stormslam
+   (every 23 to 26 s, lasts 30 s) would do it if not dispelled.
+3. **Casters needed = (one mob's cadence ÷ duration), rounded down, plus 1.**
+   Shield Bash: 24 ÷ 20 rounds to 1, so 2 casters. Sunder Slam: 21 ÷ 10 rounds
+   to 2, so 3 casters. That assumes the casters are spread out.
+4. **Spacing decides it.** Casters engaged at the same moment cast at the same
+   moment. The stack spikes, then drops before the next round, as with
+   Tectonic Strike and Shred Defense. Casters a few seconds apart keep it up.
+   The offset comes from a later pull, a stun or a pushback. Every Shield Bash
+   pair that overlapped was 6 to 7 s apart.
+5. **Shared or separate, the effects add up.** Most of these are one shared
+   debuff: each cast adds a stack and resets the timer of the whole stack.
+   Shred Defense puts a separate copy from each caster, each with its own
+   timer. Either way, 4 stacks or 4 copies of +20% is +80%.
+6. **The tooltip does not always say.** Shield Bash's tooltip never mentions
+   stacking, but it stacks. Check the log for stack counts above 1.
+
+> [!TIP]
+> Before a pull, count the casters of each debuff in this section. If the
+> count reaches the "casters to keep it up" column, plan the kill order: kill
+> one caster before the stack reaches a level the tank cannot survive, and
+> save an external defensive for the peak.
+
+### Stacks that depend on the pull
+
+"Seen" covers the 8 sampled keys of each dungeon, at levels 20 to 22. A
+debuff that never overlapped in the sample can still overlap in a bigger pull.
+
+| Dungeon | Mob | Debuff (ID) | Per stack | Lasts | One mob every | Casters to keep it up | Seen | Answer |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Murder Row | Bribed Guard, Bribed Captain | **Shield Bash** (1216529) | +20% Physical damage taken | 20 s | 23 to 24 s | 2 | Both in the first pack in 4 of 8 keys. 4 stacks for 50 to 52 s in 3. One death at 5 stacks, key 19 [[9]](#ref-9) | External at 4 stacks, then kill the Captain before the next bash [[20]](#ref-20) |
+| Ruby Life Pools | Deepstone Earthshaper | **Tectonic Strike** (1305225), instant | **+25% damage taken** | 8 s | 21 s | 3 | 2 to 9 per pull. 3 stacks in all 8 keys, 5 stacks (+125%) twice, all within 6 s | No cast bar. Have a defensive ready at the pull. The stacks drop 8 s after the burst unless stuns spread the casters out |
+| Voidscar Arena | Savage Shredclaw | **Shred Defense** (1233535), instant | +20% damage taken, one copy per Shredclaw | 10 s | 21 s | 3 | 1 to 10 per pull. 3 copies in all 8 keys, 4 copies (+80%) once | As for Tectonic Strike. Each copy also hits for 40% raw |
+| Temple of Sethraliss | Sandfury Stonefist | **Sunder Slam** (1291468) | **+50% Physical damage taken** | 10 s | 21 to 22 s | 3 | 2 per pull in all 8 keys, casting 2 to 5 s apart. 2 stacks (+100%) for 7 to 10 s, never kept up | Defensive for the second slam. A third Stonefist, or a stun that offsets one, keeps it up |
+| Altar of Fangs | Rattling Writhe | **Corrosive Fangs** (1294845) | +20% damage taken | 20 s | 28 s | 2 | Both in one pull in all 8 keys. In every key one Writhe cast twice before the other began, so the debuff never overlapped | Fight the Writhes one after the other. Together, the debuff never drops and every Rattle lands on it |
+| Kings' Rest | Ghostly Brute | **Soul Crush** (1302028) | −30% armor | 15 s | 21 to 23 s | 2 | One Brute per pull in all 9 pulls seen | Do not pull two Brutes together |
+| The Blinding Vale | Luminous Thornmaw | **Grievous Gash** (1242135) | Stacking bleed | 16 s, or until full health | 18 s | 2 | 2 or 3 per pull in 9 of 25 pulls. 2 stacks seen, rarely, because healing to full clears it | Heal the tank to full to clear it |
+| Temple of Sethraliss | Orb Watcher | **Venomous Slash** (1303443) | Nature DoT, one copy per Orb Watcher | 10 s | 23 to 24 s | 3 | 2 per pull in all 8 keys. Overlapped in 1 | Low risk. The hit before it is the danger |
+
+### Stacks from melee
+
+Some mobs stack a debuff with their melee swings, not with a cast. The stack
+count grows with the number of those mobs hitting the tank, so a bigger pull
+means more stacks [[2]](#ref-2)[[4]](#ref-4)[[7]](#ref-7)[[11]](#ref-11).
+
+| Dungeon | Mob | Debuff (ID) | Per stack | Lasts | Seen |
+| --- | --- | --- | --- | --- | --- |
+| Den of Nalorakk | Thornclaw Gatherer | **Shredding Claws** (1238247) | −5% armor | 2 s | **10 stacks (−50% armor) in all 8 keys** |
+| Den of Nalorakk | Loyal Saberfang | **Shred Armor** (1311695) | −10% armor | 5 s | 3 stacks (−30% armor) in 6 of 8 keys |
+| The Blinding Vale | Lasher | **Spore Spines** (1238084) | Nature damage over time | 16 s | Up to 30 stacks |
+| Murder Row | Street Sneak | **Heartstop Poison** (1216590) | −5% maximum health, Nature damage | 8 s coating | Up to 10 stacks (−50% maximum health) |
+
+### Stacks on bosses
+
+A boss fight holds a fixed number of casters, so these stacks can be planned
+before the pull [[3]](#ref-3)–[[6]](#ref-6)[[14]](#ref-14).
+
+| Boss | Debuff | What happens | Seen |
+| --- | --- | --- | --- |
+| Kyrakka and Erkhart Stormvein | **Stormslam** (381515), Magic | +100% Nature damage taken for 30 s. Erkhart casts every 23 to 26 s, so it would stack | Never stacked in 63 casts. Median uptime 1.4 s, longest 14.3 s. It is Magic, which fits a dispel. Dispel it after every Stormslam |
+| Melidrussa Chillworn | **Cold Claws** (1305234), Magic, from Infused Whelps | A stack per whelp attack for 10 s. **At 20 stacks the tank is Frozen Solid** | 20 stacks reached 4 times in 3 of 8 keys. Dispel it before 20 |
+| Avatar of Sethraliss | **Tainted Strike** (1303446), from each Corrupted Guardian | Shadow DoT for 25 s, cast every 11 s | 2 stacks from each Guardian that lives past its second cast. Up to 69 s |
+| Kokia Blazehoof | **Searing Wounds** (372860) | One stack per hit of Searing Blows, Fire DoT for 8 s | 4 stacks per channel. Drops before the next channel |
+| Council of Tribes (Aka'ali) | **Shattered Defenses** (266238), from Debilitating Backhand | +200% Physical damage taken for 10 s | One Aka'ali, cast every 23 s. Never overlapped in 28 casts. The danger is Barrel Through, in [Kings' Rest bosses](#kings-rest-bosses) |
+| Xathuux the Annihilator | **Legion Strike** (473898) | −80% healing received for 8 s | Cast every 24 to 28 s. Never overlapped in 65 casts |
+
 ## Boss alerts
 
 The boss abilities aimed at the tank, from the same 64 keys. Bosses differ
@@ -293,24 +390,6 @@ leaves the tank exposed [[1]](#ref-1)–[[8]](#ref-8).
 | Kings' Rest | The Golden Serpent | Serpentine Gust | 68%, max 84% | Ticks on all players for 5 s |
 | Murder Row | Zaen Bladesorrow | Killing Spree | 54%, max 73% | Ignores armor, every 0.5 s for 3 s |
 | Den of Nalorakk | Nalorakk | Overwhelming Onslaught | 41% | 3 hits in 2 s, ignores armor |
-
-## Damage amplifiers
-
-Six abilities leave a debuff that makes the next hit bigger. In each case
-the hit after the debuff is the dangerous one, so plan the defensive for it.
-
-| Debuff from | Effect | Lasts | What it amplifies |
-| --- | --- | --- | --- |
-| Corrosive Fangs (Rattling Writhe) | +20% damage taken | 20 s | Rattle, cast 6 to 7 s later |
-| Sunder Slam (Sandfury Stonefist) | +50% Physical damage taken, stacking | 10 s | Head Butt, Ground Pound and melee |
-| Soul Crush (Ghostly Brute) | −30% armor, +30% Physical damage taken | 15 s | Every physical hit after it |
-| Shield Bash (Bribed Guard, Bribed Captain) | +20% Physical damage taken | 20 s | The next Shield Bash and all melee |
-| Debilitating Backhand (Aka'ali, Council of Tribes) | **+200% Physical damage taken** | 10 s | Barrel Through, if the tank soaks it |
-| Stormslam (Erkhart Stormvein) | +100% Nature damage taken, stacking | 30 s | The next Stormslam and Primal Thundercloud melee |
-
-> [!TIP]
-> Two mobs with the same buster double its rate. Shield Bash and Sunder Slam
-> both appear in pairs. Count the casters in the pack before the pull.
 
 ## How the danger works
 

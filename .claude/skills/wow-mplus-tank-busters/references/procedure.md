@@ -96,6 +96,14 @@ the tank.
 { reportData { report(code: "<CODE>") { events(fightIDs: [<F>], dataType: Deaths, limit: 500) { data } } } }
 ```
 
+**debuffs.json**: every debuff on the tank, the whole key. About 100 to 1,200
+events and about 1 point per key. Batch 8 runs in one query, one aliased
+`report` per run, then split the result into the run directories.
+
+```graphql
+{ reportData { report(code: "<CODE>") { events(fightIDs: [<F>], dataType: Debuffs, hostilityType: Friendlies, filterExpression: "target.name = '<TANKNAME>'", limit: 10000) { data nextPageTimestamp } } } }
+```
+
 **interrupts.json**
 
 ```graphql
@@ -144,6 +152,37 @@ Per candidate, the report gives:
 - **STREAM**: the cast spans more than 8 s, so it is an aura or a melee
   passive, not a cast.
 
+Then the stacking debuffs:
+
+```
+/usr/bin/python3 debuffs.py <dir> --json <dir>/debuffs_table.json > <dir>/debuffs_report.txt
+/usr/bin/python3 debuffs.py <dir> --timeline "<debuff name>"
+```
+
+Per debuff that was re-applied while up, the report gives:
+
+- **reapp**: the share of applications that landed while it was still up.
+- **maxStk**: the highest stack count, or the number of separate copies added
+  together.
+- **natural**: the median length of windows with one application. It reads
+  short when a dispel, a full heal or a death removes the debuff early. Use
+  the tooltip duration for the rule.
+- **longest**, **chained (runs)**: the longest uptime, and the windows that
+  lasted over 1.5 times the natural length.
+- **casters**: the most distinct mobs that fed one window. The log credits a
+  shared stack to its first caster, so the script matches each application to
+  the hit at the same moment.
+- **up to N separate copies**: each caster puts its own copy.
+
+`--timeline` lists every window with two or more applications: when each
+landed and which mob instance cast it. Use it to see whether the casters were
+spread out or cast together.
+
+For every debuff that raises damage taken, lowers armor or maximum health,
+or stacks, apply the rule in the skill's "Stacking debuffs" section: duration
+from the tooltip, cadence from `gap_floor` and `gap_median`, casters needed,
+and the most casters of that mob seen in one pull.
+
 ## 6. Classify
 
 **Trash**
@@ -186,7 +225,10 @@ At most about 500 words and one table per mode. Include:
    and tank deaths.
 3. GROUP abilities in one line each.
 4. Tank deaths and what killed them.
-5. Stacking threats.
+5. Stacking threats: for each debuff, its effect per stack, duration,
+   one mob's cadence, casters needed to keep it up, the most casters seen in
+   one pull, the highest stack and the longest uptime. Include debuffs that
+   never overlapped in the sample but would in a bigger pull.
 6. What failed, and any doubt about the data.
 
 Do not round away the evidence, and do not invent numbers. If a value is

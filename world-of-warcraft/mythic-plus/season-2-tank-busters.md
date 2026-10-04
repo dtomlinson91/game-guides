@@ -76,6 +76,7 @@ the season, and a magic cast that hurts through every defensive
 | 1 | Blazebound Destroyer | **Fiery Blast** (1305955) | 4.0 s | 17 s | 101%, Fire | Interrupt it. If the kick is missed, use a defensive: it still takes 50% through one |
 | 1 | Flamegullet | **Fire Maw** (392394) | 2.5 s | 21 s | 187% | Defensive. Its Fire part ignores armor: 45% taken without a major, down to 18% health |
 | 1 | Primal Juggernaut | **Crushing Smash** (372730) | 2.5 s | 21 s | 197% | Defensive. 40% taken even through a major. Every sampled tank covered every cast |
+| — | Deepstone Earthshaper | **Tectonic Strike** (1305225) | **instant** | 21 s | 48% | **Stacks:** +25% damage taken per stack for 8 s. Pulls hold 2 to 9 Earthshapers, which reach 3 to 5 stacks in the first seconds. See [stacking debuffs](#stacking-debuffs) |
 
 ### Voidscar Arena
 
@@ -88,6 +89,7 @@ the sample that a group could prevent by standing together
 | 1 | Devouring Brutalizer | **Brutalize** (1300243) | 2.0 s | 24 to 28 s | **636%** over 5 hits in 6 s | Major defensive plus healing. 72% taken through a major |
 | 1 | Brutok | **Head Bash** (1245186) | 2.5 s | 23 s | 98%, Fire | Defensive. 80% taken without one. Leaves a Fel spittle DoT |
 | 1 | Watchful Harrower | **Sky Strike** (1239856) | 5.0 s | 25 s | 42% shared, **172% alone** | Damage is split among everyone within 10 yd. Group up on the tank, or use a defensive |
+| — | Savage Shredclaw | **Shred Defense** (1233535) | **instant** | 21 s | 40% | **Stacks:** each Shredclaw adds its own +20% damage taken for 10 s. Pulls hold 1 to 10 Shredclaws. See [stacking debuffs](#stacking-debuffs) |
 
 > [!CAUTION]
 > **Sky Strike killed a tank who was hit alone.** It deals 872,842 Nature
@@ -102,7 +104,7 @@ One clean physical buster and one fixed combo from a single mob
 
 | Tier | Mob | Ability (cast ID) | Cast | Every | Raw | Response |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Rattling Writhe | **Corrosive Fangs** (1294845), then **Rattle** (1294849) | 3.0 s each | 28 s | Rattle 95% over 5 s, **ignores armor** | Defensive for Rattle, 6 to 7 s after Fangs. 77% taken through a major |
+| 1 | Rattling Writhe | **Corrosive Fangs** (1294845), then **Rattle** (1294849) | 3.0 s each | 28 s | Rattle 95% over 5 s, **ignores armor** | Defensive for Rattle, 6 to 7 s after Fangs. 77% taken through a major. **Stacks** if both Writhes are fought at once. See [stacking debuffs](#stacking-debuffs) |
 | 2 | Ritual Chieftain | **Dismember** (1306911) | 3.0 s | 23 s | 160% | Major defensive or full Ironfur |
 
 ### Temple of Sethraliss
@@ -114,7 +116,7 @@ dangerous [[6]](#ref-6)[[15]](#ref-15).
 | --- | --- | --- | --- | --- | --- | --- |
 | 2 | Krolusk Matriarch | **Head Butt** (272654) | 3.0 s | 23 s | **199%**, 256% at p90 | Major defensive or full Ironfur |
 | 2 | Orb Watcher | **Venomous Slash** (1303443) | 2.5 s | 24 s | 170% | Major defensive or full Ironfur. Adds a 10 s Nature DoT |
-| 2 | Sandfury Stonefist | **Sunder Slam** (1291468) | 3.0 s | 22 s | 112% | Each hit adds +50% Physical damage taken for 10 s, and it stacks. Two Stonefists often cast 2 s apart |
+| 2 | Sandfury Stonefist | **Sunder Slam** (1291468) | 3.0 s | 22 s | 112% | **Stacks:** +50% Physical damage taken per stack for 10 s. Both Stonefists in a pull cast 2 to 5 s apart, so the second slam lands at +50% and the next 7 s at +100%. See [stacking debuffs](#stacking-debuffs) |
 
 ### Kings' Rest
 
@@ -123,7 +125,7 @@ healing [[3]](#ref-3)[[12]](#ref-12).
 
 | Tier | Mob | Ability (cast ID) | Cast | Every | Raw | Response |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2 | Ghostly Brute | **Soul Crush** (1302028) | 2.5 s | 23 s | **210%** | Major defensive or full Ironfur. Leaves −30% armor for 15 s, so the next hits land harder |
+| 2 | Ghostly Brute | **Soul Crush** (1302028) | 2.5 s | 23 s | **210%** | Major defensive or full Ironfur. Leaves −30% armor for 15 s, so the next hits land harder. **Stacks** if two Brutes are in one pull. See [stacking debuffs](#stacking-debuffs) |
 | 2 | King A'akul | **Mortal Bleed** (1297918) | 2.5 s | 25 s | 126% opening hit | Major defensive or full Ironfur. Then an 18 s bleed with −20% healing received |
 
 ### The Blinding Vale
@@ -134,7 +136,7 @@ Two physical busters, both with lingering damage
 | Tier | Mob | Ability (cast ID) | Cast | Every | Raw | Response |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2 | Virid Grovekeeper | **Earthrupture Strike** (1237855) | 2.5 s | 24 s | 150% | Major defensive or full Ironfur. Leaves a pool that deals Nature damage and slows by 40% |
-| 2 | Luminous Thornmaw | **Grievous Gash** (1242135) | 2.5 s | 18 s | 109% | Major defensive or full Ironfur. Stacking bleed for 16 s, or until fully healed |
+| 2 | Luminous Thornmaw | **Grievous Gash** (1242135) | 2.5 s | 18 s | 109% | Major defensive or full Ironfur. Stacking bleed for 16 s, or until fully healed. Pulls often hold 2 or 3 Thornmaws. See [stacking debuffs](#stacking-debuffs) |
 
 > [!NOTE]
 > Lasher melee applies **Spore Spines**, a stacking Nature DoT that armor does
@@ -149,14 +151,19 @@ One physical buster cast by two mobs, and a poison that stacks
 
 | Tier | Mob | Ability (cast ID) | Cast | Every | Raw | Response |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2 | Bribed Guard, Bribed Captain | **Shield Bash** (1216529) | 3.0 s | 24 s per mob | 146%, 182% at key 22 | Major defensive or full Ironfur. +20% Physical damage taken for 20 s |
+| 2 | Bribed Guard, Bribed Captain | **Shield Bash** (1216529) | 3.0 s | 24 s per mob | 146%, 182% at key 22 | Major defensive or full Ironfur. **Stacks:** +20% Physical damage taken per stack for 20 s. See the warning below |
 | — | Street Sneak | **Heartstop Poison** (1216589) | 1.5 s | — | Stacking | Remove Corruption. Each hit while the coating lasts adds a stack: damage over 8 s and −5% maximum health |
 
 > [!WARNING]
-> The Guard and the Captain stand in the same pack and cast Shield Bash in
-> turn. While both live, one Shield Bash lands about every 12 seconds. That is
-> more than one tank can cover with major defensives for long. Kill one of the
-> two early.
+> **The first pack holds both the Guard and the Captain, and their Shield Bash
+> debuff never falls off while both live.** They cast in turn, 6 to 17 s
+> apart, and every gap is shorter than the 20 s debuff. Each bash adds a stack
+> and resets the whole stack. In 3 of 8 keys it reached 4 stacks (+80%
+> Physical damage taken) and lasted 50 s. A key 19 tank died to the next bash
+> at 5 stacks [[9]](#ref-9). At 4 stacks, call for an external defensive and
+> kill the Captain before the next bash. One tank makes exactly this call on a
+> key 22 [[20]](#ref-20). Once one caster is dead, the debuff drops 20 s after
+> the last bash.
 
 ### Den of Nalorakk
 

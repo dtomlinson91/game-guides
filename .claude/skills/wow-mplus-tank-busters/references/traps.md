@@ -99,3 +99,43 @@ Some nether tooltips return empty nested links (Thundering Storm), and some
 show a placeholder number (Poison Spear Volley read "35 damage").
 
 **Fix:** mark such abilities as unconfirmed rather than guessing.
+
+## 11. Raw damage misses a stacking debuff
+
+The first season guide listed Shield Bash at 146% raw, covered by a major
+defensive 88% of the time. It did not say that the Bribed Guard and the Bribed
+Captain feed one shared debuff. Together they re-apply it every 6 to 17 s,
+inside its 20 s duration, so it never drops while both live. A key 19 tank died
+at 5 stacks, +100% Physical damage taken. Tectonic Strike never passed the raw
+threshold at all (48% raw), yet 2 to 9 Earthshapers stacked it to 5 stacks,
++125% damage taken.
+
+**Fix:** fetch `debuffs.json` and run `debuffs.py`. Then infer overlap by hand
+for every debuff, with the rule in the skill's "Stacking debuffs" section,
+even where the sample shows none. The sample only holds the pulls those groups
+chose. Corrosive Fangs never overlapped in 8 keys only because every group
+fought the two Rattling Writhes one after the other.
+
+## 12. The tooltip and the source field hide stacking
+
+Shield Bash's tooltip says "+20% for 20 sec" and never mentions stacking. The
+log shows `applydebuffstack` up to 5. The log also credits every stack of a
+shared debuff to its first caster: all five stacks read "Bribed Captain",
+although the Guard cast every second one.
+
+**Fix:** decide stacking from the log, not the tooltip. Find each stack's
+caster from the hit at the same moment, which `debuffs.py` does. Some debuffs
+are one copy per caster instead (Shred Defense, Fel Missiles, Glaive Toss).
+The script counts both kinds.
+
+## 13. A short uptime can mean a dispel, not a short debuff
+
+Stormslam's tooltip says +100% Nature damage taken for 30 s, and the boss casts
+every 23 to 26 s, so it should stack. In 63 casts it never did: median uptime
+1.4 s. The debuff is Magic, so it was almost certainly dispelled. Grievous Gash
+reads 1.0 s because a full heal removes it.
+
+**Fix:** take the duration from the tooltip, not from `natural`. When the two
+disagree, find what removed it: a `Dispels` query, a heal to full, or a death.
+State the removal in the guide. Do not write "it stacks" when the log shows
+groups removing it.

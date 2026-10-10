@@ -1547,6 +1547,47 @@ Bladesorrow, from the same 8 logs:
   is usually a second caster refreshing it, not a removal. Compare it
   against the enemy cast times before calling it a dispel.
 
+### Character performance
+
+Log reviews of one player's run against a field of the same spec, dungeon
+and key level. They live in `world-of-warcraft/character-performance/`, named
+`<character>-<spec>-<dungeon>-<key>.md`.
+
+#### Mídníghts — Arcane
+
+[`world-of-warcraft/character-performance/midnights-arcane-blinding-vale-18.md`](world-of-warcraft/character-performance/midnights-arcane-blinding-vale-18.md)
+— a Sunfury Arcane Mage at 300k DPS (4th percentile) in a Blinding Vale 18,
+against 15 EU Sunfury mages at 348k to 374k. Covers fixes, a Sunfury systems
+overview, early Arcane Barrage by Salvo stack, Arcane Soul use, Touch of the
+Magi gaps, deaths, gear, the full comparison tables and the method.
+**Written 2026-10-10.**
+
+- Subject: report `VjA2rnvhkxdbWHJK`, fight 1, actor 4. Found through
+  `reportData.reports(userID: 1021856)`, the log owner's account.
+- Field: `characterRankings` for encounter 12859, `bracket: 17`,
+  `serverRegion: "EU"`, pages 3, 6 and 9, five timed runs each. The report
+  codes are in the guide's Sources list.
+- Rotation rules: the Icy Veins Arcane rotation page. Its Sunfury Salvo cap
+  (25) and Barrage thresholds matched the field's play.
+- Tooltips: nether for 1295924, 1295942, 30451, 1242974, 1317581, item 273778,
+  and the four killing abilities.
+
+> [!TIP]
+> **Replay buff stacks against casts.** Fetch `Buffs` events filtered with
+> `filterExpression: "ability.id in (..)"` and `Casts` events for the same
+> player, merge them by timestamp, and track the stack from `applybuff`,
+> `applybuffstack` (the `stack` field) and `removebuff`. That gives the stack
+> at every cast. It showed the Salvo problem, which no table could.
+
+> [!WARNING]
+> Arcane Charges are not in `classResources` on cast events. Only mana is.
+> Any rule that names Arcane Charges cannot be checked from the log.
+
+> [!NOTE]
+> Exclude Arcane Soul windows (451038) before you judge Arcane Barrage
+> timing. During Soul, Barrage spam is correct, and three Barrages in a row
+> are not a mistake there.
+
 ### Mythic+ reference
 
 Guides that cover a whole Mythic+ season rather than one spec. They live in

@@ -40,6 +40,12 @@ follows the logs and says so.
 - [Opening the pull](#opening-the-pull)
 - [Six rules that surprise](#six-rules-that-surprise)
 - [Troubleshooting](#troubleshooting)
+- [Common situations](#common-situations)
+  - [Holding Fury of Elune](#holding-fury-of-elune)
+  - [No charges ready](#no-charges-ready)
+  - [Refreshing during an Eclipse](#refreshing-during-an-eclipse)
+  - [Incarnation over an Eclipse](#incarnation-over-an-eclipse)
+  - [Smaller questions](#smaller-questions)
 - [Observed cast rates](#observed-cast-rates)
 - [Cooldown timings](#cooldown-timings)
 - [Buttons not pressed](#buttons-not-pressed)
@@ -321,6 +327,124 @@ come from the 27 logs [[1]](#ref-1).
 > and Incarnation, the job is Starfire, damage over time refreshes and
 > building Astral Power for the next press. Bring at least 75 to the next
 > Eclipse.
+
+## Common situations
+
+These are the questions that come up mid-fight, where no priority list gives
+an answer. Each answer comes from the 27 logs [[1]](#ref-1). Where a rule is
+an estimate rather than a measurement, the text says so.
+
+### Holding Fury of Elune
+
+Hold Fury of Elune for up to about 5 seconds for a coming Lunar Eclipse or
+Incarnation. Past 8 to 10 seconds, press it. If a Lunar Eclipse charge is
+ready, do not hold at all: press Fury of Elune, then Lunar Eclipse on the next
+global cooldown [[17]](#ref-17).
+
+The field does exactly that [[1]](#ref-1):
+
+- It presses Fury of Elune a median 1.5 seconds after the cooldown ends,
+  about one global cooldown of reaction time
+- 71% of casts go out within 3 seconds of the cooldown ending, and 84%
+  within 6 seconds
+- 16% are held longer than 6 seconds. 39 of those 57 lead straight into a
+  Lunar Eclipse or Incarnation press
+- Of the 155 casts that start outside an Eclipse, 112 have Lunar Eclipse or
+  Incarnation pressed within the next 3 seconds. The field brings the Eclipse
+  to Fury of Elune, rather than holding Fury of Elune for the Eclipse
+
+Holding costs more than it looks. Lunation takes 1.5 seconds off the cooldown
+for each Arcane spell, and the field casts 0.64 Arcane spells a second
+[[7]](#ref-7)[[1]](#ref-1). While Fury of Elune sits ready, those reductions
+are lost, and each held second pushes every later cast back by a full second.
+The real cycle is about 24 seconds, so each held second costs about 4% of a
+cast. A 10-second hold costs about 40% of one.
+
+Holding also gains. On single target, a Fury of Elune that started inside a
+plain Lunar Eclipse dealt a median 1.85 times the damage of one outside
+[[1]](#ref-1). That figure rests on only 24 casts in 5 logs, and Bloodlust or
+other buffs may inflate it. Read it as an upper bound.
+
+> [!NOTE]
+> The 5-second cutoff is an estimate from the cost and the gain above, not a
+> measured optimum. The logs show only that the field rarely holds longer.
+> Icy Veins says to cast it inside an Eclipse, as soon as it comes up
+> [[15]](#ref-15). Wowhead says to send it on cooldown with Lunation, or hold
+> it slightly [[17]](#ref-17).
+
+### No charges ready
+
+When Lunar Eclipse and Incarnation are both recharging, build Astral Power,
+refresh Moonfire and Sunfire, and enter the next Eclipse full. In the 125 gaps
+of 10 seconds or more with no Eclipse up, 36 minutes in total, the field
+played like this [[1]](#ref-1):
+
+| Measure | In long gaps | Whole fight |
+| --- | --- | --- |
+| Starfire per minute | 13.4 | 15.4 |
+| Moonfire and Sunfire per minute | 6.1 and 5.8 | 4.0 and 4.1 |
+| Starsurge plus Starfall per minute | 8.3 | 17.4 |
+| Builders cast at 90+ Astral Power | 20% | 11% |
+
+The gap starts at a median 53 Astral Power and the next Eclipse begins at a
+median 84 [[1]](#ref-1). Capping is the main risk. Spend one spender as soon
+as the next Starfire would cap the bar: Starsurge on one target, Starfall on
+several. Spend free procs at once.
+
+Pooling in a gap costs little. Starlord stacks from spending end when the
+next Eclipse starts [[9]](#ref-9), so stacks built in a gap are lost.
+
+When the charges return, press one Lunar Eclipse. Press the second when the
+first ends, as [Lunar Eclipse timing](#lunar-eclipse-timing) describes. If
+Incarnation is ready while Lunar Eclipse holds 2 charges, press Lunar Eclipse
+first, so its recharge keeps running [[17]](#ref-17).
+
+### Refreshing during an Eclipse
+
+Refresh Moonfire or Sunfire inside an Eclipse when it would otherwise run out.
+Never let it drop. Prefer to refresh just before an Eclipse or Incarnation.
+
+- Drops are rare. Across 27 fights, Moonfire stopped ticking on the boss for
+  more than 4 seconds 15 times, and Sunfire 18 times [[1]](#ref-1). Some of
+  these may fall in phases where the boss cannot be attacked. That was not
+  checked
+- The field leans its refreshes outside the Eclipse. 52% of refreshes on the
+  boss land outside one, while an Eclipse is up 69% of the time
+  [[1]](#ref-1)
+- 106 of 118 Incarnations had a Moonfire or Sunfire refresh in the 12 seconds
+  before the press [[1]](#ref-1). Icy Veins gives the same rule
+  [[15]](#ref-15)
+
+Refresh in the last 5 seconds, which is 30% of the 18-second duration
+[[13]](#ref-13). That pandemic window carries the remaining time over, so an
+early refresh inside it loses nothing [[17]](#ref-17). On several targets,
+each Starfall extends both by 3 seconds, up to 28 [[8]](#ref-8).
+
+### Incarnation over an Eclipse
+
+Pressing Incarnation during a running Lunar Eclipse replaces it with a fresh
+20-second window. The rest of the Lunar Eclipse is lost [[17]](#ref-17). The
+field does this on purpose. In 48 of 118 Incarnations, Lunar Eclipse had been
+pressed a median 9 seconds earlier [[1]](#ref-1). This is the opener pattern.
+Pressing Lunar Eclipse early starts its recharge, which is worth more than the
+lost seconds [[17]](#ref-17).
+
+The reverse does not work. Lunar Eclipse pressed during Incarnation does
+nothing, and the field never pressed it there. See
+[After the window](#after-the-window).
+
+### Smaller questions
+
+| Question | Answer |
+| --- | --- |
+| When is the instant Starfire used? | At once, in 308 of 309 cases [[1]](#ref-1). It can also be saved for a movement phase [[17]](#ref-17) |
+| What can be cast while moving? | Everything except Starfire. Starsurge, Starfall, Moonfire, Sunfire, Fury of Elune, Lunar Eclipse and Incarnation are instant. Before a known move, line up a refresh, a free proc or the instant Starfire |
+| Is Wrath ever cast after the pull? | No. Lunar Calling stops it switching the Eclipse to Solar [[7]](#ref-7), and 28 of 30 Wraths landed in the first 3.2 seconds [[1]](#ref-1) |
+| Where does Touch the Cosmos go on one target? | Starsurge. Starfall on one target is for Starweaver's Warp only [[1]](#ref-1) |
+| What changes when adds arrive? | Starfall replaces Starsurge from 2 or 3 targets. See [Several targets](#several-targets) |
+| What about Astral Power when an Eclipse is ending? | Keep it if a charge is ready. Spend it if the next Eclipse is 10 or more seconds away [[15]](#ref-15). The field lands 14% of spenders in the last fifth of an Eclipse [[1]](#ref-1) |
+| Is it safe to press Fury of Elune at high Astral Power? | Fury of Elune adds 40 over 8 seconds, plus 6 from the end flash [[6]](#ref-6)[[7]](#ref-7). From 60 or more, spend during the beam. This rule is arithmetic, not measured |
+| What after a death or a battle resurrection? | Recast Moonkin Form. It shows up at 0.7 casts a minute in the gaps [[1]](#ref-1) |
 
 ## Observed cast rates
 

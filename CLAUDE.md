@@ -1559,6 +1559,16 @@ rates, cooldown gaps, buttons not pressed, the hero tree split by boss, a
 no-tier-set section, macros, Cooldown Manager buffs, and gear and stats.
 Numbered citations. **Written 2026-10-17 from 27 Mythic kills played 14 to
 17 October 2026, patch 12.1.5.** The user asked for Mythic Kith'ix first.
+The same day it gained a "Common situations" section from the same logs:
+how long to hold Fury of Elune, play with no Eclipse charges, DoT refreshes
+inside an Eclipse, Incarnation over a running Eclipse, and smaller questions.
+
+> [!TIP]
+> **Fury of Elune's ready time can be modelled from casts alone.** Start a
+> 45-second cooldown at each cast and subtract 1.5 seconds for each Arcane
+> cast (Starfire, Starsurge, Starfall, Moonfire) while it runs. No cast in
+> 357 came before the modelled ready time, so the model holds. It gives the
+> hold time of every press.
 
 Primary source — Warcraft Logs, through the MCP server:
 

@@ -1547,6 +1547,97 @@ Bladesorrow, from the same 8 logs:
   is usually a second caster refreshing it, not a removal. Compare it
   against the enemy cast times before calling it a dispel.
 
+#### Balance Druid
+
+[`world-of-warcraft/rotations/balance-druid-raid-rotation.md`](world-of-warcraft/rotations/balance-druid-raid-rotation.md)
+— raid rotation for Elune's Chosen with the 4-piece, in The Venomous Abyss,
+with a Kith'ix plan. Covers a systems overview (Eclipse is now a 2-charge
+button), the single-target list, the spender swap by target count, the
+Incarnation window, Lunar Eclipse timing, the Kith'ix add waves and charge
+plan, the opener, six surprising rules, troubleshooting bands, observed
+rates, cooldown gaps, buttons not pressed, the hero tree split by boss, a
+no-tier-set section, macros, Cooldown Manager buffs, and gear and stats.
+Numbered citations. **Written 2026-10-17 from 27 Mythic kills played 14 to
+17 October 2026, patch 12.1.5.** The user asked for Mythic Kith'ix first.
+
+Primary source — Warcraft Logs, through the MCP server:
+
+- Zone 53 now holds 10 encounters. Kith'ix is 3513 and Nymrissa Wavecaller
+  3379. Mythic is `difficulty: 5` on `characterRankings`. Kith'ix had only
+  62 ranked Balance parses, all on page 1, so 12 of them cover the field.
+- 12 Kith'ix logs at ranks 3 to 55, and 15 logs of other bosses from page 1
+  ranks 44 to 85. EU 10, CN 9, US 5, KR 3.
+- One GraphQL query per log fetched everything with name filters, about 8
+  points each: `events(dataType: Casts, includeResources: true,
+  filterExpression: "source.name = 'X'")`, the same for `DamageDone`,
+  `Buffs` with `target.name`, `CombatantInfo`, plus `fights` and
+  `masterData { actors(type: "NPC") }`. Damage events pass 10,000 on
+  10-minute fights; fetch the second page from `nextPageTimestamp`.
+- Astral Power is `classResources` type 8, scaled by 10, and is the value
+  **before** the cast spends it.
+- Single-target time is the 10-second slices where the druid damaged one
+  distinct target and instance. Raid boss pulls carry adds, so whole-fight
+  rates are not single-target rates.
+
+> [!IMPORTANT]
+> **The raid field splits by boss.** Force of Nature casters (the Keeper of
+> the Grove signature) in 17 parses per boss: Sszorak 17, Nymrissa 16,
+> Ula'tek 14, Vashnik 13, Entombed Sentinels and The Lost Explorers 0.
+> Kith'ix 0 of 21. The first sample drew 8 Keeper logs on those four bosses
+> and they were replaced. Check the hero tree before analysing any boss.
+> Markers: Boundless Moonlight damage (428682) for Elune's Chosen, Dream
+> Burst damage (433850) for Keeper. Full Moon damage (274283) appears in
+> both and is **not** a marker.
+
+> [!TIP]
+> A `table(dataType: Casts, filterExpression: "source.name = 'X'")` in the
+> default view lists only the top 5 abilities per player. Add
+> `viewBy: Ability` for the full list. The default view does carry gear
+> with item names, which `CombatantInfo` lacks.
+
+Live spell values — nether tooltips and Wowhead spell pages, IDs in the
+guide's Sources list. Research notes are in the session scratchpad, not in
+the repo.
+
+Written guides — mechanics only, priorities NOT trusted:
+
+- <https://www.icy-veins.com/wow/balance-druid-pve-dps-rotation-cooldowns-abilities>,
+  `stat-priority` and `spec-builds-talents` — updated 12 October 2026, Bora.
+  Its list renders per hero tree with CSS toggles; filter by preset
+- <https://www.wowhead.com/guide/classes/druid/balance/rotation-cooldowns-pve-dps>
+  and `stat-priority-pve-dps` — Gamz
+- <https://www.method.gg/guides/balance-druid/playstyle-and-rotation> — Gamz,
+  so one source with Wowhead
+- <https://maxroll.gg/wow/class-guides/balance-druid-raid-guide> — updated
+  12 August 2026, stale
+- <https://murlok.io/druid/balance/m+> — top 50 Mythic+ only. Its tooltip
+  numbers disagree with Wowhead on several spells; do not quote them
+
+Sources that failed:
+
+- `murlok.io/druid/balance/raid` — empty body. murlok has no raid mode.
+- `wowhead.com/guide/classes/druid/balance/hero-talents` — stale, titled
+  for The War Within 11.2.7, and contradicts itself on raid.
+- Reddit — `"balance druid"` in r/CompetitiveWoW returned zero, and the next
+  search an empty body (discovery quota spent). No thread was read.
+- The hero check query for Nek'zali timed out at 17 aliased tables.
+  Twin Fangs and Coiled Altar were not checked. Batch smaller.
+- The shared WCL client stood at 16,664 of 18,000 points when the session
+  started. The run fitted in the remainder.
+
+> [!CAUTION]
+> Icy Veins advises holding spenders for the end of an Eclipse, where the
+> tier 4-piece returns to 10%. The field front-loads instead: 32% of
+> spenders in the first fifth of a plain Eclipse, 14% in the last fifth.
+> The guide follows the logs.
+
+> [!NOTE]
+> Lunation makes Fury of Elune a 25-second button (floor 17.4 s, median
+> 24.5 s), against its 45-second tooltip. Lunar Eclipse is never pressed
+> inside Incarnation (0 of 313), and the first Starfire after each Eclipse
+> is instant (308 of 309). Test buff state 50 ms before a cast: the
+> Eclipse buff applies in the same millisecond as the Lunar Eclipse press.
+
 ### Character performance
 
 Log reviews of one player's run against a field of the same spec, dungeon
